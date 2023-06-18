@@ -13,13 +13,20 @@ body,
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
-	height: 700px;
+	height: 800px;
 
 }
 
 .logo-head
 {
     width: 13%;
+}
+.col-sm-12
+{
+
+top:120px;
+
+
 }
 .col-md-3 {
     width: 100%;
@@ -474,6 +481,10 @@ text-decoration: none;
 	#cover{
 		height: 600px;
 	}
+    .col-sm-12
+{
+top:120px;
+}
     .typewriter {
         font-size: 25px !important;
   }
@@ -545,7 +556,11 @@ text-decoration: none;
 
 
 @media (max-width: 575px){
-
+    .col-sm-12
+    {
+    top:60px;
+    
+    }
     .col-md-3 {
         width: 100%;
     }
