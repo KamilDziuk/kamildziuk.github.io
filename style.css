@@ -2,18 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 html,
 body,
+
 .navbar-brand{
     color:  #fff;
-    background-color: #3f3f3f;
+    background: linear-gradient(to bottom,#000000, #010933, #021267, #03177b, #0420af);
 }
 #cover{
-    background:url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb- 1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+ 
     background-size: cover !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 	height: 700px;
+
 }
+
 .logo-head
 {
     width: 13%;
@@ -54,14 +57,14 @@ h1{
     color: #fff;
     font-size: 40px !important;
     font-style: italic;
-    margin-bottom: 30px !important;
+  
 }
 h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700 !important;
     font-size: 75px !important;
     color: #fff ;
-    margin-bottom: 30px !important;
+ 
 }
 h3{
 	margin-bottom: 5% !important;
@@ -76,6 +79,11 @@ h4{
 }
 h6{
 	text-align: left;
+}
+.btn-primary :active {
+    backdrop-filter: blur(4px);
+    color: #ffff !important;
+    background-color: #383838a9;
 }
 .btn-primary{
     font-family: 'Montserrat', sans-serif !important;
@@ -212,8 +220,7 @@ a.nav-link{
   }
 
 #portfolio{
-    background:#262626;
-    backdrop-filter: blur(4px);
+   
     padding: 120px 0;
 }
 .card{
@@ -238,9 +245,7 @@ a.nav-link{
     background-size: cover;
     border: 7px solid  #000000a9;
 }
-#aboutUs{
-    padding: 120px;
-}
+
 .aboutUs-content .row{
     margin-bottom: 90px;
 }
@@ -280,45 +285,15 @@ a.nav-link{
 .rounded-circle {
     border-radius: 0%!important;
 }
-.yellow-text{
-    position: relative;
-    top: 50px;
-    left: 5px;
-    font-family: 'Montserrat' !important ;
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    color: #ffff !important;
-}
-#team{
-    padding-top: 120px;
-    padding-bottom: 70px;
-    background: #f1f1f1;
-}
-.team-circle{
-    width: 220px;
-    height: 220px;
-    background: #262626;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 6px solid #ffff;
-}
-.team-content h4{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-}
-.team-content h5{
-    font-family: 'Montserrat', serif;
-    color: #ffffff;
-    font-size: 14px;
-}
-.social-icons {
+
+#socialIcons {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .social-icon{
-    display: inline;
+   
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -337,21 +312,6 @@ a.nav-link{
     font-size: 16px;
 }
 
-textarea{
-    width: 90%;
-    height: 200px;
-    border-radius: 3px;
-    padding-top: 15px;
-    text-indent: 20px;
-    margin-right: 5%;
-}
-.golden-form-element{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-
 #footer {
     padding: 20px 0px;
     background:#262626a9;
@@ -362,23 +322,23 @@ textarea{
     color: #fff;
 }
 .footer-item :hover {
-    text-decoration: none;
+text-decoration: none;
 }
 .logo {
     width: 45%;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.social-icons {
+#socialIcons {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.social-icons li {
+#socialIcons li {
     display: inline-block;
     margin-right: 10px;
 }
-.social-icons a {
+#socialIcons a {
     color: #ffff;
     font-size: 24px;
 }
@@ -437,7 +397,7 @@ textarea{
 
 
 
-/* Bootstrap media 1 */
+
 @media (max-width: 991px){
   
     .company-social-icon{
@@ -594,7 +554,7 @@ textarea{
 	}
     h1{
 		margin-top: 30% !important;
-        font-size: 24px !important;
+        font-size: 40px !important;
     }
     h2{
         font-size: 30px !important;
@@ -603,7 +563,7 @@ textarea{
     #portfolio{
       background:#262626;
       backdrop-filter: blur(4px);
-      padding: 120px 0;
+    
   }
   .card{
       border-style: none;
@@ -622,11 +582,7 @@ textarea{
       font-family: 'Montserrat', serif;
       font-size: 14px;
       font-style: italic
-  }
-    #aboutUs{
-        padding: 40px;
-    }
-    
+  } 
     .navbar-toggler{
         background: #262626;
         outline: none !important;
