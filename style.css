@@ -5,7 +5,7 @@ body,
 
 .navbar-brand{
     color:  #fff;
-    background: linear-gradient(to bottom,#000000, #010933, #021267, #03177b);
+    background: linear-gradient(to bottom,#000000, #010933, #021267);
 }
 #cover{
  
@@ -559,12 +559,12 @@ text-decoration: none;
     h2{
         font-size: 30px !important;
     }
-
-    #portfolio{
-      background:#262626;
-      backdrop-filter: blur(4px);
     
-  }
+        h3{
+            padding-left: 15px
+        }
+
+ 
   .card{
       border-style: none;
       margin-bottom: 30px;
@@ -588,10 +588,7 @@ text-decoration: none;
         outline: none !important;
         border: none !important;
     }
-    textarea{
-        margin-top: 30px !important;
-        margin-left: 25px !important;
-    }
+  
 	.card img{
 		width: 100%;
 		
