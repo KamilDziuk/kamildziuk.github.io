@@ -632,7 +632,7 @@ a.nav-link {
 
 
     .typewriter {
-        font-size: 24px;
+        font-size: 20px;
         padding-left: 5px
     }
 
@@ -647,7 +647,7 @@ a.nav-link {
         position: relative;
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 450px){
     .typewriter {
         font-size: 16px;
         padding-left: 5px;
@@ -660,5 +660,4 @@ a.nav-link {
     .logo-head {
         width: 30%;
     }
-
 }
