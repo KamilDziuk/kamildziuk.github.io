@@ -3,7 +3,7 @@ html,
 body,
 .navbar-brand {
     color: #fff;
-    background: linear-gradient(to bottom, #000000, #010933, #021267);
+    background: linear-gradient(to bottom,#000,#012265c8,#002877C8,#002877C8,#002877C8,#002877C8,#002877C8);
 }
 #cover {
     height: 800px;
@@ -223,7 +223,7 @@ a.nav-link {
     margin-left: 10px;
 }
 #portfolio {
-
+    /* background: linear-gradient(200deg, #002877C8 0%, #002877C8 30%, #000000 100%); */
     padding: 120px 0;
 }
 .card {
@@ -240,6 +240,7 @@ a.nav-link {
 }
 
 .portfolio-content .card-subtitle {
+
     font-family: 'Montserrat', serif;
     font-size: 14px;
     font-style: italic
