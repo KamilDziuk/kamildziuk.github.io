@@ -3,7 +3,7 @@ html,
 body,
 .navbar-brand {
     color: #fff;
-    background: linear-gradient(to bottom,#000,#012265c8,#002877C8,#002877C8,#002877C8,#002877C8,#002877C8);
+    background: linear-gradient(to bottom,#000,#012265c8,#012265c8,#012265c8,#012265c8,#002877C8,#002877C8,#002877C8,#002877C8,#000);
 }
 #cover {
     height: 800px;
