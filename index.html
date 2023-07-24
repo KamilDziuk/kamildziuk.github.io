@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="js/wow.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Strony internetowe, aplikacje i sklepy na WordPress, Strony www, Tworzenie stron</title>
+<script src="script.js" async></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Strony internetowe, aplikacje i sklepy na WordPress, Strony www, Tworzenie stron</title>
 </head>
-
 <body>
+
+<!-- Top bar -->
+
   <section id="cover">
     <div class="container">
       <div class="row">
@@ -54,6 +49,9 @@
         </nav>
       </div>
     </div>
+    <!-- Top bar end  -->
+
+    <!-- Head -->
     <div class="container">
       <div class="row text-left ">
         <div class="col-sm-12">
@@ -79,6 +77,11 @@
         </div>
       </div>
   </section>
+
+   <!-- Head end -->
+
+    <!-- Services-->
+
   <section id="services">
     <div class="container">
       <div class="services-top row text-left">
@@ -177,6 +180,16 @@
       </div>
     </div>
   </section>
+
+    <!-- Services end -->
+
+    <!-- Portfolio -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
   <section id="portfolio">
     <div class="container">
       <div class="portfolio-top text-left">
@@ -242,7 +255,14 @@
               <div class="card-body">
                 <h4 class="card-title"></h4>
                 <p class="card-subtitle text-muted"></p>
-  </section>
+               </section>
+
+               <!-- Portfoli end -->
+               
+
+
+<!-- Opinions -->
+
   <div class="oceny-top text-left">
     <div class="container">
       <br>
@@ -254,7 +274,7 @@
       <div class="carousel"
         onclick="window.open('https://www.google.pl/maps/place/Kamil+Dziuk.+Strony+internetowe,+aplikacje+i+sklepy+na+WordPress/@50.2541412,19.0112044,18z/data=!4m8!3m7!1s0x4716cff7d21f6e77:0xd1b0c84f69b3558d!8m2!3d50.2536664!4d19.0150903!9m1!1b1!16s%2Fg%2F11tnnqn8z9?entry=ttu', '_blank')">
         <div class="slide-container">
-          <div class="slide red">
+          <div class="slide-opinions">
             <div class="black-block">
               <div class="text-container">
                 <div class="centered-content">
@@ -268,7 +288,7 @@
               </div>
             </div>
           </div>
-          <div class="slide red">
+          <div class="slide-opinions">
             <div class="black-block">
               <div class="text-container">
                 <div class="centered-content">
@@ -282,7 +302,7 @@
               </div>
             </div>
           </div>
-          <div class="slide red">
+          <div class="slide-opinions">
             <div class="black-block">
               <div class="text-container">
                 <div class="centered-content">
@@ -295,7 +315,7 @@
               </div>
             </div>
           </div>
-          <div class="slide red">
+          <div class="slide-opinions">
             <div class="black-block">
               <div class="text-container">
                 <div class="centered-content">
@@ -308,7 +328,7 @@
               </div>
             </div>
           </div>
-          <div class="slide red">
+          <div class="slide-opinions">
             <div class="black-block">
               <div class="text-container">
                 <div class="centered-content">
@@ -322,7 +342,7 @@
               </div>
             </div>
           </div>
-          <div class="slide red">
+          <div class="slide-opinions">
             <div class="black-block">
               <div class="text-container">
                 <div class="centered-content">
@@ -336,22 +356,15 @@
             </div>
           </div>
         </div>
+
       </div>
-      <script>
-        let slides = document.querySelectorAll('.slide');
-        let slideContainer = document.querySelector('.slide-container');
-        let currentSlide = 0;
-        function showSlide(n) {
-          slideContainer.style.left = `-${n * 17.33}%`;
-          currentSlide = n;
-        }
-        showSlide(currentSlide);
-        setInterval(() => {
-          showSlide((currentSlide + 1) % slides.length);
-        }, 3000);
-      </script>
     </div>
   </div>
+
+  <!-- Opinions end -->
+
+<!-- AboutUs -->
+
   <section id="aboutUs">
     <div class="container">
       <div class="aboutUs-top text-left">
@@ -448,6 +461,10 @@
           </div>
         </div>
   </section>
+  <!-- AboutUs end  -->
+
+  <!-- Information about cooperation -->
+
   <div class="container">
     <div class="aboutUs-top  text-left">
       <h3>JAK WYGLĄDA WSPÓŁPRACA?</h3>
@@ -485,6 +502,10 @@
       </p>
     </div>
   </div>
+  
+  <!-- Information about cooperation end -->
+
+    <!-- Footer -->
   <div id="footer">
     <div class="container">
       <div class="row">
@@ -525,4 +546,7 @@
       </div>
     </div>
     </footer>
+
+       <!-- Footer end -->
+
   </html>

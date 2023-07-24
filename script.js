@@ -1,4 +1,4 @@
-new WOW().init();
+// <!-- scroll -->
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
@@ -9,21 +9,24 @@ $(window).scroll(function () {
     }
 });
 $(document).on('click', 'a', function (event) {
-    event.preventDefault();
-
+    event.preventDefault(); 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1250);
-    $('html, body').animate({ path: new $.path.bezier(bezier_params) });
 });
-document.addEventListener('DOMContentLoaded', function () {
-    var socialIcons = document.getElementById('socialIcons');
-    socialIcons.addEventListener('click', function (event) {
-        var target = event.target;
-        if (target.tagName === 'I') {
-            var parentLink = target.parentNode;
-            var href = parentLink.getAttribute('href');
-            window.open(href, '_blank');
-        }
-    });
-});
+// <!-- scroll end -->
+
+// <!-- slides -->
+var slides = document.querySelectorAll('.slide-opinions');
+var slideContainer = document.querySelector('.slide-container');
+var currentSlide = 0;
+function showSlide(n) {
+  slideContainer.style.left = `-${n * 17.33}%`;
+  currentSlide = n;
+}
+showSlide(currentSlide);
+setInterval(() => {
+  showSlide((currentSlide + 1) % slides.length);
+}, 3000);
+
+// <!-- slides end -->
