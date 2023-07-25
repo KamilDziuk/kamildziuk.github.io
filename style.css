@@ -92,7 +92,7 @@ h6 {
 }
 .btn-primary {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(300deg, #ffffff 0%, #ffffff00 0%, #ffffff3a 50%);
+    background: linear-gradient(300deg, #ffffff 0%, #ffffff00 0%, #ffffff3a 70%);
     backdrop-filter: blur(4px);
     border-style: none;
     font-size: 18px;
@@ -102,7 +102,10 @@ h6 {
 .btn-primary:hover {
     backdrop-filter: blur(4px);
     color: #fff;
-    background-color:  #ffffff3a;
+    background-color: #ffffff3a;
+    background-image: radial-gradient(circle, #012265c8 1%, transparent 100%);
+    background-size: 100%;
+   
 }
 a.nav-link {
     font-family: 'Montserrat', sans-serif;
@@ -167,13 +170,16 @@ a.nav-link:hover {
 .services-content {
     border-radius: 10px;
     padding: 20px;
-    background: linear-gradient(300deg, #ffffff 0%, #ffffff00 0%, #ffffff3a 50%);
+    background: linear-gradient(-90deg, #ffffff 0%, #ffffff00 0%,  #ffffff3a 60%);
     backdrop-filter: blur(4px);
     display: inline-block;
+    
 }
 .services-content:hover {
     background: #ffffff3a;
     backdrop-filter: blur(4px);
+    background-image: radial-gradient(circle, #012265c8 1%, transparent 100%);
+    background-size: 100%;
 }
 .black-block {
     flex: 0 0 auto;
@@ -233,6 +239,7 @@ a.nav-link:hover {
 #portfolio {
     background: linear-gradient(-90deg, #ffffff 0%, #ffffff00 0%,  #ffffff3a 70%);
     padding: 60px 0;
+    backdrop-filter: blur(4px);
 }
 .card {
     border-style: none;
