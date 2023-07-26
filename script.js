@@ -30,3 +30,14 @@ setInterval(() => {
 }, 3000);
 
 // <!-- slides end -->
+
+// <!-- loader animation  -->
+
+var loader = document.getElementById('loader');
+        window.addEventListener("load", function(event) {
+            loader.classList.remove('loading');
+            loader.classList.add('loaded');
+            document.body.classList.add('imgloaded');
+        });
+
+        // <!-- animation end -->
