@@ -6,9 +6,6 @@ body,
     color: #fff;
  background: linear-gradient(to bottom,#000000,#012265c8,#012265c8,#012265c8,#012265c8,#012265c8,#012265c8,#012265c8,#002877C8,#002877C8,#002877C8),
  url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 8000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
- --color-text: #fff;
-  --color-bg: #000;
-  --color-link: #555;
 
   --glitch-width: 98.8vw;
   --glitch-height: 100vh;
@@ -49,37 +46,7 @@ body,
 .col-md-3 {
     width: 100%;
 }
-@keyframes typing {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
-}
-.typewriter {
-    overflow: hidden;
-    border-right: .1em solid rgb(255, 255, 255);
-    white-space: nowrap;
 
-    animation:
-        typing 10.5s steps(120, end),
-        blink-caret .4s step-end infinite;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 55px;
-    color: #fff;
-    margin-bottom: 30px;
-}
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    35% {
-        border-color: rgb(255, 255, 255);
-    }
-}
 
 
 .fixed-top {
@@ -147,7 +114,6 @@ a.nav-link:hover {
     color: #ffffffaf !important;
   
 }
-
 
 #services {
     padding: 70px 0px;
