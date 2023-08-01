@@ -405,6 +405,7 @@ margin-top: 20px;
 }
 .col-sm-12 {
   top: 260px;
+  margin-bottom:15px;
 }
 .col-md-3 {
   width: 100%;
@@ -422,6 +423,7 @@ margin-top: 20px;
       font-weight: 700;
       font-size: 40px;
       color: #fff;
+    margin-bottom:15px;
     animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.25);
   }
 
