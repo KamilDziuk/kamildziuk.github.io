@@ -44,12 +44,14 @@ const links = [
 //link end
 
 //slides
+var currentSlide = 0;
 var slides = document.querySelectorAll('.slide-opinions');
 var slideContainer = document.querySelector('.slide-container');
-var currentSlide = 0;
+const buttonRight = document.querySelector('.opinions-right');
+const buttonLeft = document.querySelector('.opinions-left');
 
 function showSlide(n) {
-  slideContainer.style.left = `-${n *20}%`;
+  slideContainer.style.left = `-${n *380}px`;
   currentSlide = n;
 }
 
@@ -66,9 +68,29 @@ function scrollToNextSlide() {
 showSlide(currentSlide);
 
 // The setInterval code for automatic sliding remains the same
-setInterval(() => {
+// Stop automatic slideAdvance function
+function automaticSlideAdvance()
+{
+setIntervalId = setInterval(() => {
   scrollToNextSlide();
 }, 6000);
+}
+
+function stopAutomaticSlideAdvance()
+{
+  clearInterval(setIntervalId);
+}
+
+automaticSlideAdvance()
+
+buttonRight.addEventListener('click', () => {
+
+  stopAutomaticSlideAdvance();
+});
+buttonLeft.addEventListener('click', () => {
+
+  stopAutomaticSlideAdvance();
+});
 //slides end
 
 //loader animation
