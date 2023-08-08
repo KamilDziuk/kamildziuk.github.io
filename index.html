@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="script.js" async></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Strony internetowe, aplikacje i sklepy na WordPress, Strony www, Tworzenie stron</title>
 </head>
@@ -200,70 +201,83 @@
       <div class="portfolio-content text-center">
         <div class="row mb-5">
           <div class="col-md-4">
-            <div class="card">
+            <div class="card-portfolio">
               <a href="" id="sparkpaerewskiego-link">
               <img src="https://kamildziuk.pl/wp-content/uploads/2023/05/httpsparkpaerewskiego.pl_.png"
                 alt="parkpaerewskiego.pl"></a>
-              <div class="card-body">
-                <h4 class="card-title"></h4>
-                <p class="card-subtitle text-muted"></p>
+              <div class="card-portfolio-body">
+                <h4 class="card-portfolio-title"></h4>
+                <p class="card-portfolio-subtitle text-muted"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card-portfolio">
               <a href="" id="diamodhill-link">
               <img src="https://kamildziuk.pl/wp-content/uploads/2023/05/httpsdiamodhill.com_.pl_.png"
                 alt="diamodhill"></a>
-              <div class="card-body">
-                <h4 class="card-title"></h4>
-                <p class="card-subtitle text-muted"></p>
+              <div class="card-portfolio-body">
+                <h4 class="card-portfolio-title"></h4>
+                <p class="card-portfolio-subtitle text-muted"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card-portfolio">
               <a href="" id="chaintitans-link">
               <img src="https://kamildziuk.pl/wp-content/uploads/2023/05/httpschaintitans.org_.png" alt="chaintitans"></a>
-              <div class="card-body">
-                <h4 class="card-title"></h4>
-                <p class="card-subtitle text-muted"></p>
+              <div class="card-portfolio-body">
+                <h4 class="card-portfolio-title"></h4>
+                <p class="card-portfolio-subtitle text-muted"></p>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
+            <div class="card-portfolio">
               <a href="" id="kancelariaprawabuo-link">
               <img src="https://kamildziuk.pl/wp-content/uploaddowlanegs/2023/06/httpskancelariaprawabudowlanego.com_.pl_.png"
                 alt="kancelariaprawabudowlanego"></a>
-              <div class="card-body">
-                <h4 class="card-title"></h4>
-                <p class="card-subtitle text-muted"></p>
+              <div class="card-portfolio-body">
+                <h4 class="card-portfolio-title"></h4>
+                <p class="card-portfolio-subtitle text-muted"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card-portfolio">
               <a href="" id="kancelariakrzysztofkot-link">
               <img src="https://kamildziuk.pl/wp-content/uploads/2023/06/httpskancelariakrzysztofkot.pl_.png"
                 alt="kancelariakrzysztofkot"></a>
-              <div class="card-body">
-                <h4 class="card-title"></h4>
-                <p class="card-subtitle text-muted"></p>
+              <div class="card-portfolio-body">
+                <h4 class="card-portfolio-title"></h4>
+                <p class="card-portfolio-subtitle text-muted"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card-portfolio">
               <a href="" id="sunitedsellers-link">
               <img src="https://kamildziuk.pl/wp-content/uploads/2023/06/httpsunitedsellers.eu_.png" alt="unitedsellers">
             </a>
-            <div class="card-body">
-                <h4 class="card-title"></h4>
-                <p class="card-subtitle text-muted"></p>
+            <div class="card-portfolio-body">
+                <h4 class="card-portfolio-title"></h4>
+                <p class="card-portfolio-subtitle text-muted"></p>
                </section>
+
+
+               <div id="carousel-wrapper">
+                <div id="menu">
+                    <div id="current-option">
+                      <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                      <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                    </div>
+                    <button id="previous-option"></button>
+                    <button id="next-option"></button>
+                </div>
+                <div id="image"></div>
+              </div>
                <!-- Portfoli end -->
 <!-- Opinions -->
   <section class="opinions-top text-left">
@@ -274,7 +288,7 @@
       <br>
       <br>
     <h3> Opinie<i></h3></i>
-    <h3 id="google-link">Podziel się swoją opinią na <i class="fab fa-google"></h3></i>
+    <p id="google-link">Podziel się swoją opinią na <i class="fab fa-google">oogle</p></i>
       <div class="carousel">
         <div class="slide-container">
           <div class="slide-opinions" >
