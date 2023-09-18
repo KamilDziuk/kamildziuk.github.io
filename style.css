@@ -406,7 +406,7 @@ margin-top: 20px;
 .col-sm-12 {
   top: 260px;
   margin-bottom: 15px;
- 
+
 }
 .col-md-3 {
   width: 100%;
@@ -420,7 +420,7 @@ margin-top: 20px;
 }
 .contentText {
 
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
       font-weight: 700;
       font-size: 40px;
       color: #fff;
@@ -430,7 +430,7 @@ margin-top: 20px;
 
   .contentTitle {
     margin-top: 15%;
-    font-family: 'Montserrat', serif;
+    font-family: 'Abhaya Libre', sans-serif;
     color: #fff;
     font-size: 40px;
     font-style: italic;
@@ -445,7 +445,7 @@ margin-top: 20px;
   border-style: none;
 }
 .btn-primary {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   background: linear-gradient(300deg, #ffffff 0%, #ffffff00 0%, #ffffff3a 70%);
   backdrop-filter: blur(4px);
   border-style: none;
@@ -467,14 +467,14 @@ margin-top: 20px;
 }
 h1 {
     margin-top: 15%;
-    font-family: 'Montserrat', serif;
+    font-family: 'Abhaya Libre', sans-serif;
     color: #fff;
     font-size: 40px;
     font-style: italic;
 
 }
 h2 {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
     font-weight: 700;
     font-size: 75px;
     color: #fff;
@@ -485,7 +485,7 @@ h3 {
     text-align: left;
 }
 h4 {
-    font-family: 'Montserrat', serif;
+  font-family: 'Abhaya Libre', sans-serif;
     position: relative;
     color: #fff;
     font-style: italic;
@@ -498,7 +498,7 @@ h6 {
 }
 
 a.nav-link {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
     font-size: 17px;
     color: #fff;
     width: 142px;
@@ -514,7 +514,7 @@ a.nav-link:hover {
 margin-top: 950px;
 }
 .services-content h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -522,7 +522,7 @@ margin-top: 950px;
 }
 .services-content p,
 .aboutUs-content p {
-  font-family: 'Montserrat', serif;
+  font-family: 'Abhaya Libre', sans-serif;
   color: #ffffff;
   font-size: 14px;
   text-align: left;
@@ -556,18 +556,18 @@ margin-top: 950px;
   margin-top: 10px;
 }
 .contact-top h3 {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
     font-size: 40px;
     font-weight: 700;
 }
 .contact-top p {
-    font-family: 'Montserrat', serif;
+  font-family: 'Abhaya Libre', sans-serif;
     font-style: italic;
     font-size: 16px;
     margin-bottom: 70px;
 }
 .text-container {
-    font-family: 'Montserrat', serif;
+  font-family: 'Abhaya Libre', sans-serif;
     margin-bottom: 20px;
 }
 .text-container img {
@@ -605,7 +605,7 @@ margin-top: 950px;
     }
     .mfp-with-zoom .mfp-title:before, .touch .gallery-image figcaption:before, html:not(.touch) .gallery-image figcaption:before, .mfp-with-zoom .mfp-title:after, .touch .gallery-image figcaption:after, html:not(.touch) .gallery-image figcaption:after {
       content: "";
-      font-family: 'Montserrat', serif;
+      font-family: 'Abhaya Libre', sans-serif;
       position: absolute;
       background: #002877C8;
       width: 100%;
@@ -640,27 +640,13 @@ margin-top: 950px;
       left: -1.5em;
       top: -1.5em;
     }
-    
-   
-    
+  
     .gallery {
       margin-top: 200px;
       -moz-column-gap: 0;
            column-gap: 0;
     }
-    @media (min-width: 480px) {
-      .gallery {
-        -moz-column-count: 2;
-             column-count: 2;
-      }
-    }
-    @media (min-width: 1260px) {
-      .gallery {
-        -moz-column-count: 3;
-             column-count: 3;
-      }
-    }
-    
+   
     .gallery-image {
       position: relative;
       margin: 0;
@@ -852,14 +838,14 @@ margin-top: 950px;
 
 
 .portfolio-content .card-portfolio-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 
 .portfolio-content .card-portfolio-subtitle {
 
-  font-family: 'Montserrat', serif;
+  font-family: 'Abhaya Libre', sans-serif;
   font-size: 14px;
   font-style: italic
 }
@@ -889,17 +875,19 @@ margin-top: 950px;
   color: rgb(255, 255, 255);
   padding: 20px;
   margin-right: 10px;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .carousel {
     width: 100%;
     height: 500px;
     overflow: hidden;
     position: relative;
 }
+
 .slide-container {
     width: 100%;
     display: flex;
@@ -907,7 +895,12 @@ margin-top: 950px;
     left: 0px;
     transition: left 1.5s;
 }
+ .imageGoogle
+ {
 
+  width: 75px !important;
+  height:  75px !important;
+ }
 .opinions-left
 {
 color: #fff;
@@ -949,7 +942,7 @@ border-style: none;
 }
 
 .aboutUs-content h4 {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
@@ -1005,7 +998,7 @@ border-style: none;
 .team-content p {
     width: 85%;
     margin: 50px auto;
-    font-family: 'Montserrat', serif;
+    font-family: 'Abhaya Libre', sans-serif;
     color: #ffffff;
     font-size: 16px;
 }
@@ -1106,7 +1099,7 @@ border-style: none;
   overflow: hidden;
 }
 #carousel-wrapper #menu {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   font-weight: 700;
   font-size: 17px;
   color: #fff;
@@ -1133,7 +1126,7 @@ border-style: none;
   overflow: hidden;
 }
 #carousel-wrapper #menu #current-option #current-option-text1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   font-size: 1.6rem;
   line-height: 3rem;
   width: 220px;
@@ -1166,7 +1159,7 @@ border-style: none;
   justify-content: flex-start;
 }
 #carousel-wrapper #menu #current-option #current-option-text2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   font-size: 0.8rem;
   width: 220px;
   height: 40px;
@@ -1198,7 +1191,7 @@ border-style: none;
   justify-content: flex-end;
 }
 #carousel-wrapper #menu #previous-option {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   width: 1.5rem;
   height: 1.5rem;
   border: none;
@@ -1210,7 +1203,7 @@ border-style: none;
   transform: translate(310px, 50px);
 }
 #carousel-wrapper #menu #next-option {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   width: 1.5rem;
   height: 1.5rem;
   border: none;
@@ -1332,8 +1325,12 @@ border-style: none;
     opacity: 1;
   }
 }
-
-  
+@media (min-width: 1260px) {
+  .gallery {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
 @media (max-width: 991px) {
   .logo-head {
     width: 183px;
@@ -1341,7 +1338,7 @@ border-style: none;
 }
 
 a.nav-link {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
   font-size: 14px;
   color: #fff;
   text-align: center;
@@ -1657,9 +1654,16 @@ margin-left:  100px;
     margin-left:  100px;
     }
 
+} 
+/* portfolio */
+@media (min-width: 480px) {
+  .gallery {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
 }
+/* portfolio end */
  /* Opinions end */
-
 @media (max-width: 450px){
 
 
@@ -1728,4 +1732,57 @@ margin-left:  100px;
   
   }
 
- 
+
+/* Stylizacja całego formularza */
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+/* Stylizacja etykiet */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Stylizacja pól tekstowych i textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Stylizacja przycisku */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Stylizacja dla wymaganego pola */
+input:required,
+textarea:required {
+    border-color: #ff6347;
+}
+
+/* Stylizacja dla poprawnie wypełnionego pola */
+input:valid,
+textarea:valid {
+    border-color: #00cc00;
+}
