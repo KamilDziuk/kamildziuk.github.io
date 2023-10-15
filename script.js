@@ -1,6 +1,6 @@
 //scroll 
 $(window).scroll(function () {
-  var scroll = $(window).scrollTop();
+  let scroll = $(window).scrollTop();
 
   if (scroll >= 50) {
       $(".fixed-top").addClass("change-fixed-top");
@@ -17,11 +17,11 @@ $(document).on('click', 'a', function (event) {
 //scroll end
 
 //slides
-var currentSlide = 0;
-var slides = document.querySelectorAll('.slide-opinions');
-var slideContainer = document.querySelector('.slide-container');
-const buttonRight = document.querySelector('.opinions-right');
-const buttonLeft = document.querySelector('.opinions-left');
+let currentSlide = 0;
+let slides = document.querySelectorAll('.slide-opinions');
+let slideContainer = document.querySelector('.slide-container');
+let buttonRight = document.querySelector('.opinions-right');
+let buttonLeft = document.querySelector('.opinions-left');
 
 function showSlide(n) {
 slideContainer.style.left = `-${n *380}px`;
@@ -67,7 +67,7 @@ stopAutomaticSlideAdvance();
 //slides end
 
 //loader animation
-var loader = document.getElementById('loader');
+let loader = document.getElementById('loader');
       window.addEventListener("load", function(event) {
           loader.classList.remove('loading');
           loader.classList.add('loaded');
