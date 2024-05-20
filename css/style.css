@@ -48,7 +48,7 @@ margin-top: 20px;
 
 .glitchit.relative-bg {
   position: relative;
-  background: url(/image/Strony-internetowe-i-sklepy-na-WordPress-Strony-www-Tworzenie-stron.png) no-repeat 50% 0;
+  background: url(/image/mainImage.webp) no-repeat 50% 0;
 
 }
 
@@ -58,7 +58,7 @@ margin-top: 20px;
   left: calc(-1 * var(--gap-horizontal));
   width: calc(100% + var(--gap-horizontal) * 2);
   height: calc(100% + var(--gap-vertical) * 2);
-   background: url(/image/Strony-internetowe-i-sklepy-na-WordPress-Strony-www-Tworzenie-stron.png) no-repeat 50% 0;
+   background: url(/image/mainImage.webp) no-repeat 50% 0;
    background-size:820px; 
    top: 70px; 
    left: 430px;
@@ -450,7 +450,7 @@ margin-top: 20px;
   backdrop-filter: blur(4px);
   border-style: none;
   font-size: 18px;
-  padding: 20px 40px;
+  padding: 10px 30px;
   font-weight: 700;
 }
 .btn-primary:hover {
@@ -585,7 +585,24 @@ margin-top: 950px;
   margin: 1.5rem;
 }
 
+/* github button  start*/
 
+#githubButton
+{
+  top:10px;
+  font-size: 55px;
+  position: relative;
+  margin-left: 10px !important;
+ 
+}
+
+#githubText
+{
+  top:-10px;
+  position: relative;
+  text-decoration: none;
+}
+/* github button  end/
 
     /* portfolio gallery */
     .mfp-with-zoom .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image figcaption {
