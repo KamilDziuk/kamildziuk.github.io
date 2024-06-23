@@ -1,1 +1,214 @@
-const _0xfbb950=_0x3cb9;(function(_0xa76cbf,_0x352f17){const _0xa760ed=_0x3cb9,_0x108d06=_0xa76cbf();while(!![]){try{const _0x58713c=parseInt(_0xa760ed(0xa9))/0x1*(-parseInt(_0xa760ed(0xaa))/0x2)+parseInt(_0xa760ed(0x9f))/0x3+-parseInt(_0xa760ed(0xa2))/0x4+-parseInt(_0xa760ed(0x97))/0x5*(parseInt(_0xa760ed(0x9e))/0x6)+parseInt(_0xa760ed(0xa6))/0x7+parseInt(_0xa760ed(0x9c))/0x8*(parseInt(_0xa760ed(0x9b))/0x9)+parseInt(_0xa760ed(0x91))/0xa;if(_0x58713c===_0x352f17)break;else _0x108d06['push'](_0x108d06['shift']());}catch(_0x284a9c){_0x108d06['push'](_0x108d06['shift']());}}}(_0x5dab,0xd86e8),$(window)[_0xfbb950(0x90)](function(){const _0x56fc3b=_0xfbb950;let _0x2dd745=$(window)[_0x56fc3b(0x95)]();_0x2dd745>=0x32?$(_0x56fc3b(0x88))[_0x56fc3b(0x96)]('change-fixed-top'):$('.fixed-top')['removeClass']('change-fixed-top');}),$(document)['on'](_0xfbb950(0xa7),'a',function(_0x5ab477){const _0x32f135=_0xfbb950;_0x5ab477[_0x32f135(0x8f)](),$('html,\x20body')[_0x32f135(0xa0)]({'scrollTop':$($['attr'](this,_0x32f135(0x8b)))[_0x32f135(0x9d)]()['top']},0x4e2);}));let currentSlide=0x0,slides=document[_0xfbb950(0x94)](_0xfbb950(0x9a)),slideContainer=document['querySelector'](_0xfbb950(0x89)),buttonRight=document[_0xfbb950(0x92)](_0xfbb950(0xa4)),buttonLeft=document[_0xfbb950(0x92)](_0xfbb950(0x8e));function showSlide(_0x4dcb64){const _0x2ccea2=_0xfbb950;slideContainer[_0x2ccea2(0x8a)][_0x2ccea2(0x8c)]='-'+_0x4dcb64*0x17c+'px',currentSlide=_0x4dcb64;}function scrollToPreviousSlide(){const _0x5046fa=_0xfbb950;currentSlide=(currentSlide-0x1+slides[_0x5046fa(0xa8)])%slides[_0x5046fa(0xa8)],showSlide(currentSlide);}function scrollToNextSlide(){const _0x2c9d45=_0xfbb950;currentSlide=(currentSlide+0x1)%slides[_0x2c9d45(0xa8)],showSlide(currentSlide);}showSlide(currentSlide);function automaticSlideAdvance(){setIntervalId=setInterval(()=>{scrollToNextSlide();},0x1770);}function stopAutomaticSlideAdvance(){clearInterval(setIntervalId);}automaticSlideAdvance(),buttonRight[_0xfbb950(0xab)]('click',()=>{stopAutomaticSlideAdvance();}),buttonLeft[_0xfbb950(0xab)](_0xfbb950(0xa7),()=>{stopAutomaticSlideAdvance();});function _0x5dab(){const _0x4f64b9=['length','854815MppbWt','4KIcExL','addEventListener','.fixed-top','.slide-container','style','href','left','remove','.opinions-left','preventDefault','scroll','25389090VkNymV','querySelector','loader','querySelectorAll','scrollTop','addClass','8074885OKVLlh','classList','add','.slide-opinions','37377hQEZmy','712ZbvyEe','offset','6gJOzBu','3097383ViKbfy','animate','loading','2788344NtfwXr','body','.opinions-right','getElementById','6770470SoNUQi','click'];_0x5dab=function(){return _0x4f64b9;};return _0x5dab();}let loader=document[_0xfbb950(0xa5)](_0xfbb950(0x93));function _0x3cb9(_0x47032e,_0x5f0728){const _0x5dab64=_0x5dab();return _0x3cb9=function(_0x3cb936,_0x3ba393){_0x3cb936=_0x3cb936-0x88;let _0x1399a8=_0x5dab64[_0x3cb936];return _0x1399a8;},_0x3cb9(_0x47032e,_0x5f0728);}window[_0xfbb950(0xab)]('load',function(_0x214321){const _0x5ce9b1=_0xfbb950;loader[_0x5ce9b1(0x98)][_0x5ce9b1(0x8d)](_0x5ce9b1(0xa1)),loader[_0x5ce9b1(0x98)][_0x5ce9b1(0x99)]('loaded'),document[_0x5ce9b1(0xa3)][_0x5ce9b1(0x98)]['add']('imgloaded');});
+
+function ScrollMenu()
+{
+  
+    this.aboutMeText =  () =>
+    {
+        this.cooperationText();
+        this.offerText();
+        this.projectsText();
+     
+window.addEventListener("scroll", () => {
+    let scroll = window.pageYOffset || document.documentElement.scrollaboutMeText;
+    if (scroll >= 0 ) {
+    document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
+    }
+    
+    else {
+    document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
+  
+    }  
+    if(scroll >=130)
+        {
+            document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
+        }
+    });
+    }
+    this.projectsText=  () =>
+    {
+       
+        window.addEventListener("scroll", () => {
+             scroll = window.pageYOffset || document.documentElement.scrollprojectsText;
+
+     if(scroll >=140)
+        {
+            document.querySelector(".projectsText").classList.add("projectsText--scrolling");
+        } 
+        else
+        {
+            document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
+        }
+
+        if(scroll >=2000)   {
+  
+    document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
+    }
+   
+    })
+
+    }
+
+    this.offerText=  () =>
+    {
+     window.addEventListener("scroll", () => {
+         scroll = window.pageYOffset || document.documentElement.scrollofferText;
+
+     if(scroll >= 2270)
+        {
+            document.querySelector(".offerText").classList.add("offerText--scrolling");
+        } 
+        else
+        {
+        document.querySelector(".offerText").classList.remove("offerText--scrolling");
+        }
+        if(scroll >=3000) {
+  
+    document.querySelector(".offerText").classList.remove("offerText--scrolling");
+    }
+  
+    });   
+    }
+
+    this.cooperationText=  () =>
+        {
+         window.addEventListener("scroll", () => {
+             scroll = window.pageYOffset || document.documentElement.scrollcooperationText;
+    
+         if(scroll >= 3200)
+            {
+                document.querySelector(".cooperationText").classList.add("cooperationText--scrolling");
+            } 
+            else
+            {
+            document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
+            }
+            if(scroll >=4000) {
+      
+        document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
+        }
+      
+        });   
+        }
+
+    
+}
+
+let scrollMenuResult = new ScrollMenu();
+scrollMenuResult.aboutMeText();
+
+
+
+function ConsoleLog()
+
+{
+
+    
+    this.consoleLogNextText =  () =>
+        {
+            this.consoleLogText = document.querySelector(".consoleLog");
+            this.consoleLogText.innerHTML = "I'm coding your ideas for online success.";
+
+        
+            setInterval(() =>{
+         this.consoleLogText = document.querySelector(".consoleLog");
+                this.consoleLogText.innerHTML = "I'm coding your ideas for online success.";
+            
+            
+            },9000)
+          
+setInterval(()=>{
+ 
+    this.consoleLogText.innerHTML = `<a href="mailto:contact@kamildziuk.pl"> contact@kamildziuk.pl</a>`;
+
+
+},4000)
+setInterval(() =>{
+   
+    this.consoleLogText.innerHTML = `  <a  href=""onclick="window.location.href='tel:668573034'"> +48 668 573 034</a>`;
+
+ 
+},7000)
+}
+};
+
+let test = new ConsoleLog();
+
+
+test.consoleLogNextText();
+
+
+// Bar and bar icone start
+
+function Bar()
+{
+
+this.barButton = document.querySelector(".barButton");
+this.menu = document.querySelector(".menu");
+this.optionsMenu = document.querySelector(".optionsMenu");
+
+this.optionsMenu.style.display = "none";
+this.menu.style.display = "none";
+this.openBar = () =>
+    {
+       
+         return this.barButton.addEventListener("click", () =>
+        {
+if( this.menu.style.display == "none" || this.optionsMenu.style.display == "none")
+    {
+        this.menu.style.display = "block";
+        this.optionsMenu.style.display = "block";
+    }
+    else
+    {
+        this.menu.style.display = "none";
+        this.optionsMenu.style.display = "none";
+    }
+    
+            
+        })
+    }
+
+}
+
+let barResult = new Bar();
+
+    barResult.openBar();
+
+
+
+
+
+
+// Bar and bar icone end
+
+
+
+// landing start 
+
+function landing()
+{
+
+this.landing = document.querySelector("#landing");
+
+this.landing.style.display = "block";
+
+
+this.startLanding = () =>
+    {
+       setTimeout(()=>{
+
+     
+        this.landing.style.display = "none";
+
+       },1000)
+
+    }
+
+}
+
+let landingResult = new landing();
+
+landingResult.startLanding();
+
+
+// landing end 
