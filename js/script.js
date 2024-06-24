@@ -39,7 +39,7 @@ window.addEventListener("scroll", () => {
             document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
         }
 
-        if(scroll >=2000)   {
+        if(scroll >=1750)   {
   
     document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
     }
@@ -53,7 +53,7 @@ window.addEventListener("scroll", () => {
      window.addEventListener("scroll", () => {
          scroll = window.pageYOffset || document.documentElement.scrollofferText;
 
-     if(scroll >= 2270)
+     if(scroll >= 1752)
         {
             document.querySelector(".offerText").classList.add("offerText--scrolling");
         } 
@@ -61,7 +61,7 @@ window.addEventListener("scroll", () => {
         {
         document.querySelector(".offerText").classList.remove("offerText--scrolling");
         }
-        if(scroll >=3000) {
+        if(scroll >=2300) {
   
     document.querySelector(".offerText").classList.remove("offerText--scrolling");
     }
@@ -74,7 +74,7 @@ window.addEventListener("scroll", () => {
          window.addEventListener("scroll", () => {
              scroll = window.pageYOffset || document.documentElement.scrollcooperationText;
     
-         if(scroll >= 3200)
+         if(scroll >= 2001)
             {
                 document.querySelector(".cooperationText").classList.add("cooperationText--scrolling");
             } 
