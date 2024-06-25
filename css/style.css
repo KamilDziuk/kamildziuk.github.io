@@ -167,6 +167,9 @@ h3 {
 
 /* console Log start */
 .consoleLog {
+
+  position: relative;
+ font-size: 20px;
     color: #ffffff8a;
     text-shadow:
         0 0 7px #fff,
@@ -195,6 +198,7 @@ margin-bottom: 54px;
     width: 40%;
     text-align: right;
     margin: 5px;
+    margin-bottom:5% ;
 }
 
 /* Cooperation section */
@@ -409,7 +413,7 @@ display: none;
 
   .consoleLogPosition
   {
-    display: none;
+ 
   }
 
 
@@ -512,6 +516,15 @@ left: 4%;
   display: none;
 }
 
+.consoleLog 
+{
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 5%;
+  width: 97%;
+  font-size: 15px;
+}
 
     #head,
     #aboutMe,
@@ -525,6 +538,7 @@ left: 4%;
         width: 97%;
         text-align: center;
         margin: 20px 0;
+        margin-bottom: 10%;
     }
 
     .portfolioImage0,
