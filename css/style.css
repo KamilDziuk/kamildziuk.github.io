@@ -662,7 +662,8 @@ margin-top: -12%;
 {
 
   left:50%;
-
+  margin-top: 3%;
+  opacity: 0.3;
 }
 
 }
