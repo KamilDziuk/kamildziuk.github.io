@@ -7,10 +7,12 @@ function ScrollMenu()
         this.cooperationText();
         this.offerText();
         this.projectsText();
-     
+      
+ 
+
 window.addEventListener("scroll", () => {
     let scroll = window.pageYOffset || document.documentElement.scrollaboutMeText;
-    if (scroll >= 0 ) {
+    if (scroll >= 0) {
     document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
     }
     
@@ -39,7 +41,7 @@ window.addEventListener("scroll", () => {
             document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
         }
 
-        if(scroll >=1750)   {
+        if(scroll >=1900)   {
   
     document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
     }
@@ -53,7 +55,7 @@ window.addEventListener("scroll", () => {
      window.addEventListener("scroll", () => {
          scroll = window.pageYOffset || document.documentElement.scrollofferText;
 
-     if(scroll >= 1752)
+     if(scroll >= 2000)
         {
             document.querySelector(".offerText").classList.add("offerText--scrolling");
         } 
@@ -61,7 +63,7 @@ window.addEventListener("scroll", () => {
         {
         document.querySelector(".offerText").classList.remove("offerText--scrolling");
         }
-        if(scroll >=2300) {
+        if(scroll >=2600) {
   
     document.querySelector(".offerText").classList.remove("offerText--scrolling");
     }
@@ -74,7 +76,7 @@ window.addEventListener("scroll", () => {
          window.addEventListener("scroll", () => {
              scroll = window.pageYOffset || document.documentElement.scrollcooperationText;
     
-         if(scroll >= 2001)
+         if(scroll >= 2620)
             {
                 document.querySelector(".cooperationText").classList.add("cooperationText--scrolling");
             } 
