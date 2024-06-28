@@ -15,7 +15,7 @@ let data = await url.json();
  });
 
  showRepo.innerHTML = textElement;
- lengthRepo.innerHTML =  `<p> The number of my repositories: ${data.length}</p>`;
+ lengthRepo.innerHTML =  `<p>My Repository List<br><br>Total number: ${data.length}</p>`;
  textElement += "</ul>";
 };
 gitAPI();
