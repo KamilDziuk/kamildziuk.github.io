@@ -201,6 +201,50 @@ margin-bottom: 54px;
     margin-bottom:5% ;
 }
 
+
+
+/* Git API */
+
+.showRepo
+{
+  position: relative;
+  color: #ffffff8a;
+  margin-top: 10px;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.lengthRepo
+{
+  position: relative;
+  color: #ffffff;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.showRepo p:hover
+{
+  
+  color: #ffffff;
+
+}
+
+#GitHubRESTAPI
+{
+  position: relative;
+  left: 50%;
+  width: 40%;
+  text-align: right;
+  margin: 5px;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+
+
 /* Cooperation section */
 #cooperation {
     position: relative;
@@ -347,7 +391,7 @@ margin-bottom: 5px;
 }
 
 
-#offerTextMenu:hover, #cooperationTextMenu:hover
+#offerTextMenu:hover, #cooperationTextMenu:hover, #GitHubRESTAPI:hover
 {
 
   color: #fff;
@@ -531,7 +575,8 @@ left: 4%;
     #offer,
     #cooperation,
     #portfolio,
-    #certificates{
+    #certificates,
+    #GitHubRESTAPI{
         position: relative;
         left: 50%;
         transform: translateX(-50%);
