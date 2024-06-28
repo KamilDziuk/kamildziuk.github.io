@@ -11,7 +11,7 @@ let data = await url.json();
 
  let textElement = "<ul>";
  data.forEach(element => {
-  textElement += `<a href="${element.html_url}"><p><br>${element.name}<br></p></a>`;
+  textElement += `<a href="${element.html_url}"><p>${element.name}</p></a>`;
  });
 
  showRepo.innerHTML = textElement;

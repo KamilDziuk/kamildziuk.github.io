@@ -205,8 +205,9 @@ margin-bottom: 54px;
 
 /* Git API */
 
-.showRepo p
+.showRepo 
 {
+  line-height: 1.5;
   position: relative;
   color: #ffffff8a;
   margin-top: 10px;
