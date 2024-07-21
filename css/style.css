@@ -200,13 +200,13 @@ margin-top: -5.5%;
     width: 40%;
     text-align: right;
 margin-bottom: 54px;
-
+margin-top: 10% ;
 
 
 }
 
 /* Offer section */
-#offer {
+#offer{
     position: relative;
     left: 50%;
     width: 40%;
@@ -289,6 +289,8 @@ margin-bottom: 54px;
 /* about me section end */
 
 /* icon start */
+
+
 .fa-github {
     position: absolute;
     top: 20%;
