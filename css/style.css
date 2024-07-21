@@ -212,7 +212,8 @@ margin-top: 10% ;
     width: 40%;
     text-align: right;
     margin: 5px;
-    margin-bottom:5% ;
+    margin-top:6.5%;
+    margin-bottom:6.5%;
 }
 
 
@@ -609,8 +610,9 @@ margin-top: -12%;
         transform: translateX(-50%);
         width: 97%;
         text-align: center;
-        margin: 20px 0;
-        margin-bottom: 10%;
+        margin: 0px 0;
+        margin-bottom: 17%;
+        margin-top: 6.5%;
     }
 
     .portfolioImage0,

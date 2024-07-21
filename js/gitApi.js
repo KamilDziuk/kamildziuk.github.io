@@ -17,14 +17,14 @@ let data = await url.json();
 
  textElement += "</ul>";
  let polishLanguage =  document.querySelector('.polishLanguage');
- lengthRepo.innerHTML =  `<p>My repository List<br><br>Total number: ${data.length}</p>`;
+ lengthRepo.innerHTML =  `<p>My repository List<br>Total number: ${data.length}</p>`;
   
     polishLanguage.addEventListener('click', () =>{
   if(polishLanguage.textContent == 'English'){
-    lengthRepo.innerHTML =  `<p>Moje repozytoria<br><br>Łączna liczba: ${data.length}</p>`;
+    lengthRepo.innerHTML =  `<p>Moje repozytoria<br>Łączna liczba: ${data.length}</p>`;
   }
    else if(polishLanguage.textContent == 'Polish'){
-        lengthRepo.innerHTML =  `<p>My repository List<br><br>Total number: ${data.length}</p>`;
+        lengthRepo.innerHTML =  `<p>My repository List<br>Total number: ${data.length}</p>`;
         }
  
 })
