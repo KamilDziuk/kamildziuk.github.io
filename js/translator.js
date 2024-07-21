@@ -1,3 +1,6 @@
+
+
+
 let cooperation = document.querySelector('#cooperation');
 
 let offer = document.querySelector('#offer');
