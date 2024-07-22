@@ -114,7 +114,7 @@ if(number > consoleLog.length)
     number = +1;
 }
 consoleLog[number -1].style.display = 'block';
-setTimeout(caruslese,3000);
+setTimeout(headerCarousel,3000);
 };
 headerCarousel();
 
