@@ -165,7 +165,7 @@ h3 {
 
 /* console Log start */
 .consoleLog {
-
+display: none;
   position: relative;
  font-size: 20px;
     color: #ffffff8a;
@@ -611,7 +611,7 @@ margin-top: -12%;
         width: 97%;
         text-align: center;
         margin: 0px 0;
-        margin-bottom: 17%;
+        margin-bottom: 6.5%;
         margin-top: 6.5%;
     }
 

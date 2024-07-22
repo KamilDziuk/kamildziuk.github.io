@@ -100,43 +100,23 @@ scrollMenuResult.aboutMeText();
 
 
 
-function ConsoleLog()
+let number = 0;
+function headerCarousel(){
+let consoleLog = document.querySelectorAll('.consoleLog');
 
+for(let i = 0; i< consoleLog.length; i++)
 {
-
-    
-    this.consoleLogNextText =  () =>
-        {
-            this.consoleLogText = document.querySelector(".consoleLog");
-            this.consoleLogText.innerHTML = "I'm coding your ideas for online success.";
-
-        
-            setInterval(() =>{
-         this.consoleLogText = document.querySelector(".consoleLog");
-                this.consoleLogText.innerHTML = "I'm coding your ideas for online success.";
-            
-            
-            },9000)
-          
-setInterval(()=>{
- 
-    this.consoleLogText.innerHTML = `<a href="mailto:contact@kamildziuk.pl"> contact@kamildziuk.pl</a>`;
-
-
-},4000)
-setInterval(() =>{
-   
-    this.consoleLogText.innerHTML = `  <a  href=""onclick="window.location.href='tel:668573034'"> +48 668 573 034</a>`;
-
- 
-},7000)
+    consoleLog[i].style.display = 'none';
 }
+    number ++;
+if(number > consoleLog.length)
+{
+    number = +1;
+}
+consoleLog[number -1].style.display = 'block';
+setTimeout(caruslese,3000);
 };
-
-let test = new ConsoleLog();
-
-
-test.consoleLogNextText();
+headerCarousel();
 
 
 // Bar and bar icone start
