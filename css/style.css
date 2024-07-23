@@ -334,8 +334,7 @@ margin-top: 10% ;
 .portfolioImage {
   position: absolute;
   width: 40%;
-  height: auto;
- 
+  height: 200px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -368,7 +367,7 @@ a {
 /* link end */
 
 .portfolioImage:hover {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 /* certificates section start */

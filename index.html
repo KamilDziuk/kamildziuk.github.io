@@ -8,7 +8,7 @@
   <script src="/js/script.js" defer></script>
   <script src="/js/gitApi.js" defer></script>
   <script src="/js/translator.js" defer></script>
-  
+  <script src="/js/sliderPortfolio.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/jpg" href="image/kdlb.jpg">
 
@@ -114,36 +114,7 @@
 
 </div>
 
-<script>
-  let galleryItem = document.querySelectorAll('.portfolioImage');
 
-let numbers = 0;
-
-function  gallery(index)
-{
-    galleryItem.forEach((item, i) => {
-        item.style.transform = `translateY(${(i - index)* 110}%)`;
-        item.style.opacity = i  === index ? 1: 0.5;
-    });
-
-    
-};
-
-
-
-
-
-
-setInterval( () =>
-{
-    numbers = (numbers < galleryItem.length -2) ?  numbers +1:0;
-    gallery(numbers);
-    
-  
-},3000)
-
-gallery(numbers);
-</script>
 <section id="portfolioPosition"></section>
 <!-- portfolio section end -->
 <!-- GitHubRESTAPI section start -->
