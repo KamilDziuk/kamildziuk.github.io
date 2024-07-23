@@ -99,7 +99,7 @@ let scrollMenuResult = new ScrollMenu();
 scrollMenuResult.aboutMeText();
 
 
-
+// header carousel start
 let number = 0;
 function headerCarousel(){
 let consoleLog = document.querySelectorAll('.consoleLog');
@@ -117,7 +117,7 @@ consoleLog[number -1].style.display = 'block';
 setTimeout(headerCarousel,3000);
 };
 headerCarousel();
-
+// header carousel end
 
 // Bar and bar icone start
 

@@ -103,14 +103,47 @@
 <!-- about me section end -->
 
 <!-- portfolio section start -->
-<section id="portfolio">
-<img class="portfolioImage0"  src="/image/pp.webp"><div class="blockImage0"><a target="_blank" href="/image/pp.webp"><i class="fa fa-picture-o" style="font-size:24px"></i></a><a target="_blank"  href="https://github.com/KamilDziuk/parkpaderewskiego"><i  class="fa fa-github" style="font-size:24px"></i></a></div>
-<img class="portfolioImage1"  src="/image/dhd.webp"><div class="blockImage1"><a target="_blank" href="/image/dhd.webp"><i class="fa fa-picture-o" style="font-size:24px"></i></a><a  target="_blank" href="https://github.com/KamilDziuk/diamond-hill"><i  class="fa fa-github" style="font-size:24px"></i></a></div>
-<img class="portfolioImage2"  src="/image/dgs.webp"><div class="blockImage2"><a target="_blank" href="/image/dgs.webp"><i class="fa fa-picture-o" style="font-size:24px"></i></a><a target="_blank"  href="https://github.com/KamilDziuk/degensquad"><i  class="fa fa-github" style="font-size:24px"></i></a></div>
-<img class="portfolioImage3"  src="/image/kd.webp"><div class="blockImage3"><a target="_blank" href="/image/kd.webp"><i class="fa fa-picture-o" style="font-size:24px"></i></a><a  target="_blank"  href="https://github.com/KamilDziuk/kamildziuk.github.io"><i  class="fa fa-github" style="font-size:24px"></i></a></div>
-<img class="portfolioImage4"  src="/image/nc.webp"><div class="blockImage4"><a target="_blank" href="/image/nc.webp"><i class="fa fa-picture-o" style="font-size:24px"></i></a><a target="_blank"  href="https://github.com/KamilDziuk/nakamotogcartel"><i  class="fa fa-github" style="font-size:24px"></i></a></div>
-<img class="portfolioImage5"  src="/image/hp.webp"><div class="blockImage5"><a target="_blank" href="/image/hp.webp"><i class="fa fa-picture-o" style="font-size:24px"></i></a><a target="_blank"  href="https://github.com/KamilDziuk/hollaPola_restaurant_page"><i  class="fa fa-github" style="font-size:24px"></i></a></div>
-</section>
+<div id="portfolio">
+
+<a target="_blank"  href="https://github.com/KamilDziuk/parkpaderewskiego"><img class="portfolioImage" src="/image/pp.webp"></a>
+<a  target="_blank" href="https://github.com/KamilDziuk/diamond-hill"><img class="portfolioImage"  src="/image/dhd.webp"></a>
+  <a target="_blank"  href="https://github.com/KamilDziuk/degensquad"><img class="portfolioImage"  src="/image/dgs.webp"></a>
+    <a  target="_blank"  href="https://github.com/KamilDziuk/kamildziuk.github.io"><img class="portfolioImage"  src="/image/kd.webp"></a>
+      <a target="_blank"  href="https://github.com/KamilDziuk/nakamotogcartel"><img class="portfolioImage"  src="/image/nc.webp"></a>
+        <a target="_blank"  href="https://github.com/KamilDziuk/hollaPola_restaurant_page"><img class="portfolioImage"  src="/image/hp.webp"></a>
+
+</div>
+
+<script>
+  let galleryItem = document.querySelectorAll('.portfolioImage');
+
+let numbers = 0;
+
+function  gallery(index)
+{
+    galleryItem.forEach((item, i) => {
+        item.style.transform = `translateY(${(i - index)* 110}%)`;
+        item.style.opacity = i  === index ? 1: 0.5;
+    });
+
+    
+};
+
+
+
+
+
+
+setInterval( () =>
+{
+    numbers = (numbers < galleryItem.length -2) ?  numbers +1:0;
+    gallery(numbers);
+    
+  
+},3000)
+
+gallery(numbers);
+</script>
 <section id="portfolioPosition"></section>
 <!-- portfolio section end -->
 <!-- GitHubRESTAPI section start -->
