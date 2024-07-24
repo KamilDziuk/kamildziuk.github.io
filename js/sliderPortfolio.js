@@ -19,19 +19,19 @@ function  gallery(index)
 
 setInterval( () =>
 {
-    numbers = (numbers < galleryItem.length -3) ?  numbers +1:0;
+    numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
     gallery(numbers);
 
 },5000)
 
 
 document.querySelector('.top').addEventListener('click', () => {
-numbers = (numbers < galleryItem.length - 2)? numbers + 1: 0;
+numbers = (numbers < galleryItem.length - 1)? numbers + 1: 0;
 gallery(numbers);
 });
 
 document.querySelector('.buttom').addEventListener('click', () => {
-numbers = (numbers > 0) ? numbers -2: galleryItem.length -1;
+numbers = (numbers > 0) ? numbers -1: galleryItem.length -1;
 gallery(numbers);
 });
 
