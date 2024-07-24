@@ -279,7 +279,7 @@ margin-top: 10% ;
   height: 600px;
 
   transform: translateX(-50%);
-  left: 102%;
+  left: 100%;
   overflow: hidden
 
 }
@@ -338,6 +338,29 @@ margin-top: 10% ;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.top
+{
+position: relative;
+display: flex;
+transform: translateX(-50);
+left: 78%;
+padding: 10px;
+color: #fff;
+    background-color: rgba(255, 255, 255, 0.097);
+text-align:center;
+}
+
+.buttom
+{
+  position: relative;
+margin-top: 0px;
+transform: translateX(-50);
+left: 78%;
+padding: 10px;
+color: #fff;
+    background-color: rgba(255, 255, 255, 0.097);
+text-align:center;
+}
 /* Portfolio Image end */
 
 /* Block Image start */
@@ -609,8 +632,27 @@ margin-top: -12%;
     .portfolioImage {
         right: 0;
         width: 100%;
-        height: auto;
+        height:auto;
     }
+
+
+    .top
+{
+
+transform: translateX(-50%);
+left: 50%;
+
+text-align:center;
+}
+
+.buttom
+{
+ 
+margin-top:0px;
+transform: translateX(-50%);
+left: 50%;
+
+}
 
     .blockImage0,
     .blockImage1,
