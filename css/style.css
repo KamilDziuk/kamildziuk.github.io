@@ -567,7 +567,13 @@ padding: 0.5px;
    color:#828080;
  }
  
+ .lengthRepo
+ {
 
+   padding-top: 15px;
+   font-size: 20px;
+
+ }
 .fa-bars
 {
   position: relative;
@@ -643,6 +649,11 @@ margin-top: -12%;
     }
 
 
+    .offerTitleText{
+      display: inline-block;
+      font-size: 20px;
+    
+    }
     
 
 .buttom,.top
