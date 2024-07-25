@@ -236,10 +236,10 @@ margin-top: 10% ;
 .lengthRepo
 {
   position: relative;
-  color: #ffffff;
+  color: #ffffff8a;
   padding-bottom: 0px;
   padding-top: 15px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 900;
 }
 
@@ -294,38 +294,20 @@ margin-top: 10% ;
 /* icon start */
 
 
-.fa-github {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-}
 
-.fa-picture-o {
-    position: absolute;
-    top: 20%;
-    right: 55%;
-}
-
-.fa-globe {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-}
-
-.bi-linkedin:hover, .bi-github:hover, .stars:hover {
+.fa:hover {
     color: #ffffff;
 }
 
 
 
-.bi {
+.fa {
     position: relative;
-    padding: 5px;
-    width: 34px;
-    height: 34px;
-
+    padding: 3px;
+font-size: 30px;
 
 }
+
 
 
 /* icon end */
@@ -341,12 +323,11 @@ margin-top: 10% ;
 .top
 {
 position: relative;
-display: flex;
+
 transform: translateX(-50);
-left: 78%;
+left: 77%;
 padding: 10px;
-color: #fff;
-    background-color: rgba(255, 255, 255, 0.097);
+color:#ffffff8a;
 text-align:center;
 }
 
@@ -357,14 +338,14 @@ margin-top: 0px;
 transform: translateX(-50);
 left: 78%;
 padding: 10px;
-color: #fff;
-    background-color: rgba(255, 255, 255, 0.097);
+color:#ffffff8a;
+ 
 text-align:center;
 }
 
 .top:hover, .buttom:hover
 {
-  background-color: rgba(255, 255, 255, 0.36);
+  color: #fff;
 }
 
 
@@ -420,15 +401,25 @@ margin-top: 5px;
 margin-bottom: 5px;
    
 }
+.projectsText, .certificatesText,.baseText, .offerText
+{
+  color:#ffffff8a;
+  font-size: 20px; 
+}
 
-
- .projectsText, .certificatesText,.baseText, .offerText, .aboutMeTextHead, #offerTextMenu,#cooperationTextMenu, .cooperationText,.aboutMeText
+  .aboutMeTextHead, #offerTextMenu,#cooperationTextMenu, .cooperationText,.aboutMeText
  
 {
   color:#ffffff8a;
     font-size: 20px; 
+    display: inline-block;
 }
 
+.offerTitleText{
+  display: inline-block;
+  font-size: 30px;
+
+}
 
 #offerTextMenu:hover, #cooperationTextMenu:hover, #GitHubRESTAPI:hover
 {
@@ -621,7 +612,6 @@ margin-top: -12%;
     #head,
     #aboutMe,
     #offer,
-    #cooperation,
     #portfolio,
     #certificates,
     #GitHubRESTAPI{
@@ -635,7 +625,17 @@ margin-top: -12%;
         margin-top: 6.5%;
     }
 
-
+    #cooperation
+    {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 97%;
+      text-align: center;
+      margin: 0px 0;
+   
+      margin-top: 25%;
+    }
     .portfolioImage {
         right: 0;
         width: 100%;
@@ -643,16 +643,9 @@ margin-top: -12%;
     }
 
 
-    .top
-{
+    
 
-transform: translateX(-50%);
-left: 50%;
-
-text-align:center;
-}
-
-.buttom
+.buttom,.top
 {
  
 margin-top:0px;
