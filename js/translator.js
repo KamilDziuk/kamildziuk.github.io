@@ -136,7 +136,7 @@ if(polishLanguage.textContent == 'Polish')
     
 
     offer.innerHTML = `<h3 class="offerText" id="offerTextMenu"> <div class ="offerTitleText">STRONY WWW</div> <i class="fa fa-window-maximize" style ="font-size: 30px;"></i><br><br>Każdą stronę internetową projektuję tak, aby zachować harmonię pomiędzy estetyką i prostotą. Stara się tworzyć strony internetowe, które nie tylko przyciągają wzrok, ale są również łatwe w obsłudze dla użytkowników. Stawiam na minimalistyczny design, eliminując niepotrzebne elementy i skupiając się na kluczowych aspektach, dzięki czemu strony są przejrzyste i intuicyjne. Głównie przy użyciu języków programowania JavaScript oraz PHP<br><br><br><br>
- <div class ="offerTitleText"> APLIKACJE <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Potrzebujesz funkcjonalności dostosowanej do Twojej witryny? Zaprojektuję dla Ciebie aplikację lub funkcjonalność dostosowaną do indywidualnych potrzeb Twojego biznesu. Odkryj potencjał niestandardowych rozwiązań i wyróżnij się na tle konkurencji!.<br><br><br><br>
+ <div class ="offerTitleText"> APLIKACJE </div><i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Potrzebujesz funkcjonalności dostosowanej do Twojej witryny? Zaprojektuję dla Ciebie aplikację lub funkcjonalność dostosowaną do indywidualnych potrzeb Twojego biznesu. Odkryj potencjał niestandardowych rozwiązań i wyróżnij się na tle konkurencji!.<br><br><br><br>
      <div class ="offerTitleText">WSPARCIE TECHNICZNE</div>  <i class="fa fa-bug" style ="font-size: 30px;" ></i><br><br>Jeśli pragniesz utrzymać pełną kontrolę nad stanem swojej strony internetowej i aplikacji, z przyjemnością nawiążę z Tobą współpracę w zakresie cyberbezpieczeństwa oraz wsparcia technicznego.</h3>`;
     
     
