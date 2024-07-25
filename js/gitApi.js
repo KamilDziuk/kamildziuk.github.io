@@ -17,14 +17,14 @@ let data = await url.json();
 
  textElement += "</ul>";
  let polishLanguage =  document.querySelector('.polishLanguage');
- lengthRepo.innerHTML =  `<p>My repository List <i class="fa fa-github"></i><br>Total number: ${data.length}</p>`;
+ lengthRepo.innerHTML =  `<p>List of my projects (repositories) from my <a target="_blank"  href="https://github.com/KamilDziuk" style="color: #fff;">github</a> account, where I document progress in current projects. Total number: ${data.length}</p>`;
   
     polishLanguage.addEventListener('click', () =>{
   if(polishLanguage.textContent == 'English'){
-    lengthRepo.innerHTML =  `<p>Moje repozytoria <i class="fa fa-github"></i><br>Łączna liczba: ${data.length}</p>`;
+    lengthRepo.innerHTML =  `<p>Lista moich projektów (repozytoriów) z mojego konta na platformie <a target="_blank"  href="https://github.com/KamilDziuk" style="color: #fff;"> github </a>, prowadzę tam dokumentację postępów w aktualnych projektach. Łączna liczba: ${data.length}</p>`;
   }
    else if(polishLanguage.textContent == 'Polish'){
-        lengthRepo.innerHTML =  `<p>My repository List <i class="fa fa-github"></i><br>Total number: ${data.length}</p>`;
+        lengthRepo.innerHTML =  `<p>List of my projects (repositories) from my <a target="_blank"  href="https://github.com/KamilDziuk" style="color: #fff;"> github</a> account, where I document progress in current projects. Total number: ${data.length}</p>`;
         }
  
 })

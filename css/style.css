@@ -2,8 +2,9 @@
 { 
     margin: 0;
     padding: 0;
-    
+
 }
+
 
 html,
 body {
@@ -11,6 +12,7 @@ body {
     background-color: rgb(5, 5, 55);
     font-family: 'Courier New', monospace;
     overflow-x: hidden;
+
 }
 
 
@@ -179,7 +181,16 @@ display: none;
 /* console Log end */
 /* head section end */
 
-
+.consoleLog:hover
+{
+  font-size: 25px;
+  color: #ffffff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 255, 255);
+}
 /* me image */
 .meImage
 {
@@ -191,6 +202,14 @@ margin-top: -5.5%;
   top: 0;
   z-index: 0;
 }
+.meImage:hover
+{
+  opacity:1;
+  width: 70%;
+  left: 60%;
+  margin-top: -20%;
+}
+  
 
 /* About Me section */
 #aboutMe {
@@ -212,8 +231,9 @@ margin-top: 10% ;
     width: 40%;
     text-align: right;
     margin: 5px;
-    margin-top:6.5%;
+    margin-top:5%;
     margin-bottom:6.5%;
+
 }
 
 
@@ -239,8 +259,9 @@ margin-top: 10% ;
   color: #ffffff8a;
   padding-bottom: 0px;
   padding-top: 15px;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 900;
+  z-index: 99;
 }
 
 .showRepo p:hover
@@ -276,10 +297,10 @@ margin-top: 10% ;
 #portfolio {
   position: relative;
   width: 70%;
-  height: 600px;
+  height: 800px;
 
   transform: translateX(-50%);
-  left: 100%;
+  left: 90%;
   overflow: hidden
 
 }
@@ -296,7 +317,13 @@ margin-top: 10% ;
 
 
 .fa:hover {
-    color: #ffffff;
+  color: #ffffff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 255, 255);
+    font-size: 35px;
 }
 
 
@@ -315,9 +342,15 @@ font-size: 30px;
 /* Portfolio Image start */
 .portfolioImage {
   position: absolute;
-  width: 40%;
-  height: 200px;
+  width: 50%;
+  height: 280px;
+  
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolioImage:hover {
+opacity: 1;
+
 }
 
 .top
@@ -325,7 +358,7 @@ font-size: 30px;
 position: relative;
 
 transform: translateX(-50);
-left: 77%;
+left: 71%;
 padding: 10px;
 color:#ffffff8a;
 text-align:center;
@@ -336,7 +369,7 @@ text-align:center;
   position: relative;
 margin-top: 0px;
 transform: translateX(-50);
-left: 78%;
+left: 71%;
 padding: 10px;
 color:#ffffff8a;
  
@@ -421,6 +454,16 @@ margin-bottom: 5px;
 
 }
 
+.offerTitleText:hover
+{
+  color: #ffffff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 255, 255);
+}
+
 #offerTextMenu:hover, #cooperationTextMenu:hover, #GitHubRESTAPI:hover
 {
 
@@ -438,7 +481,7 @@ margin-bottom: 5px;
     font-size: 23px;
 }
 
-.projectsText:hover,.baseText:hover, #offerTextHover:hover, #cooperationTextHover:hover
+.projectsText:hover,.baseText:hover, #offerTextHover:hover, #cooperationTextHover:hover, .certificatesText:hover
 {
   color:#ffffff;
     font-size: 23px;
@@ -534,8 +577,8 @@ position: absolute;
  .menu
  {
    position: fixed;
-   background: rgba(18, 1, 100, 0.699);
-   backdrop-filter: blur(4px);
+   background: rgba(0, 0, 0, 0.699);
+
    border-style: none;
    top: 0%;
    width: 100%;
@@ -616,7 +659,8 @@ margin-top: -12%;
   top: 0;
   z-index: 0;
 }
-    #head,
+
+  #head,
     #aboutMe,
     #offer,
     #portfolio,

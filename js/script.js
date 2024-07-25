@@ -12,7 +12,7 @@ function ScrollMenu()
 
 window.addEventListener("scroll", () => {
     let scroll = window.pageYOffset || document.documentElement.scrollaboutMeText;
-    if (scroll >= 0) {
+    if (scroll >= -0) {
     document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
     }
     
@@ -101,8 +101,9 @@ scrollMenuResult.aboutMeText();
 
 // header carousel start
 let number = 0;
-function headerCarousel(){
 let consoleLog = document.querySelectorAll('.consoleLog');
+function headerCarousel(){
+
 
 for(let i = 0; i< consoleLog.length; i++)
 {
@@ -115,8 +116,15 @@ if(number > consoleLog.length)
 }
 consoleLog[number -1].style.display = 'block';
 setTimeout(headerCarousel,3000);
+
+
+
 };
-headerCarousel();
+
+headerCarousel(number);
+
+    
+
 // header carousel end
 
 // Bar and bar icone start
@@ -194,3 +202,5 @@ landingResult.startLanding();
 
 
 // landing end 
+
+
