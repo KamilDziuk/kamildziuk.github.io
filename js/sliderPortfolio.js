@@ -19,7 +19,7 @@ function  gallery(index)
 
 setInterval( () =>
 {
-    numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
+    numbers = (numbers < galleryItem.length -3) ?  numbers +1:0;
     gallery(numbers);
 
 },5000)
