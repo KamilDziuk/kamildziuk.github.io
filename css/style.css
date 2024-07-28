@@ -619,12 +619,15 @@ padding: 0.5px;
   
 
  }
-.fa-bars
+
+ .fa
 {
-  position: relative;
-font-size: 24px;
-left: 4%;
+
+font-size: 20px;
+
 }
+
+
  /* Bar and bar icone end */
 
     h1 {
