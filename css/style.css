@@ -578,7 +578,7 @@ position: absolute;
  .menu
  {
    position: fixed;
-   background: rgba(0, 0, 0, 0.699);
+   background:  #030045af;
 
    border-style: none;
    top: 0%;
