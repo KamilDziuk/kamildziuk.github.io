@@ -1,0 +1,374 @@
+
+<html lang="pl" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lifestyle - Nowoczesne Osiedle w Zawierciu</title>
+<link rel="icon" type="image/jpg" href="image/icone.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/popupCookie.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>  <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/script.js" async></script>
+<script src="js/sendingEmail.js" defer></script>
+<script src="js/popupCookie.js" defer></script>
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-');</script>
+  <!-- End Google Tag Manager -->
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-');
+</script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<!-- navbar start -->
+<div class="top">
+  <div class="navbar">
+  <a class="navbar__item logo" href="./">  <img class="navbar__item logo" href="./"><img class="navbar__item logo"  src="image/lpp.webp"></a>
+  <div class="navbar__menu">
+    <a class="navbar__item navbar__link white-border" href="mieszkania">Mieszkania</a>
+    <div class="navbar__item navbar__link dropdown">Parkingi
+    <div class="dropdown-content">
+      <a href="parkingi-naziemne.php">Parkingi Naziemne</a><br>
+      <a href="budynek-b-garaze-podziemne.php">Garaże podziemne B</a>
+      <br>
+      <a href="budynek-c-garaze-podziemne.php">Garaże podziemne C</a>
+      <br>
+      <a href="budynek-a-garaze-podziemne.php">Garaże podziemne A</a>
+    </div>
+    </div>
+  <a class="navbar__item navbar__link" href="galeria">Galeria</a>
+  <a class="navbar__item navbar__link" href="oferta-inwestycyjna">Oferta inwestycyjna</a>
+  <a class="navbar__item navbar__link" href="lifestyle">Lifestyle</a>
+  <a class="navbar__item navbar__link" href="kontakt">Kontakt</a>
+  <a class="navbar__item navbar__link" href="https://diamond-hill.com.pl/">Deweloper</a>
+  </div>
+  <!-- Popup start -->
+  <button id="showPopup">Zapytaj o mieszkania</button>
+  <!-- Popup end -->
+  <span class="hamburger hamburger--collapse navbar__item" id="js-navbar-toggle">
+  <span class="hamburger-box">
+  <span class="hamburger-inner"></span>
+  </span>
+  </span>
+  </div>
+  </div>
+  <div id="popup" class="popup">
+
+  <div class="popup-content">
+
+    <!-- email  start -->
+    <!-- View information about the sending status start -->
+    <div class="textValue"></div>
+
+       <!-- View information about the sending status end -->
+    <form id="formPopup" class="topBefore" method="post">
+        <input id="text1" class="firstName" type="text" placeholder="Imie" >
+        <input class="email" type="email" placeholder="Emial">
+        <input class="phone" type="number" placeholder="Telefon">
+        <textarea class="message" type="text" placeholder="Dotyczy mieszkania"></textarea>
+        <!-- send request start -->
+        <input class="send" id="submit" type="button" value="Wyślij zapytanie"> 
+          <!-- send request end -->
+          <!-- checkbox start   -->
+          <div class="checkbox-wrapper-32">
+            <input type="checkbox" name="checkbox-32" id="checkbox-32"  class="checkbox0">
+            <label for="checkbox-32">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu i zakresie koniecznym do realizacji zgłoszenia.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+    
+          <div class="checkbox-wrapper-33">
+            <input type="checkbox" name="checkbox-33" id="checkbox-33"  class="checkbox1">
+            <label for="checkbox-33">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu przesyłania mi ofert handlowych na produkty własne spółki drogą elektroniczną.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+    
+    
+    
+          <div class="checkbox-wrapper-34">
+            <input type="checkbox" name="checkbox-34" id="checkbox-34"  class="checkbox2">
+            <label for="checkbox-34">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu kontaktu telefonicznego ze strony przedstawicieli spółki w sprawach związanych z ofertą handlową na produkty własne.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+          <!-- checkbox end   -->
+        
+          <div class="text"></div>
+          <div class="text1"></div>
+          </form>
+            <!-- email  end -->
+           
+          <div class="allAvailableApartmentsAvailable"></div>
+          <span class="close" id="closePopup">X</span>
+          
+          </div>
+          </div>
+  <!-- navbar end -->
+  
+  <!-- lifestyle banner start -->
+  <header class="lifestyle">
+    <!-- top and middle of the page start -->
+    <div class="centerLifestyle">
+    <p>Witamy Cię w rzeczywistości<br>Parku Paderewskiego</p>
+    
+    <a href="galeria"><button  id="buttomTextLifestyle1">ZOBACZ GALERIĘ</button></a>
+ 
+    </header>
+   <!-- lifestyle banner end -->
+  <!-- lifestyle one start -->
+
+  <section class="add-padding add-flex">
+    <div class="center-text">
+    <h1 id="textAlexBrush" class="alex-brush"><span class="custom-font"></span><br/>Park Paderewskiego lifestyle</h1><br>
+    <section id="aboutus"></section>
+    <p id="textAboutus">Park Paderewskiego to pierwsza inwestycja w Zawierciu, która z myślą o mieszkańcach przygotowała starannie przemyślane i optymalnie zaprojektowane części wspólne.
+      To tutaj znajdziesz miejsce do wypoczynku, realizacji pasji ale także spotkań z przyjaciółmi. Naszym głównym celem jest dostarczenie Ci czegoś więcej, niż mógłbyś się spodziewać.</p>
+    </section>
+
+    <!-- slides one start -->
+    <div class="slidesContainer">
+      <div class="split-slideshow">
+      <div class="slideshow">
+      <div class="slider">
+      <div class="item">
+      <img src="image/lifestyle0.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle1.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle2.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle3.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle5.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle6.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle7.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle8.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle9.webp"/>
+      </div>
+      <!-- <div class="item">
+      <img src="image/lifestyle10.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle11.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle12.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle13.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle15.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle16.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle17.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle18.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle19.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle20.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle21.webp"/>
+      </div>
+      <div class="item">
+      <img src="image/lifestyle22.webp"/>
+      </div> -->
+
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- slides one end -->
+  
+<!-- text two start -->
+<section class="add-padding2 add-flex">
+<div class="center-text">
+<h1 id="textAlexBrush" class="alex-brush"><span class="custom-font"></span><br/></h1><br>
+<section id="aboutus"></section>
+<!-- text two end -->
+</section>
+
+<!-- Lifestyle photo and text one strart -->
+      <div class="containerLifestyle">
+        <div>
+          <img  class="imgContainerLifestyle" src="image/lifestyle1.webp">
+          <img  class="imgContainerLifestyle" src="image/lifestyle2.webp">
+          <img  class="imgContainerLifestyle" src="image/lifestyle3.webp">
+          <img  class="imgContainerLifestyle" src="image/lifestyle0.webp">
+        </div>
+        <div class="textContainerLifestyle">
+          <b>Pokój klubowy</b>
+          <p>Twoje miejsce na wyjątkowe spotkania.</p>
+          <p>Rozumiejąc, jak ważne są chwile spędzone z najbliższymi, stworzyliśmy wyjątkową przestrzeń dla naszych mieszkańców. Przedstawiamy Pokój Klubowy, który został zaprojektowany z pasją i myślą o Tobie. To idealna przestrzeń do organizacji zarówno kameralnych spotkań, jak i większych celebracji</p>
+          <p>Dzięki wyposażonej kuchni i przestronnej jadalni przygotowanie posiłków stanie się prawdziwą przyjemnością, a wspólne chwile przy stole niezapomnianym przeżyciem. Dodatkowo, przytulna część wypoczynkowa pozwoli Ci rozsiąść się z kawą lub lampką wina w towarzystwie najbliższych.</p>
+          <p>Nie musisz martwić się o nic – wszystko zostało zaprojektowane z myślą o wygodzie i funkcjonalności. Ty jedynie zadbaj o listę gości i menu, resztę mamy już przygotowaną dla Ciebie.</p>
+        </div>
+      </div>
+      <!-- Lifestyle photo and text one end -->
+
+      <!-- Lifestyle photo and text two strart -->
+      <div class="containerLifestyle">
+      
+        <div class="textContainerLifestyle">
+          <b>Sala kinowa</b>
+          <p>Twoje prywatne kino, tuż za rogiem!</p>
+          <p>Zapomnij o kolejnych wyjazdach do kina i przeciągających się dyskusjach o tym, co warto zobaczyć. Teraz kino jest obok Ciebie. Sala kinowa w Parku Paderewskiego zaprasza.</p>
+          <p>Chcesz poczuć klimat wielkiego ekranu bez opuszczania domu? Teraz jest to możliwe. Oglądaj filmy, delektuj się w najnowszymi ekranizacjami lub kibicuj ulubionym drużynom razem z przyjaciółmi. Wszystko to w doskonałej jakości dźwięku, w pełni wyciszonej sali z perfekcyjną akustyką, która przeniesie Cię w sam środek akcji.</p>
+          <p>Przygotuj popcorn, wygodnie rozsiądź się i po prostu delektuj się chwilą. Bez względu na to, co postanowisz wyświetlić – gwarantujemy kinowe wrażenia.<br>
+            Kino jest zawsze na wyciągnięcie ręki. Włącz projektor, światła zgasną… Poczuj kinowy klimat w domowym zaciszu.</p>
+        </div>
+        <div>
+          <img  class="imgContainerLifestyle1" src="image/lifestyle5.webp">
+          <img  class="imgContainerLifestyle1" src="image/lifestyle6.webp">
+          <img  class="imgContainerLifestyle1" src="image/lifestyle7.webp">
+          <img  class="imgContainerLifestyle1" src="image/lifestyle8.webp">
+        </div>
+      </div>
+      <!-- Lifestyle photo and text two end -->
+<!-- Lifestyle photo and text Three strart -->
+<div class="containerLifestyle">
+  <div class="image">
+    <img  class="imgContainerLifestyle2" src="image/lifestyle9.webp">
+    <img  class="imgContainerLifestyle2" src="image/lifestyle10.webp">
+    <img  class="imgContainerLifestyle2" src="image/lifestyle11.webp">
+    <img  class="imgContainerLifestyle2" src="image/lifestyle12.webp">
+  </div>
+  <div class="textContainerLifestyle">
+    <b>Sala fitness</b>
+    <p>Twoja osobista siłownia</p>
+    <p>Nie pozwól, aby zatłoczone kluby fitness i ciągłe poszukiwanie wolnych maszyn stały na drodze do Twojego codzinnego treningu. W Parku Paderewskiego, Twoje cele treningowe stają się jeszcze bardziej osiągalne i dostępne na wyciągnięcie ręki.</p>
+    <p>Zanurz się w atmosferze naszej ekskluzywnej sali fitness, zaprojektowanej z myślą o Twoich potrzebach. Najwyższej jakości sprzętem i styl dzięki któremu poczujesz się zmotywowany do działania przy każdej wizycie.</p>
+    <p>Dlaczego trenować w tłumie, kiedy możesz ćwiczyć w komfortowych warunkach, z dostępem do najlepszej klasy urządzeń tuż obok domu? Twoja podróż do wymarzonej formy zaczyna się tu i teraz.</p>
+  </div>
+</div>
+<!-- Lifestyle photo and text Three end -->
+
+<!-- Lifestyle photo and text four strart -->
+<div class="containerLifestyle">
+      
+  <div class="textContainerLifestyle">
+    <b>Sala dla dzieci</b>
+    <p>Gdzie dziecięca wyobraźnia nabiera skrzydeł</p>
+    <p>Wierzymy, że każdy moment zabawy kryje w sobie potencjał do nauki i odkrywania świata. Jak powiedział André Stern „zabawa to najdoskonalsza forma edukacji” i w Parku Paderewskiego traktujemy ją z należytym szacunkiem.
+      Zapraszamy do strefy dla dzieci, gdzie kreatywność spotyka bezpieczeństwo. Zaprojektowaliśmy ją tak, aby była miejscem, gdzie Twoje dziecko może nie tylko bawić się bezgranicznie, ale także rozwijać swoje umiejętności, pasje i zainteresowania pod okiem wykwalifikowanego animatora.</p>
+    <p>W świecie kolorów, kształtów i przyjacielskich twarzy, Twoje dziecko odkryje radość z nauki przez zabawę, budując przy tym trwałe więzi z rówieśnikami. W Park Paderewskiego zabawa spotyka się z inspiracją, a dzieci rosną w otoczeniu, które pielęgnuje ich ciekawość i kreatywność. Witaj w miejscu, gdzie małe marzenia stają się wielkimi osiągnięciami.</p>
+  </div>
+  <div>
+    <img  class="imgContainerLifestyle3" src="image/lifestyle13.webp">
+    <img  class="imgContainerLifestyle3" src="image/lifestyle20.webp">
+    <img  class="imgContainerLifestyle3" src="image/lifestyle15.webp">
+    <img  class="imgContainerLifestyle3" src="image/lifestyle16.webp">
+
+  </div>
+</div>
+
+<!-- Lifestyle photo and text four end -->
+      
+  <!-- footer start -->
+  <footer>
+    <div class="locationsAll">
+    <div class="locationsLeft"> 
+    <img src="image/dhd.webp"
+    class="footer_logo">  <h5>DIAMOND HILL DEVELOPMENT jest ogólnopolskim<br>deweloperem segmentu premium. Tworzymy<br>nieruchomości cechujące się najwyższą jakością,<br> innowacyjnymi technologiami, funkcjonalnością i<br>ponadczasowym designem.</h5>
+    <img src="image/pzfd.webp" class="footer_logo">
+    </div>       
+    <div class="locationsRight">  
+    <h5>BIURO SPRZEDAŻY<br>ul.Paderewskiego 63a, 42-400 Zawiercie<br><a href="tel:+48 786 337 302 " style="color: #ffffff;">+48 786 337 302 </a><br>e-mail.<a href="mailto:biuro@parkpaderewskiego.pl" style="color:  #ffffff;"> biuro@parkpaderewskiego.pl</a><br>  <a href="mailto:sprzedaz@parkpaderewskiego.pl" style="color:  #ffffff;"> sprzedaz@parkpaderewskiego.pl</a><br>www.diamond-hill.com.pl</h5>                                                                           
+    <!-- social media start -->
+  <h5 class="smollText">   Bądź na bieżąco </h5>
+    <a href="https://www.facebook.com/profile.php?id=100092554970321" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/company/diamond-hill-development/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/@ParkPaderewskiegoZawiercie" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/park_paderewskiego_zawiercie/" class="fa fa-instagram"></a>
+  
+  </div>
+    <!-- social media end -->
+    <div class="locationsCenter">    
+    <div class="line"></div>
+    <h5><a style="color:  #ffffff;" href="cookiesPolitics">Polityka cookies</a><br><a style="color:  #ffffff;" href="privacyPolicy">Polityka prywatności</a><br>Copyright © Diamond Hill Development, All Rights Reserved.</h5>
+    </div>
+    </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- popup cookie  start -->
+    <div class="popupCookie"></div>
+<div class="containerCookie">
+    <img class="imageLpp" src="/image/lpp.webp">
+    <div class="headerCookie">
+
+      <h2>Cenimy Twoją prywatność</h2>
+    </div>
+  
+    <div class="textCookie"></div>
+  
+    <div class="buttonsCookie">
+      <button class="button" id="acceptBtn">Akceptuję i przechodzę do strony</button>
+        <button class="button" id="advancedSettings">Ustawienia zaawansowane</button>
+      <button class="button" id="saveBtn">Zapisz</button>
+    </div>
+  </div>
+  <!-- popup cookie  start -->
+</body>
+</html>

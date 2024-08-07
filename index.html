@@ -1,163 +1,385 @@
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kamil Dziuk - Websites and applications</title>
-  <script src="/js/script.js" defer></script>
-  <script src="/js/gitApi.js" defer></script>
-  <script src="/js/translator.js" defer></script>
-  <script src="/js/sliderPortfolio.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/jpg" href="image/kdlb.jpg">
-
-  <link rel="stylesheet" type="text/css" href="/css/translator.css">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
- </head>
- <body>
-
-<div id="landing">
-  <img class="landingLogo" src="/image/kamildziukLogo.webp">
-</div>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Park Paderewskiego - Nowoczesne Osiedle w Zawierciu</title>
+<link rel="icon" type="image/jpg" href="image/icone.jpg">
 
 
-  <!-- light Reflections start-->
-<div class="lightReflectionsContainer">
-  <div class="lightReflections"></div>
-  <div class="lightReflections" style="--delay:-12s;--size:0.35;--speed:20s;"></div>
-  <div class="lightReflections" style="--delay:-10s;--size:0.3;--speed:10s;"></div>
-</div>
-<!-- light Reflections end-->
 
-<a href="/."><img class="logo" src="/image/kamildziukLogo.webp"></a>
-<!-- bar start -->
-<div class="bar"> 
-  <div class="barButton">
-    <img class="burgerMenu"  src="/image/burgerMenu.svg" ><i class="fa fa-bars" aria-hidden="true"></i>
-  </div>
-  <div class="menu">  </div>
-
-  <div class="optionsMenu">
-    
-    <a id="colorText" href="#aboutMePosition"><h3  class="aboutMePosition" > </h3></a>
-    <a id="colorText" href="#portfolioPosition"><h3   class="portfolioPosition"></h3></a>
-    <a id="colorText" href="#offerPosition"><h3   class="offerPosition"></h3></a>
-    <a id="colorText" href="#cooperationPosition"><h3  class="cooperationPosition"></h3></a>
-    <a id="colorText" target="_blank"  href="/image/certificates.pdf"><h3  class="certificatesMenu"></h3></a>
-    <a id="colorText" target="_blank"  href="https://www.kamildziuk.pl/questionsApp/myKnowledgeBase.php"><h3  class="baseTextMenu"></h3></a>
-    
-  </div>
-</div>
-<!-- bar end -->
-<!-- head section start-->
-<section id="head">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:100'>
 
 
-<h1>Kamil Dziuk</h1>
-<h2>Web Developer</h2>
-<div class="consoleLogPosition">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/popupCookie.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/sliderForBanner.css"> -->
+<script src="js/script.js" defer></script>
+<script src="js/sendingEmail.js" defer></script>
+<script src="js/popupCookie.js" defer></script>
+<!-- <script src="js/sliderForBanner.js" defer></script> -->
 
-<h3 class="consoleLog">
-  I'm coding your ideas for online success.
-</h3>
-<h3 class="consoleLog">
-  <a href="mailto:contact@kamildziuk.pl"><i class="fa fa-envelope-o"></i> contact@kamildziuk.pl</a>
-</h3>
-<h3 class="consoleLog">
-  <a  href=""onclick="window.location.href='tel:668573034'" > <i class="fa fa-phone"></i> +48 668 573 034</a>
-</h3>
-
-<div class="sectionOptions">
-  <a href="#aboutMePosition"><h3 class="aboutMeText"></h3></a>
-  <a href="#portfolioPosition"><h3 class="projectsText"></h3></a>
-  <a href="#offerPosition"><h3  id="offerTextHover"  class="offerText"></h3></a>
-  <a href="#cooperationPosition"><h3  id="cooperationTextHover"  class="cooperationText"></h3></a>
-  <a  target="_blank" href="/image/certificates.pdf"><h3 class="certificatesText"></h3></a>
-  <a target="_blank"  href="https://www.kamildziuk.pl/questionsApp/myKnowledgeBase.php"><h3 class="baseText"></h3></a>
-
-
-</div>
-<br>
-<a target="_blank"  href="https://www.linkedin.com/in/kamil-dziuk-1b02201b3/"><i class="fa fa-linkedin-square"></i></a>
-<a target="_blank"  href="https://github.com/KamilDziuk"><i class="fa fa-github"></i></a>
-<a target="_blank"   href="https://www.google.com/maps/place/Kamil+Dziuk+-+Websites+%26+applications/@50.2536698,19.0125154,17z/data=!4m8!3m7!1s0x4716cff7d21f6e77:0xd1b0c84f69b3558d!8m2!3d50.2536664!4d19.0150903!9m1!1b1!16s%2Fg%2F11tnnqn8z9?authuser=0&entry=ttu"><i class="fa fa-star-half-o"></i></a>
-</section>
-<!-- head section end-->
-
-
-<button class="polishLanguage"></button>
-
-<!-- about me section start -->
-<section id="aboutMePosition"></section>
-<section id="aboutMe">
-  <img class="meImage"  src="/image/KamilDziukWebsitesAndApplications.webp">
-
-
- 
-<h3 class="aboutMeTextHead"> </h3>
-
-</section>
-<!-- about me section end -->
-
-<!-- portfolio section start -->
-<section id="portfolioPosition"></section>
-<i class="fa fa-arrow-circle-up top"></i>
-
-<div id="portfolio">
-
-<a target="_blank"  href="https://github.com/KamilDziuk/parkpaderewskiego"><img class="portfolioImage" src="/image/pp.webp"></a>
-<a  target="_blank" href="https://github.com/KamilDziuk/diamond-hill"><img class="portfolioImage"  src="/image/dhd.webp"></a>
-  <a target="_blank"  href="https://github.com/KamilDziuk/degensquad"><img class="portfolioImage"  src="/image/dgs.webp"></a>
-    <a  target="_blank"  href="https://github.com/KamilDziuk/kamildziuk.github.io"><img class="portfolioImage"  src="/image/kd.webp"></a>
-      <a target="_blank"  href="https://github.com/KamilDziuk/nakamotogcartel"><img class="portfolioImage"  src="/image/nc.webp"></a>
-        <a target="_blank"  href="https://github.com/KamilDziuk/hollaPola_restaurant_page"><img class="portfolioImage"  src="/image/hp.webp"></a>
-        <a target="_blank"  href="https://kancelariakrzysztofkot.pl/"><img class="portfolioImage"  src="/image/kkk.webp"></a>
-        <img class="portfolioImage"  src="/image/ct.webp">
-        <img class="portfolioImage"  src="/image/db.webp">
-        <img class="portfolioImage"  src="/image/gb.webp">
-        <img class="portfolioImage"  src="/image/gs.webp">
-        <img class="portfolioImage"  src="/image/kb.webp">
-        <img class="portfolioImage"  src="/image/s.webp">
-        <img class="portfolioImage"  src="/image/sd.webp">
-        <img class="portfolioImage"  src="/image/sf.webp">
-        <img class="portfolioImage"  src="/image/wb.webp">
-        <img class="portfolioImage"  src="/image/z.webp">
-        <a target="_blank"  href="https://unitedsellers.eu/"><img class="portfolioImage"  src="/image/us.webp"></a>
-
-</div>
-<i class="fa fa-arrow-circle-down buttom"></i>
-<br>
-
-<!-- portfolio section end -->
-<!-- GitHubRESTAPI section start -->
-<section id="GitHubRESTAPI">
-  <div class="lengthRepo"></div>
-  <div class="showRepo"></div>
-  <!-- <img src="https://ghchart.rshah.org/KamilDziuk" alt="Name Your Github chart"> -->
-  </section>
-<!-- GitHubRESTAPI section end -->
-
-<!-- offer section start -->
-<section id="offerPosition"></section>
-<section id="offer">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-');</script>
+  <!-- End Google Tag Manager -->
   
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  </section>
-<!-- offer section end -->
- 
+  gtag('config', 'G-');
+</script>
 
-<!-- cooperation section start -->
-<section id="cooperationPosition"></section>
-<section id="cooperation">
+</head>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<body>
+<!-- navbar start -->
+<div class="top">
+<div class="navbar">
+<a class="navbar__item logo" href="./">  <img class="navbar__item logo" href="./"><img class="navbar__item logo"  src="image/lpp.webp"></a>
+<div class="navbar__menu">
+<a class="navbar__item navbar__link white-border" href="mieszkania">Mieszkania</a>
+<div class="navbar__item navbar__link dropdown">Parkingi
+<div class="dropdown-content">
+  <a href="parkingi-naziemne.php">Parkingi Naziemne</a><br>
+  <a href="budynek-b-garaze-podziemne.php">Garaże podziemne B</a>
+  <br>
+  <a href="budynek-c-garaze-podziemne.php">Garaże podziemne C</a>
+  <br>
+  <a href="budynek-a-garaze-podziemne.php">Garaże podziemne A</a>
+</div>
+</div>
+<a class="navbar__item navbar__link" href="galeria">Galeria</a>
+<a class="navbar__item navbar__link" href="oferta-inwestycyjna">Oferta inwestycyjna</a>
+<a class="navbar__item navbar__link" href="lifestyle">Lifestyle</a>
+<a class="navbar__item navbar__link" href="kontakt">Kontakt</a>
+<a class="navbar__item navbar__link" href="https://diamond-hill.com.pl/">Deweloper</a>
+</div>
+<!-- Popup start -->
+<button id="showPopup">Zapytaj o mieszkania</button>
+<!-- Popup end -->
+<span class="hamburger hamburger--collapse navbar__item" id="js-navbar-toggle">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</span>
+</div>
+</div>
+<div id="popup" class="popup">
+<div class="popup-content">
+    <!-- email  start -->
+    <!-- View information about the sending status start -->
+    <div class="textValue"></div>
 
-  </section>
+       <!-- View information about the sending status end -->
+    <form id="formPopup" class="topBefore" method="post">
+        <input id="text1" class="firstName" type="text" placeholder="Imie" >
+        <input class="email" type="email" placeholder="Emial">
+        <input class="phone" type="number" placeholder="Telefon">
+        <textarea class="message" type="text" placeholder="Dotyczy mieszkania"></textarea>
+        <!-- send request start -->
+        <input class="send" id="submit" type="button" value="Wyślij zapytanie"> 
+          <!-- send request end -->
+          <!-- checkbox start   -->
+          <div class="checkbox-wrapper-32">
+            <input type="checkbox" name="checkbox-32" id="checkbox-32"  class="checkbox0">
+            <label for="checkbox-32">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu i zakresie koniecznym do realizacji zgłoszenia.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+    
+          <div class="checkbox-wrapper-33">
+            <input type="checkbox" name="checkbox-33" id="checkbox-33"  class="checkbox1">
+            <label for="checkbox-33">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu przesyłania mi ofert handlowych na produkty własne spółki drogą elektroniczną.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+    
+    
+    
+          <div class="checkbox-wrapper-34">
+            <input type="checkbox" name="checkbox-34" id="checkbox-34"  class="checkbox2">
+            <label for="checkbox-34">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu kontaktu telefonicznego ze strony przedstawicieli spółki w sprawach związanych z ofertą handlową na produkty własne.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+          <!-- checkbox end   -->
+        
+          <div class="text"></div>
+          <div class="text1"></div>
+          </form>
+            <!-- email  end -->
+      <div class="allAvailableApartmentsAvailable"></div>
+      <span class="close" id="closePopup">X</span>
+      
+      </div>
+      </div>
+<!-- navbar end -->
+<header>
+<!-- top and middle of the page start -->
+<div class="center">
+<p>INTELIGENTNE OSIEDLE W ZAWIERCIU</p>
+<!-- arrows one start -->
+<svg class="arrows">
+<path class="a1" d="M0 0 L30 32 L60 0"></path>
+<path class="a2" d="M0 20 L30 52 L60 20"></path>
+<path class="a3" d="M0 40 L30 72 L60 40"></path>
+</svg>
+<!-- arrows one end -->
+<p class="text0">NOWOCZESNE MIESZKANIA</p>
+<a href="mieszkania"><button id="buttomText0">SPRAWDŹ MIESZKANIA</button></a>
+<p class="text1">PONADCZASOWY DESIGN ARCHITEKTONICZNY</p>
+<!-- arrows two start -->
+<svg class="arrows1">
+  <path class="a1" d="M0 0 L30 32 L60 0"></path>
+  <path class="a2" d="M0 20 L30 52 L60 20"></path>
+  <path class="a3" d="M0 40 L30 72 L60 40"></path>
+  </svg> 
+  <!-- arrows two end -->
+<p class="text2">WYJĄTKOWE CZĘŚCI WSPÓLNE</p>
+<p class="text3">DOSTĘPNE DLA MIESZKAŃCÓW</p>
 
 
 
 
 
-<!-- cooperation section end -->
+<a href="lifestyle"><button id="buttomText1">LIFESTYLE</button></a> 
+</div>
+</header>
 
+<!-- text zero start -->
+<section class="add-padding add-flex">
+<div class="center-text">
+<h1 id="textAlexBrush" class="alex-brush"><span class="custom-font"></span><br/>Park Paderewskiego</h1><br>
+<section id="aboutus"></section>
+<p id="textAboutus">Osiedle Parku Paderewskiego to nowy wymiar luksusowych mieszkań na sprzedaż w Zawierciu,
+które rewolucjonizują rynek nieruchomości w regionie. Nasza prestiżowa inwestycja deweloperska,
+jest synonimem ekskluzywnego stylu życia, oferując wysoki standard przestrzeni życiowych.
+Osiedle wyróżnia się swoją lokalizacją w malowniczym parku oraz zastosowaniem innowacyjnych
+technologii i odnawialnych źródeł energii. Przestrzeń, którą tworzymy jest idealnym rozwiązaniem
+dla tych, którzy szukają wyjątkowego miejsca do życia.</p>
+</section>
+<!-- text zero end -->
+   <!-- Slider for banner start -->
+
+   <!-- <section id="sldierOffer">
+    <div class="banner"><div class="bannerText" >Program mieszkaniowy<br><div class="bannerTextTwo">Decyzja na raty 1.0</div><br>Z nami bez ryzyka zaplanujesz zakup swego wymarzonego „M”<br><br><div class="bannerTextThree">podpisujesz umowę bez ryzyka, a do 28.02.2025 r. powiększasz kapitał na poczet wybranego mieszkania..</div><br><br>
+    
+    
+    </div><img class="images" src="image/apartment_interior3B.jpg"></div> 
+    <div class="banner"><div class="bannerText">Program mieszkaniowy<br><div class="bannerTextTwo">Decyzja na raty 2.0</div><br>Z nami bez ryzyka zaplanujesz zakup swego wymarzonego „M”<br><br><div class="bannerTextThree">podpisujesz umowę bez ryzyka, a do 28.02.2025 r. powiększasz kapitał na poczet wybranego mieszkania..</div><br><br>
+    
+    
+    
+    </div><img class="images" src="image/apartment_interior2B.png"></div> 
+    <div class="banner"><div class="bannerText">Program mieszkaniowy<br><div class="bannerTextTwo">Decyzja na raty 3.0</div><br>Z nami bez ryzyka zaplanujesz zakup swego wymarzonego „M”<br><br><div class="bannerTextThree">podpisujesz umowę bez ryzyka, a do 28.02.2025 r. powiększasz kapitał na poczet wybranego mieszkania..</div><br><br>
+    
+    
+    
+    </div><img class="images" src="image/apartment_interior1B.jpg"></div> 
+    
+
+  </section> -->
+       <!-- Slider for banner end -->
+<body>
+<!-- slides one start -->
+<div class="slidesContainer">
+<div class="split-slideshow">
+<div class="slideshow">
+<div class="slider">
+<div class="item">
+<img src="image/visualization20.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization21.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization22.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization30.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization1.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization2.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization3.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization4.webp"/>
+</div>
+<div class="item">
+<img src="image/visualization5.webp"/>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- slides one end -->
+<!-- text one start -->
+
+
+    
+<section class="add-padding1 add-flex">
+<div class="center-text">
+<h1 id="textAlexBrush" class="alex-brush"><span class="custom-font"></span><br/>Lifestyle</h1><br>
+<section id="aboutus"></section>
+<p id="textAboutus">Części wspólne stanowią serce naszej ekskluzywnej inwestycji, oferując mieszkańcom
+przestrzenie idealne do relaksu, realizacji pasji, rekreacji i spotkań z przyjaciółmi. Każda z tych
+przestrzeni została starannie zaprojektowana, aby zapewnić komfort i funkcjonalność. Naszym
+ głównym celem jest dostarczenie Ci czegoś więcej, niż mógłbyś się spodziewać</p>
+<a href="lifestyle"><button id="buttomText2">ODKRYWAJ CZĘŚCI WSPÓLNE</button></a>
+</section>
+<!-- text one end -->
+<!-- slides two start -->
+<div class="slidesTwoContainer">
+<div class="split-slideshowTwo">
+<div class="slideshowTwo">
+<div class="sliderTwo">
+<div class="itemTwo">
+<img src="image/visualization7.webp" />
+</div>
+<div class="itemTwo">
+<img src="image/visualization8.webp" />
+</div>
+<div class="itemTwo">
+<img src="image/visualization9.webp" />
+</div>
+<div class="itemTwo">
+<img src="image/visualization10.webp" />
+</div>
+<div class="itemTwo">
+<img src="image/visualization11.webp" />
+</div>
+</div>
+</div>
+<div class="slideshowTwo-text">
+<div class="itemTwo">Pokój Klubowy</div>
+<div class="itemTwo">Sala kinowa</div>
+<div class="itemTwo">Sala fitness</div>
+<div class="itemTwo">Sala dla dzieci</div>
+<div class="itemTwo">Garaż podziemny</div>
+</div>
+</div>
+</div>
+<!-- slides two end -->
+<br><br><br>
+<!-- text two start -->
+<section class="add-padding2 add-flex">
+<div class="center-text">
+<h1 id="textAlexBrush" class="alex-brush"><span class="custom-font"></span><br/>Inteligentne Osiedle</h1><br>
+<section id="aboutus"></section>
+<p id="textAboutus">Osiedle jest wyposażone w inteligentną technologię Blue Bolt powstałą we współpracy z Intel,
+ułatwiającą poruszanie się po osiedlu i budynkach. Z łatwością zarządzaj dostępem na każdym
+kroku z użyciem aplikacji na smartfony lub smartwatche.</p>
+</section>
+<!-- top and middle of the page end -->
+
+<!-- text two end -->
+<!-- estate background start  -->
+<img class="theEntireInvestor" src="image/theEntireInvestor.webp">
+<!-- estate background end  -->
+<!-- movable buttons start -->
+<div class="panels">
+<div class="panels__container">
+<a href="https://diamond-hill.com.pl/" class="panel">
+<div class="panel__content" style="background-image: url(image/visualization4.webp);">
+<h3 class="panel__title">Diamond Hill Development</h3>
+<h3 class="panel__title1">Diamond Hill Development</h3>
+</div>
+</a>
+<a href="mieszkania.html" class="panel">
+<div class="panel__content" style="background-image: url(image/apartments.webp)">
+<h3 class="panel__title">Apartamenty</h3>
+<h3 class="panel__title1">Apartamenty</h3>
+</div>
+</a>
+</div>
+</div>
+<!-- movable buttons end -->
+<!-- footer start -->
+<footer>
+    <div class="locationsAll">
+    <div class="locationsLeft"> 
+    <img src="image/dhd.webp"
+    class="footer_logo">  <h5>DIAMOND HILL DEVELOPMENT jest ogólnopolskim<br>deweloperem segmentu premium. Tworzymy<br>nieruchomości cechujące się najwyższą jakością,<br> innowacyjnymi technologiami, funkcjonalnością i<br>ponadczasowym designem.</h5>
+    <img src="image/pzfd.webp" class="footer_logo">
+    </div>       
+    <div class="locationsRight">  
+    <h5>BIURO SPRZEDAŻY<br>ul.Paderewskiego 63a, 42-400 Zawiercie<br><a href="tel:+48 786 337 302 " style="color: #ffffff;">+48 786 337 302 </a><br>e-mail.<a href="mailto:biuro@parkpaderewskiego.pl" style="color:  #ffffff;"> biuro@parkpaderewskiego.pl</a><br>  <a href="mailto:sprzedaz@parkpaderewskiego.pl" style="color:  #ffffff;"> sprzedaz@parkpaderewskiego.pl</a><br>www.diamond-hill.com.pl</h5>                                                                           
+    <!-- social media start -->
+  <h5 class="smollText">   Bądź na bieżąco </h5>
+    <a href="https://www.facebook.com/profile.php?id=100092554970321" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/company/diamond-hill-development/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/@ParkPaderewskiegoZawiercie" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/park_paderewskiego_zawiercie/" class="fa fa-instagram"></a>
+  
+  </div>
+    <!-- social media end -->
+    <div class="locationsCenter">    
+    <div class="line"></div>
+    <h5><a style="color:  #ffffff;" href="cookiesPolitics">Polityka cookies</a><br><a style="color:  #ffffff;" href="privacyPolicy">Polityka prywatności</a><br>Copyright © Diamond Hill Development, All Rights Reserved.</h5>
+    </div>
+    </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- popup cookie  start -->
+    <div class="popupCookie"></div>
+<div class="containerCookie">
+    <img class="imageLpp" src="/image/lpp.webp">
+    <div class="headerCookie">
+
+      <h2>Cenimy Twoją prywatność</h2>
+    </div>
+  
+    <div class="textCookie"></div>
+  
+    <div class="buttonsCookie">
+      <button class="button" id="acceptBtn">Akceptuję i przechodzę do strony</button>
+        <button class="button" id="advancedSettings">Ustawienia zaawansowane</button>
+      <button class="button" id="saveBtn">Zapisz</button>
+    </div>
+  </div>
+  <!-- popup cookie  start -->
+
+  
 </body>
- </html>
+</html>

@@ -1,0 +1,764 @@
+
+<html lang="pl" >
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Galeria - Nowoczesne Osiedle w Zawierciu</title>
+<link rel="icon" type="image/jpg" href="image/icone.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script> 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/gallery.css">
+<link rel="stylesheet" type="text/css" href="css/popupCookie.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/script.js" defer></script>
+<script src="js/sendingEmail.js" defer></script>
+<script src="js/popupCookie.js" defer></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','');</script>
+  <!-- End Google Tag Manager -->
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<!-- navbar start -->
+<div class="top">
+  <div class="navbar">
+  <a class="navbar__item logo" href="./">  <img class="navbar__item logo" href="./"><img class="navbar__item logo"  src="image/lpp.webp"></a>
+  <div class="navbar__menu">
+    <a class="navbar__item navbar__link white-border" href="mieszkania">Mieszkania</a>
+    <div class="navbar__item navbar__link dropdown">Parkingi
+    <div class="dropdown-content">
+      <a href="parkingi-naziemne.php">Parkingi Naziemne</a><br>
+      <a href="budynek-b-garaze-podziemne.php">Garaże podziemne B</a>
+      <br>
+      <a href="budynek-c-garaze-podziemne.php">Garaże podziemne C</a>
+      <br>
+      <a href="budynek-a-garaze-podziemne.php">Garaże podziemne A</a>
+    </div>
+    </div>
+  <a class="navbar__item navbar__link" href="galeria">Galeria</a>
+  <a class="navbar__item navbar__link" href="oferta-inwestycyjna">Oferta inwestycyjna</a>
+  <a class="navbar__item navbar__link" href="lifestyle">Lifestyle</a>
+  <a class="navbar__item navbar__link" href="kontakt">Kontakt</a>
+  <a class="navbar__item navbar__link" href="https://diamond-hill.com.pl/">Deweloper</a>
+  </div>
+  <!-- Popup start -->
+  <button id="showPopup">Zapytaj o mieszkania</button>
+  <!-- Popup end -->
+  <span class="hamburger hamburger--collapse navbar__item" id="js-navbar-toggle">
+  <span class="hamburger-box">
+  <span class="hamburger-inner"></span>
+  </span>
+  </span>
+  </div>
+  </div>
+  <div id="popup" class="popup">
+
+  <div class="popup-content">
+    <!-- email  start -->
+    <!-- View information about the sending status start -->
+    <div class="textValue"></div>
+
+       <!-- View information about the sending status end -->
+    <form id="formPopup" class="topBefore" method="post">
+        <input id="text1" class="firstName" type="text" placeholder="Imie" >
+        <input class="email" type="email" placeholder="Emial">
+        <input class="phone" type="number" placeholder="Telefon">
+        <textarea class="message" type="text" placeholder="Dotyczy mieszkania"></textarea>
+        <!-- send request start -->
+        <input class="send" id="submit" type="button" value="Wyślij zapytanie"> 
+          <!-- send request end -->
+          <!-- checkbox start   -->
+          <div class="checkbox-wrapper-32">
+            <input type="checkbox" name="checkbox-32" id="checkbox-32"  class="checkbox0">
+            <label for="checkbox-32">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu i zakresie koniecznym do realizacji zgłoszenia.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+    
+          <div class="checkbox-wrapper-33">
+            <input type="checkbox" name="checkbox-33" id="checkbox-33"  class="checkbox1">
+            <label for="checkbox-33">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu przesyłania mi ofert handlowych na produkty własne spółki drogą elektroniczną.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+    
+    
+    
+          <div class="checkbox-wrapper-34">
+            <input type="checkbox" name="checkbox-34" id="checkbox-34"  class="checkbox2">
+            <label for="checkbox-34">
+            Wyrażam zgodę na przetwarzanie przez Diamond Hill Development Sp. z o.o, moich danych osobowych zawartych w niniejszym formularzu kontaktowym w celu kontaktu telefonicznego ze strony przedstawicieli spółki w sprawach związanych z ofertą handlową na produkty własne.
+            </label>
+     
+            <svg viewBox="0 0 100 100">
+              <path d="M 10 10 L 90 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+              <path d="M 90 10 L 10 90" stroke="#000" stroke-dasharray="113" stroke-dashoffset="113"></path>
+            </svg>
+          </div>
+          <!-- checkbox end   -->
+        
+          <div class="text"></div>
+          <div class="text1"></div>
+          </form>
+            <!-- email  end -->
+         
+        <div class="allAvailableApartmentsAvailable"></div>
+        <span class="close" id="closePopup">X</span>
+        
+        </div>
+        </div>
+  <!-- navbar end -->
+  <!-- title banner start -->
+  
+
+  <header class="galleryHeader">
+    <!-- top and middle of the page start -->
+    <div class="centerLifestyle">
+    <p class="titleTextGallery">Galeria</p>
+    </header>
+   <!-- gallery banner end -->
+  <!-- gallery one start -->
+   <!-- gallery visualization  start -->
+
+   
+
+<section class="add-paddingGallery add-flex">
+  <br><h1 id="galleryText"><br/>WIZUALIZACJE etap 2</h1><br>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/visualization19.webp">
+        <img src="image/visualization19.webp">
+      </a>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/visualization20.webp">
+        <img src="image/visualization20.webp">
+      </a>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/visualization21.webp">
+        <img src="image/visualization21.webp">
+      </a>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/visualization22.webp">
+        <img src="image/visualization22.webp">
+      </a>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/visualization25.webp">
+        <img src="image/visualization25.webp">
+      </a>
+    </div>
+  </div>
+
+ 
+
+  <div class="responsive">
+    <div class="gallery">
+  
+        <img src="image/empty.webp">
+     
+    </div>
+  </div>
+
+
+
+
+
+  <div class="responsive">
+    <div class="gallery">
+    
+        <img src="image/empty.webp">
+   
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+   
+        <img src="image/empty.webp">
+   
+    </div>
+  </div>
+
+
+
+<br><h1 id="galleryText"><br/>WIZUALIZACJE etap 1</h1><br>
+
+
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="image/visualization0.webp">
+    <img src="image/visualization0.webp">
+  </a>
+</div>
+</div>
+
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="image/visualization1.webp">
+    <img src="image/visualization1.webp">
+  </a>
+
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="image/visualization2.webp">
+    <img src="image/visualization2.webp">
+  </a>
+
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="image/visualization3.webp">
+    <img src="image/visualization3.webp">
+  </a>
+
+</div>
+</div>
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="image/visualization4.webp">
+    <img src="image/visualization4.webp">
+  </a>
+
+</div>
+</div>
+
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="image/visualization12.webp">
+    <img src="image/visualization12.webp">
+  </a>
+</div>
+</div>
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="image/visualization17.webp">
+    <img src="image/visualization17.webp">
+  </a>
+</div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+
+      <img src="image/empty.webp">
+    
+  
+  </div>
+  </div>
+
+
+
+   <!-- gallery visualization  end -->
+<br>
+ <!-- gallery apartment  start -->
+<h1 id="galleryText"><br/>MIESZKANIA</h1><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior.jpg">
+      <img src="image/apartment_interior.jpg">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior1.jpg">
+      <img src="image/apartment_interior1.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior2.jpg">
+      <img src="image/apartment_interior2.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior3.jpg">
+      <img src="image/apartment_interior3.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior4.jpg">
+      <img src="image/apartment_interior4.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior5.jpg">
+      <img src="image/apartment_interior5.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior6.jpg">
+      <img src="image/apartment_interior6.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior7.jpg">
+      <img src="image/apartment_interior7.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior8.jpg">
+      <img src="image/apartment_interior8.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior9.jpg">
+      <img src="image/apartment_interior9.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior10.jpg">
+      <img src="image/apartment_interior10.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior11.jpg">
+      <img src="image/apartment_interior11.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior12.jpg">
+      <img src="image/apartment_interior12.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior13.jpg">
+      <img src="image/apartment_interior13.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior20.jpg">
+      <img src="image/apartment_interior20.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior15.jpg">
+      <img src="image/apartment_interior15.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior16.jpg">
+      <img src="image/apartment_interior16.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior17.jpg">
+      <img src="image/apartment_interior17.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior18.jpg">
+      <img src="image/apartment_interior18.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/apartment_interior19.jpg">
+      <img src="image/apartment_interior19.jpg">
+    </a>
+  </div>
+</div>
+</div>
+ <!-- gallery apartment  end -->
+<br>
+ <!-- gallery LIFESTYLE  start -->
+<h1 id="galleryText"><br/>LIFESTYLE</h1><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle0.webp">
+      <img src="image/lifestyle0.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle0.webp">
+      <img src="image/lifestyle0.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle1.webp">
+      <img src="image/lifestyle1.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle2.webp">
+      <img src="image/lifestyle2.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle3.webp">
+      <img src="image/lifestyle3.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle21.webp">
+      <img src="image/lifestyle21.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle5.webp">
+      <img src="image/lifestyle5.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle6.webp">
+      <img src="image/lifestyle6.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle7.webp">
+      <img src="image/lifestyle7.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle8.webp">
+      <img src="image/lifestyle8.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle9.webp">
+      <img src="image/lifestyle9.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle10.webp">
+      <img src="image/lifestyle10.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle11.webp">
+      <img src="image/lifestyle11.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle12.webp">
+      <img src="image/lifestyle12.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle13.webp">
+      <img src="image/lifestyle13.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle20.webp">
+      <img src="image/lifestyle20.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle15.webp">
+      <img src="image/lifestyle15.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle16.webp">
+      <img src="image/lifestyle16.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle17.webp">
+      <img src="image/lifestyle17.webp">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/lifestyle18.webp">
+      <img src="image/lifestyle18.webp">
+    </a>
+  </div>
+</div>
+
+
+</div>
+ <!-- gallery LIFESTYLE  end -->
+<br>
+ <!-- gallery staircase  start -->
+<h1 id="galleryText"><br/>KLATKA SCHODOWA</h1><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase8.webp">
+      <img src="image/staircase8.webp">
+    </a>
+
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase1.webp">
+      <img src="image/staircase1.webp">
+    </a>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase2.webp">
+      <img src="image/staircase2.webp">
+    </a>
+ 
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase3.webp">
+      <img src="image/staircase3.webp">>
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase4.webp">
+      <img src="image/staircase4.webp">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase5.webp">
+      <img src="image/staircase5.webp">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase6.webp">
+      <img src="image/staircase6.webp">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/staircase7.webp">
+      <img src="image/staircase7.webp">
+    </a>
+
+  </div>
+</div>
+
+</div>
+ <!-- gallery staircase  end -->
+  <!-- gallery UNDERGROUND CAR PARK  start -->
+<br><h1 id="galleryText"><br/>PARKING PODZIEMNY</h1><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/underground_garage0.webp">
+      <img src="image/underground_garage0.webp">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/underground_garage1.webp">
+      <img src="image/underground_garage1.webp">
+    </a>
+
+  </div>
+</div>
+</div>
+ <!-- gallery UNDERGROUND CAR PARK end -->
+</section>
+
+
+    
+<!-- footer start -->
+<footer>
+  <div class="locationsAll">
+  <div class="locationsLeft"> 
+  <img src="image/dhd.webp"
+  class="footer_logo">  <h5>DIAMOND HILL DEVELOPMENT jest ogólnopolskim<br>deweloperem segmentu premium. Tworzymy<br>nieruchomości cechujące się najwyższą jakością,<br> innowacyjnymi technologiami, funkcjonalnością i<br>ponadczasowym designem.</h5>
+  <img src="image/pzfd.webp" class="footer_logo">
+  </div>       
+  <div class="locationsRight">  
+  <h5>BIURO SPRZEDAŻY<br>ul.Paderewskiego 63a, 42-400 Zawiercie<br><a href="tel:+48 786 337 302 " style="color: #ffffff;">+48 786 337 302 </a><br>e-mail.<a href="mailto:biuro@parkpaderewskiego.pl" style="color:  #ffffff;"> biuro@parkpaderewskiego.pl</a><br>  <a href="mailto:sprzedaz@parkpaderewskiego.pl" style="color:  #ffffff;"> sprzedaz@parkpaderewskiego.pl</a><br>www.diamond-hill.com.pl</h5>                                                                           
+  <!-- social media start -->
+<h5 class="smollText">   Bądź na bieżąco </h5>
+  <a href="https://www.facebook.com/profile.php?id=100092554970321" class="fa fa-facebook"></a>
+  <a href="https://www.linkedin.com/company/diamond-hill-development/" class="fa fa-linkedin"></a>
+  <a href="https://www.youtube.com/@ParkPaderewskiegoZawiercie" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/park_paderewskiego_zawiercie/" class="fa fa-instagram"></a>
+
+</div>
+  <!-- social media end -->
+  <div class="locationsCenter">    
+  <div class="line"></div>
+  <h5><a style="color:  #ffffff;" href="cookiesPolitics">Polityka cookies</a><br><a style="color:  #ffffff;" href="privacyPolicy">Polityka prywatności</a><br>Copyright © Diamond Hill Development, All Rights Reserved.</h5>
+  </div>
+  </div>
+  </footer>
+  <!-- footer end -->
+
+    <!-- popup cookie  start -->
+    <div class="popupCookie"></div>
+<div class="containerCookie">
+    <img class="imageLpp" src="/image/lpp.webp">
+    <div class="headerCookie">
+
+      <h2>Cenimy Twoją prywatność</h2>
+    </div>
+  
+    <div class="textCookie"></div>
+  
+    <div class="buttonsCookie">
+      <button class="button" id="acceptBtn">Akceptuję i przechodzę do strony</button>
+        <button class="button" id="advancedSettings">Ustawienia zaawansowane</button>
+      <button class="button" id="saveBtn">Zapisz</button>
+    </div>
+  </div>
+  <!-- popup cookie  start -->
+
+
+</body>
+</html>
