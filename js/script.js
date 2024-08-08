@@ -1,77 +1,206 @@
-// navigation bar start
-document.querySelector(".hamburger").addEventListener("click", function() {
-document.querySelector(".hamburger").classList.toggle("is-active");
-document.querySelector(".navbar__menu").classList.toggle("navbar__menu--active");
-document.querySelector(".top").classList.toggle("top--open");
-});
-window.addEventListener("scroll", function() {
-let scroll = window.pageYOffset || document.documentElement.scrollTop;
-if (scroll >= 60) {
-document.querySelector(".top").classList.add("top--scrolling");
-} else {
-document.querySelector(".top").classList.remove("top--scrolling");
-}
-});
-// navigation bar end
 
-// popup start
-document.addEventListener("DOMContentLoaded", function () {
-let showPopupButton = document.getElementById('showPopup');
-let popup = document.getElementById('popup');
-let closePopupButton = document.getElementById('closePopup');
-showPopupButton.addEventListener('click', () => {
-popup.style.display = 'block';
-});
-closePopupButton.addEventListener('click', () => {
-popup.style.display = 'none';
-});
-window.addEventListener('click', (event) => {
-if (event.target === popup) {
-popup.style.display = 'none';
-}
-});
-let form = document.getElementById('form');
-let btn = document.getElementById('button');  
-});
-// popup end
-
-// slides one  start
-let tracking1,rightTracking1,$slider=$(".slideshow .slider"),maxItemsOne=$(".item",$slider).length,draggingOne=!1;for($sliderRight=$(".slideshow").clone().addClass("slideshow-right").appendTo($(".split-slideshow")),reverseItems=(rightItems=$(".item",$sliderRight).toArray()).reverse(),$(".slider",$sliderRight).html(""),i=0;i<maxItemsOne;i++)$(reverseItems[i]).appendTo($(".slider",$sliderRight));function changeSlideOne(){$(".slideshow-left").slick("slickNext")}$slider.addClass("slideshow-left"),$(".slideshow-left").slick({vertical:!0,verticalSwiping:!0,arrows:!1,infinite:!0,dots:!0,speed:1e3,cssEase:"cubic-bezier(0.7, 0, 0.3, 1)"}).on("beforeChange",function(s,e,l,t){l>t&&0==t&&l==maxItemsOne-1?($(".slideshow-right .slider").slick("slickGoTo",-1),$(".slideshow-text").slick("slickGoTo",maxItemsOne)):l<t&&0==l&&t==maxItemsOne-1?($(".slideshow-right .slider").slick("slickGoTo",maxItemsOne),$(".slideshow-text").slick("slickGoTo",-1)):($(".slideshow-right .slider").slick("slickGoTo",maxItemsOne-1-t),$(".slideshow-text").slick("slickGoTo",t))}).on("onclick",function(s){s.preventDefault(),s.deltaX>0||s.deltaY<0?$(this).slick("slickNext"):(s.deltaX<0||s.deltaY>0)&&$(this).slick("slickPrev")}).on("onclick",function(){draggingOne=!0,tracking=parseInt((tracking=$(".slick-track",$slider).css("transform")).split(",")[5]),rightTracking=parseInt((rightTracking=$(".slideshow-right .slick-track").css("transform")).split(",")[5])}).on("onclick",function(){draggingOne&&(diffTracking=(newTracking=parseInt((newTracking=$(".slideshow-left .slick-track").css("transform")).split(",")[5]))-tracking,$(".slideshow-right .slick-track").css({transform:"matrix(1, 0, 0, 1, 0, "+(rightTracking-diffTracking)+")"}))}).on("onclick",function(){draggingOne=!1}),$(".slideshow-right .slider").slick({swipe:!1,vertical:!0,arrows:!1,infinite:!0,speed:950,cssEase:"cubic-bezier(0.7, 0, 0.3, 1)",initialSlideOne:maxItemsOne-1}),$(".slideshow-text").slick({swipe:!1,vertical:!0,arrows:!1,infinite:!0,speed:900,cssEase:"cubic-bezier(0.7, 0, 0.3, 1)"}),setInterval(changeSlideOne,2500);
-// slides one end
-
-// slides dwo start
- let tracking,rightTracking,$sliderTwo=$(".slideshowTwo .sliderTwo"),maxItems=$(".itemTwo",$sliderTwo).length,dragging=!1;for($sliderRight=$(".slideshowTwo").clone().addClass("slideshowTwo-right").appendTo($(".split-slideshowTwo")),reverseItems=(rightItems=$(".itemTwo",$sliderRight).toArray()).reverse(),$(".sliderTwo",$sliderRight).html(""),i=0;i<maxItems;i++)$(reverseItems[i]).appendTo($(".sliderTwo",$sliderRight));function changeSlide(){$(".slideshowTwo-left").slick("slickNext")}$sliderTwo.addClass("slideshowTwo-left"),$(".slideshowTwo-left").slick({vertical:!0,verticalSwiping:!0,arrows:!1,infinite:!0,dots:!0,speed:1e3,cssEase:"cubic-bezier(0.7, 0, 0.3, 1)"}).on("beforeChange",function(s,e,l,t){l>t&&0==t&&l==maxItems-1?($(".slideshowTwo-right .sliderTwo").slick("slickGoTo",-1),$(".slideshowTwo-text").slick("slickGoTo",maxItems)):l<t&&0==l&&t==maxItems-1?($(".slideshowTwo-right .sliderTwo").slick("slickGoTo",maxItems),$(".slideshowTwo-text").slick("slickGoTo",-1)):($(".slideshowTwo-right .sliderTwo").slick("slickGoTo",maxItems-1-t),$(".slideshowTwo-text").slick("slickGoTo",t))}).on("onclick",function(s){s.preventDefault(),s.deltaX>0||s.deltaY<0?$(this).slick("slickNext"):(s.deltaX<0||s.deltaY>0)&&$(this).slick("slickPrev")}).on("onclick",function(){dragging=!0,tracking=parseInt((tracking=$(".slick-track",$sliderTwo).css("transform")).split(",")[5]),rightTracking=parseInt((rightTracking=$(".slideshowTwo-right .slick-track").css("transform")).split(",")[5])}).on("onclick",function(){dragging&&(diffTracking=(newTracking=parseInt((newTracking=$(".slideshowTwo-left .slick-track").css("transform")).split(",")[5]))-tracking,$(".slideshowTwo-right .slick-track").css({transform:"matrix(1, 0, 0, 1, 0, "+(rightTracking-diffTracking)+")"}))}).on("onclick",function(){dragging=!1}),$(".slideshowTwo-right .sliderTwo").slick({swipe:!1,vertical:!0,arrows:!1,infinite:!0,speed:950,cssEase:"cubic-bezier(0.7, 0, 0.3, 1)",initialSlide:maxItems-1}),$(".slideshowTwo-text").slick({swipe:!1,vertical:!0,arrows:!1,infinite:!0,speed:900,cssEase:"cubic-bezier(0.7, 0, 0.3, 1)"}),setInterval(changeSlide,2500);
-// slides dwo end
-
-// carousel start
-let numbers  = 0;
-let imgContainerLifestyle = document.querySelectorAll('.imgContainerLifestyle');
-let imgContainerLifestyle1 = document.querySelectorAll('.imgContainerLifestyle1');
-let imgContainerLifestyle2 = document.querySelectorAll('.imgContainerLifestyle2');
-let imgContainerLifestyle3 = document.querySelectorAll('.imgContainerLifestyle3');
-
-carousel =  () =>
+function ScrollMenu()
 {
-for(let i = 0; i < imgContainerLifestyle.length; i ++)
+  
+    this.aboutMeText =  () =>
+    {
+        this.cooperationText();
+        this.offerText();
+        this.projectsText();
+      
+ 
+
+window.addEventListener("scroll", () => {
+    let scroll = window.pageYOffset || document.documentElement.scrollaboutMeText;
+    if (scroll >= -0) {
+    document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
+    }
+    
+    else {
+    document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
+  
+    }  
+    if(scroll >=130)
+        {
+            document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
+        }
+    });
+    }
+    this.projectsText=  () =>
+    {
+       
+        window.addEventListener("scroll", () => {
+             scroll = window.pageYOffset || document.documentElement.scrollprojectsText;
+
+     if(scroll >=140)
+        {
+            document.querySelector(".projectsText").classList.add("projectsText--scrolling");
+        } 
+        else
+        {
+            document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
+        }
+
+        if(scroll >=1900)   {
+  
+    document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
+    }
+   
+    })
+
+    }
+
+    this.offerText=  () =>
+    {
+     window.addEventListener("scroll", () => {
+         scroll = window.pageYOffset || document.documentElement.scrollofferText;
+
+     if(scroll >= 2000)
+        {
+            document.querySelector(".offerText").classList.add("offerText--scrolling");
+        } 
+        else
+        {
+        document.querySelector(".offerText").classList.remove("offerText--scrolling");
+        }
+        if(scroll >=2600) {
+  
+    document.querySelector(".offerText").classList.remove("offerText--scrolling");
+    }
+  
+    });   
+    }
+
+    this.cooperationText=  () =>
+        {
+         window.addEventListener("scroll", () => {
+             scroll = window.pageYOffset || document.documentElement.scrollcooperationText;
+    
+         if(scroll >= 2620)
+            {
+                document.querySelector(".cooperationText").classList.add("cooperationText--scrolling");
+            } 
+            else
+            {
+            document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
+            }
+            if(scroll >=4000) {
+      
+        document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
+        }
+      
+        });   
+        }
+
+    
+}
+
+let scrollMenuResult = new ScrollMenu();
+scrollMenuResult.aboutMeText();
+
+
+// header carousel start
+let number = 0;
+let consoleLog = document.querySelectorAll('.consoleLog');
+function headerCarousel(){
+
+
+for(let i = 0; i< consoleLog.length; i++)
 {
-  imgContainerLifestyle[i].style.display ="none";
-  imgContainerLifestyle1[i].style.display ="none";
-  imgContainerLifestyle2[i].style.display ="none";
-  imgContainerLifestyle3[i].style.display ="none";
+    consoleLog[i].style.display = 'none';
 }
-numbers ++
-if(numbers >imgContainerLifestyle.length  || numbers >imgContainerLifestyle1.length || numbers >imgContainerLifestyle2.length ||numbers >imgContainerLifestyle3.length)
+    number ++;
+if(number > consoleLog.length)
 {
-  numbers =1
+    number = +1;
 }
-imgContainerLifestyle[ numbers -1].style.display ="block";
-imgContainerLifestyle1[ numbers -1].style.display ="block";
-imgContainerLifestyle2[ numbers -1].style.display ="block";
-imgContainerLifestyle3[ numbers -1].style.display ="block";
+consoleLog[number -1].style.display = 'block';
+setTimeout(headerCarousel,3000);
 
-setTimeout(carousel,4000)
+
+
+};
+
+headerCarousel(number);
+
+    
+
+// header carousel end
+
+// Bar and bar icone start
+
+function Bar()
+{
+
+this.barButton = document.querySelector(".barButton");
+this.menu = document.querySelector(".menu");
+this.optionsMenu = document.querySelector(".optionsMenu");
+
+this.optionsMenu.style.display = "none";
+this.menu.style.display = "none";
+this.openBar = () =>
+    {
+       
+         return this.barButton.addEventListener("click", () =>
+        {
+if( this.menu.style.display == "none" || this.optionsMenu.style.display == "none")
+    {
+        this.menu.style.display = "block";
+        this.optionsMenu.style.display = "block";
+    }
+    else
+    {
+        this.menu.style.display = "none";
+        this.optionsMenu.style.display = "none";
+    }
+    
+            
+        })
+    }
+
 }
 
+let barResult = new Bar();
 
-carousel()
-// carousel end
+    barResult.openBar();
+
+
+
+
+
+
+// Bar and bar icone end
+
+
+
+// landing start 
+
+function landing()
+{
+
+this.landing = document.querySelector("#landing");
+
+this.landing.style.display = "block";
+
+
+this.startLanding = () =>
+    {
+       setTimeout(()=>{
+
+     
+        this.landing.style.display = "none";
+
+       },1000)
+
+    }
+
+}
+
+let landingResult = new landing();
+
+landingResult.startLanding();
+
+
+// landing end 
+
+
