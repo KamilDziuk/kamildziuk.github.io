@@ -65,7 +65,7 @@ body {
   aspect-ratio:1;
   width:calc( 150% * var(--size) );
   
-  background: linear-gradient(259.53deg, #000000 20%, #067fff 60%, #d509c8 10%,#8002ff 10% );
+  background: linear-gradient(259.53deg, #4229ff 20%, #000000 60%, #ffffff 10%,#0a12ff 10% );
   filter:blur( 10vw );
   
   border-radius:50%;

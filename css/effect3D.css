@@ -69,9 +69,9 @@ rotateY(var(--rotateY))
 
 
     --white: hsl(0, 0%, 100%);
-    --green:hsl(153, 77%, 42%);
- --yellow:hsl(59, 100%, 49%);
-    --orange:hsl(39, 100%, 49%);
+    --green:hsl(198, 98%, 43%);
+ --yellow:hsl(180, 100%, 49%);
+    --orange:hsl(249, 100%, 48%);
 }
 
 
@@ -86,8 +86,8 @@ pre
 font-size: 20px;
 font-weight: bold;
 
-background: hsla(221, 44%, 7%, 0);
-padding: 10px;
+background: hsl(221, 44%, 7%);
+padding: 15px;
 margin-bottom: 2%;
 margin-top: 2%;
 margin-left: 2%;
@@ -150,7 +150,7 @@ pre::after
 pre::after
 {
     inset: -2px;
-    background: hsl(222, 45%, 7%);
+    background: hsl(246, 100%, 17%);
      transform: translateZ(-50px);
 
 }
@@ -235,7 +235,33 @@ pre::after
     {
         font-size: 12px;
         width: 78%;
+
+        margin-bottom: 1px;
+        margin-top: 1px;
+        margin-left: 1px;
+        margin-right: 1px;
+
+        
     }
+
+
+    pre::after
+{
+    
+    background: hsla(221, 44%, 7%, 0);
+   
+
+}
+
+#propertyContent
+{
+    
+  margin-bottom: 1px;
+  margin-top: 1px;
+
+    
+}
+
 }
 
 
