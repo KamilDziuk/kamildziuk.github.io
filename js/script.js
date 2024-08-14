@@ -99,33 +99,6 @@ let scrollMenuResult = new ScrollMenu();
 scrollMenuResult.aboutMeText();
 
 
-// header carousel start
-let number = 0;
-let consoleLog = document.querySelectorAll('.consoleLog');
-function headerCarousel(){
-
-
-for(let i = 0; i< consoleLog.length; i++)
-{
-    consoleLog[i].style.display = 'none';
-}
-    number ++;
-if(number > consoleLog.length)
-{
-    number = +1;
-}
-consoleLog[number -1].style.display = 'block';
-setTimeout(headerCarousel,3000);
-
-
-
-};
-
-headerCarousel(number);
-
-    
-
-// header carousel end
 
 // Bar and bar icone start
 

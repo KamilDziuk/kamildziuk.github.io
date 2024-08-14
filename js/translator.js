@@ -21,7 +21,7 @@ let offerPosition = document.querySelector('.offerPosition');
 let cooperationPosition = document.querySelector('.cooperationPosition');
 let certificatesMenu = document.querySelector('.certificatesMenu');
 let baseTextMenu = document.querySelector('.baseTextMenu');
- let consoleLogText = document.querySelector(".consoleLog");
+
 let polishLanguage =  document.querySelector('.polishLanguage');
 
 
@@ -34,7 +34,7 @@ portfolioPosition.innerHTML =`Projects`;
 offerPosition.innerHTML =`Offer`;
 cooperationPosition.innerHTML =`Cooperation`;
 certificatesMenu.innerHTML =`Certificates`;
-baseTextMenu.innerHTML =`My knowledge base`;
+baseTextMenu.innerHTML =`Knowledge base`;
 
 
 
@@ -42,12 +42,12 @@ baseTextMenu.innerHTML =`My knowledge base`;
 
 
 
-aboutMeText.innerHTML = `About me -`;
-projectsText.innerHTML = `Projects --`;
-offerText.innerHTML = `Offer ---`;
-cooperationText.innerHTML = `Cooperation ----`;
+aboutMeText.innerHTML = `About me`;
+projectsText.innerHTML = `Projects`;
+offerText.innerHTML = `Offer`;
+cooperationText.innerHTML = `Cooperation`;
 certificatesText.innerHTML = `Certificates`;
-baseText.innerHTML = `My knowledge base`;
+baseText.innerHTML = `Knowledge base`;
 
 aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several years of professional experience in designing websites and creating applications. I have the skills necessary to further develop in my industry to be able to implement better solutions for your company. Outside of work, I am mainly interested in personal development, business and news in the field of cybersecurity. I am highly motivated to deepen my knowledge and achieve my goals.';
 
@@ -103,7 +103,7 @@ cooperation.innerHTML =`<h3 class="cooperationText" id="cooperationTextMenu"> <d
  
 if(polishLanguage.textContent == 'Polish')
 {
-    consoleLogText.innerHTML = "Koduję Twoje pomysły na sukces w Internecie.";
+   
         polishLanguage.innerHTML = 'English';
 
      aboutMePosition.innerHTML =`O mnie`;
@@ -119,10 +119,10 @@ if(polishLanguage.textContent == 'Polish')
     
     
     
-    aboutMeText.innerHTML = `O mnie -`;
-    projectsText.innerHTML = `Projekty --`;
-    offerText.innerHTML = `Oferta ---`;
-    cooperationText.innerHTML = `Współpraca ----`;
+    aboutMeText.innerHTML = `O mnie`;
+    projectsText.innerHTML = `Projekty`;
+    offerText.innerHTML = `Oferta`;
+    cooperationText.innerHTML = `Współpraca`;
     certificatesText.innerHTML = `Certyfikaty`;
     baseText.innerHTML = `Moja baza wiedzy`;
     
@@ -173,7 +173,7 @@ if(polishLanguage.textContent == 'Polish')
  else if(polishLanguage.textContent == 'English')
     {
     
-    consoleLogText.innerHTML = "I'm coding your ideas for online success.";
+  
         polishLanguage.innerHTML = 'Polish';
     
     
@@ -182,7 +182,7 @@ if(polishLanguage.textContent == 'Polish')
         offerPosition.innerHTML =`Offer`;
         cooperationPosition.innerHTML =`Cooperation`;
         certificatesMenu.innerHTML =`Certificates`;
-        baseTextMenu.innerHTML =`My knowledge base`;
+        baseTextMenu.innerHTML =`Knowledge base`;
         
         
         
@@ -190,12 +190,12 @@ if(polishLanguage.textContent == 'Polish')
         
         
         
-        aboutMeText.innerHTML = `About me -`;
-        projectsText.innerHTML = `Projects --`;
-        offerText.innerHTML = `Offer ---`;
-        cooperationText.innerHTML = `Cooperation ----`;
+        aboutMeText.innerHTML = `About me`;
+        projectsText.innerHTML = `Projects`;
+        offerText.innerHTML = `Offer`;
+        cooperationText.innerHTML = `Cooperation`;
         certificatesText.innerHTML = `Certificates`;
-        baseText.innerHTML = `My knowledge base`;
+        baseText.innerHTML = `Knowledge base`;
         
         aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several years of professional experience in designing websites and creating applications. I have the skills necessary to further develop in my industry to be able to implement better solutions for your company. Outside of work, I am mainly interested in personal development, business and news in the field of cybersecurity. I am highly motivated to deepen my knowledge and achieve my goals.';
         
