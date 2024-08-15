@@ -235,7 +235,7 @@ pre::after
     {
         font-size: 12px;
         width: 78%;
-
+        background: hsla(221, 44%, 7%, 0);
         margin-bottom: 1px;
         margin-top: 1px;
         margin-left: 1px;

@@ -12,7 +12,7 @@ body {
     background-color: rgb(5, 5, 55);
     font-family: 'Courier New', monospace;
     overflow-x: hidden;
-
+    font-weight:300;
 }
 
 
@@ -460,7 +460,10 @@ padding-top: 15px;
 border-radius: 5%;
 }
 
-
+.meImage--scrolling
+{
+  display: none;
+}
 /* scrolling start  */
 .projectsText--scrolling, .offerText--scrolling, .cooperationText--scrolling,.aboutMeText--scrolling
 {

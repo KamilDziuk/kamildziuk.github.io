@@ -8,17 +8,42 @@ function ScrollMenu()
         this.offerText();
         this.projectsText();
       
- 
+        setTimeout(()=>
+            {
+           
+                
+                document.querySelector(".meImage").classList.add("meImage--scrolling");
+              
+                document.querySelector(".aboutMeTextHead").addEventListener("mouseover", () =>
+                    {
+                
+                        document.querySelector(".meImage").classList.remove("meImage--scrolling");
+                    })
+          
+            },3000)
+
+         
 
 window.addEventListener("scroll", () => {
     let scroll = window.pageYOffset || document.documentElement.scrollaboutMeText;
     if (scroll >= -0) {
     document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
+
+
+   
+    setTimeout(()=>
+    {
+   
+
+        document.querySelector(".meImage").classList.add("meImage--scrolling");
+  
+    },3000)
+  
     }
     
     else {
     document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
-  
+    document.querySelector(".meImage").classList.remove("meImage--scrolling");
     }  
     if(scroll >=130)
         {
