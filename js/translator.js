@@ -1,8 +1,8 @@
 
 
-let cooperation = document.querySelector('#cooperation');
+let cooperation = document.querySelector('.cooperation');
 
-let offer = document.querySelector('#offer');
+let offer = document.querySelector('.offer');
 
 
 let aboutMeText = document.querySelector('.aboutMeText');
@@ -59,7 +59,7 @@ aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several yea
 
 
 
-offer.innerHTML = `<h3 class="offerText" id="offerTextMenu"> <div class ="offerTitleText">WWW PAGES </div> <i class="fa fa-desktop" style ="font-size: 30px;"></i><br><br>I design each website in such a way as to maintain harmony between aesthetics and simplicity. It strives to create websites that are not only eye-catching, but also easy to use for users. I emphasize minimalist design, eliminating unnecessary elements and focusing on key aspects, which makes the pages clear and intuitive. Mainly using JavaScript and PHP programming languages<br><br><br><br>
+offer.innerHTML = `<h3 class="offerText" id="offerTextMenu"> <div class ="offerTitleText ">WWW PAGES </div> <i class="fa fa-desktop" style ="font-size: 30px;"></i><br><br>I design each website in such a way as to maintain harmony between aesthetics and simplicity. It strives to create websites that are not only eye-catching, but also easy to use for users. I emphasize minimalist design, eliminating unnecessary elements and focusing on key aspects, which makes the pages clear and intuitive. Mainly using JavaScript and PHP programming languages<br><br><br><br>
     <div class ="offerTitleText">APPS </div> <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Do you need tailored functionality for your website? I will design an application or functionality for you that meets the individual needs of your business. Discover the potential of non-standard solutions and stand out from the competition!.<br><br><br><br>
     <div class ="offerTitleText">TECHNICAL SUPPORT </div>  <i class="fa fa-bug" style ="font-size: 30px;" ></i><br><br>If you want to maintain full control over the health of your website and application, I will be happy to cooperate with you in the field of cybersecurity and technical support.</h3>`;
 

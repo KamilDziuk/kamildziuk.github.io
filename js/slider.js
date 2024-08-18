@@ -22,7 +22,7 @@ setInterval( () =>
     numbers = (numbers < galleryItem.length -3) ?  numbers +1:0;
     gallery(numbers);
 
-},5000)
+},7000)
 
 
 document.querySelector('.top').addEventListener('click', () => {

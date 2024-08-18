@@ -1,4 +1,5 @@
 
+
 function ScrollMenu()
 {
   
@@ -28,8 +29,8 @@ window.addEventListener("scroll", () => {
     let scroll = window.pageYOffset || document.documentElement.scrollaboutMeText;
     if (scroll >= -0) {
     document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
-
-
+    document.querySelector(".aboutMe").classList.add("aboutMe--scrolling");
+  
    
     setTimeout(()=>
     {
@@ -44,10 +45,12 @@ window.addEventListener("scroll", () => {
     else {
     document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
     document.querySelector(".meImage").classList.remove("meImage--scrolling");
+    document.querySelector(".aboutMe").classList.remove("aboutMe--scrolling");
     }  
     if(scroll >=130)
         {
             document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
+            document.querySelector(".aboutMe").classList.remove("aboutMe--scrolling");
         }
     });
     }
@@ -60,13 +63,15 @@ window.addEventListener("scroll", () => {
      if(scroll >=140)
         {
             document.querySelector(".projectsText").classList.add("projectsText--scrolling");
+           
         } 
         else
         {
             document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
+            
         }
 
-        if(scroll >=1900)   {
+        if(scroll >=1199)   {
   
     document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
     }
@@ -80,17 +85,22 @@ window.addEventListener("scroll", () => {
      window.addEventListener("scroll", () => {
          scroll = window.pageYOffset || document.documentElement.scrollofferText;
 
-     if(scroll >= 2000)
+     if(scroll >= 1200)
         {
             document.querySelector(".offerText").classList.add("offerText--scrolling");
+            document.querySelector(".offer").classList.add("offer--scrolling");
+            
         } 
         else
         {
         document.querySelector(".offerText").classList.remove("offerText--scrolling");
+        document.querySelector(".offer").classList.remove("offer--scrolling");
         }
-        if(scroll >=2600) {
+        if(scroll >=2100) {
   
     document.querySelector(".offerText").classList.remove("offerText--scrolling");
+    document.querySelector(".offer").classList.remove("offer--scrolling");
+
     }
   
     });   
@@ -101,17 +111,20 @@ window.addEventListener("scroll", () => {
          window.addEventListener("scroll", () => {
              scroll = window.pageYOffset || document.documentElement.scrollcooperationText;
     
-         if(scroll >= 2620)
+         if(scroll >= 2101)
             {
                 document.querySelector(".cooperationText").classList.add("cooperationText--scrolling");
+                document.querySelector(".cooperation").classList.add("cooperation--scrolling");
             } 
             else
             {
             document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
+            document.querySelector(".cooperation").classList.remove("cooperation--scrolling");
             }
             if(scroll >=4000) {
       
         document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
+        document.querySelector(".cooperation").classList.remove("cooperation--scrolling");
         }
       
         });   
