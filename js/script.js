@@ -1,5 +1,4 @@
 
-
 function ScrollMenu()
 {
   
@@ -26,7 +25,7 @@ function ScrollMenu()
          
 
 window.addEventListener("scroll", () => {
-    let scroll = window.pageYOffset || document.documentElement.scrollaboutMeText;
+    let scroll = window.pageYOffset;
     if (scroll >= -0) {
     document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
     document.querySelector(".aboutMe").classList.add("aboutMe--scrolling");
@@ -58,7 +57,7 @@ window.addEventListener("scroll", () => {
     {
        
         window.addEventListener("scroll", () => {
-             scroll = window.pageYOffset || document.documentElement.scrollprojectsText;
+             scroll = window.pageYOffset;
 
      if(scroll >=140)
         {
@@ -83,7 +82,7 @@ window.addEventListener("scroll", () => {
     this.offerText=  () =>
     {
      window.addEventListener("scroll", () => {
-         scroll = window.pageYOffset || document.documentElement.scrollofferText;
+         scroll = window.pageYOffset;
 
      if(scroll >= 1200)
         {
@@ -109,7 +108,7 @@ window.addEventListener("scroll", () => {
     this.cooperationText=  () =>
         {
          window.addEventListener("scroll", () => {
-             scroll = window.pageYOffset || document.documentElement.scrollcooperationText;
+             scroll = window.pageYOffset;
     
          if(scroll >= 2101)
             {
