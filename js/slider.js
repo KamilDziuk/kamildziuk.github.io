@@ -5,7 +5,7 @@ let numbers = 0;
 function  gallery(index)
 {
     galleryItem.forEach((item, i) => {
-        item.style.transform = `translateY(${(i - index)* 110}%)`;
+        item.style.transform = `translateY(${(i - index)* 115}%)`;
         item.style.opacity = i  === index ? 1: 0.3;
     });
 
