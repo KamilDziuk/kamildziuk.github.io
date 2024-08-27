@@ -26,7 +26,7 @@ function ScrollMenu()
 
 window.addEventListener("scroll", () => {
     let scroll = window.pageYOffset;
-    if (scroll >= -0) {
+    if (scroll >= document.querySelector("#aboutMePosition").offsetTop) {
     document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
     document.querySelector(".aboutMe").classList.add("aboutMe--scrolling");
   
@@ -46,7 +46,7 @@ window.addEventListener("scroll", () => {
     document.querySelector(".meImage").classList.remove("meImage--scrolling");
     document.querySelector(".aboutMe").classList.remove("aboutMe--scrolling");
     }  
-    if(scroll >=130)
+    if(scroll >= document.querySelector("#portfolioPosition").offsetTop - 100)
         {
             document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
             document.querySelector(".aboutMe").classList.remove("aboutMe--scrolling");
@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
         window.addEventListener("scroll", () => {
              scroll = window.pageYOffset;
 
-     if(scroll >=140)
+     if(scroll >= document.querySelector("#portfolioPosition").offsetTop)
         {
             document.querySelector(".projectsText").classList.add("projectsText--scrolling");
            
@@ -70,7 +70,7 @@ window.addEventListener("scroll", () => {
             
         }
 
-        if(scroll >=1199)   {
+        if(scroll >= document.querySelector("#offerPosition").offsetTop)   {
   
     document.querySelector(".projectsText").classList.remove("projectsText--scrolling");
     }
@@ -84,7 +84,7 @@ window.addEventListener("scroll", () => {
      window.addEventListener("scroll", () => {
          scroll = window.pageYOffset;
 
-     if(scroll >= 1200)
+     if(scroll >=document.querySelector("#offerPosition").offsetTop)
         {
             document.querySelector(".offerText").classList.add("offerText--scrolling");
             document.querySelector(".offer").classList.add("offer--scrolling");
@@ -95,7 +95,7 @@ window.addEventListener("scroll", () => {
         document.querySelector(".offerText").classList.remove("offerText--scrolling");
         document.querySelector(".offer").classList.remove("offer--scrolling");
         }
-        if(scroll >=2100) {
+        if(scroll >=  document.querySelector("#cooperationPosition").offsetTop) {
   
     document.querySelector(".offerText").classList.remove("offerText--scrolling");
     document.querySelector(".offer").classList.remove("offer--scrolling");
@@ -110,7 +110,7 @@ window.addEventListener("scroll", () => {
          window.addEventListener("scroll", () => {
              scroll = window.pageYOffset;
     
-         if(scroll >= 2101)
+         if(scroll >= document.querySelector("#cooperationPosition").offsetTop)
             {
                 document.querySelector(".cooperationText").classList.add("cooperationText--scrolling");
                 document.querySelector(".cooperation").classList.add("cooperation--scrolling");
@@ -120,7 +120,7 @@ window.addEventListener("scroll", () => {
             document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
             document.querySelector(".cooperation").classList.remove("cooperation--scrolling");
             }
-            if(scroll >=4000) {
+            if(scroll >= document.querySelector("#cooperationPosition").offsetTop + 150) {
       
         document.querySelector(".cooperationText").classList.remove("cooperationText--scrolling");
         document.querySelector(".cooperation").classList.remove("cooperation--scrolling");
