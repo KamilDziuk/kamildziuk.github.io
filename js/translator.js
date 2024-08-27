@@ -13,6 +13,7 @@ let certificatesText = document.querySelector('.certificatesText');
 let baseText = document.querySelector('.baseText');
 let optionsMenu = document.querySelector('#optionsMenu');
 let aboutMeTextHead = document.querySelector('.aboutMeTextHead');
+let textHead = document.querySelector('.textHead');
 
 
 let aboutMePosition = document.querySelector('.aboutMePosition');
@@ -48,6 +49,8 @@ offerText.innerHTML = `Offer`;
 cooperationText.innerHTML = `Cooperation`;
 certificatesText.innerHTML = `Certificates`;
 baseText.innerHTML = `Knowledge base`;
+
+textHead.innerHTML ="Websites & Web Applications";
 
 aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several years of professional experience in designing websites and creating applications. I have the skills necessary to further develop in my industry to be able to implement better solutions for your company. Outside of work, I am mainly interested in personal development, business and news in the field of cybersecurity. I am highly motivated to deepen my knowledge and achieve my goals.';
 
@@ -114,7 +117,7 @@ if(polishLanguage.textContent == 'Polish')
     baseTextMenu.innerHTML =`Moja baza wiedzy`;
     
     
-    
+    textHead.innerHTML ="Strony Internetowe <br>& Aplikacje Webowe";
     
     
     
@@ -176,7 +179,7 @@ if(polishLanguage.textContent == 'Polish')
   
         polishLanguage.innerHTML = 'Polish';
     
-    
+        textHead.innerHTML ="Websites & Web Applications";
         aboutMePosition.innerHTML =`About me`;
         portfolioPosition.innerHTML =`Projects`;
         offerPosition.innerHTML =`Offer`;
