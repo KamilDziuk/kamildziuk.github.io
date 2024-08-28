@@ -315,7 +315,10 @@ font-size: 30px;
 
 }
 
-
+.colorLink
+{
+  color: hsl(249, 100%, 48%);
+}
 
 /* icon end */
 
@@ -566,7 +569,7 @@ position: absolute;
  .menu
  {
    position: fixed;
-   background: rgba(0, 0, 0, 0.699);
+   background: rgb(0, 0, 0);
 
    border-style: none;
    top: 0%;

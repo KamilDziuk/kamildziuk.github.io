@@ -5,8 +5,8 @@ let numbers = 0;
 function  gallery(index)
 {
     galleryItem.forEach((item, i) => {
-        item.style.transform = `translateY(${(i - index)* 115}%)`;
-        item.style.opacity = i  === index ? 1: 0.3;
+        item.style.transform = `translateY(${(i - index)* 107}%)`;
+      
     });
 
     
@@ -63,7 +63,7 @@ function  propertyText(index)
 {
     property.forEach((item, i) => {
         item.style.transform = `translateY(${(i - index)* 110}%)`;
-        item.style.opacity = i  === index ? 1: 0.3;
+        
     });
 
     
