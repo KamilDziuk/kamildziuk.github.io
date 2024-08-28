@@ -325,8 +325,9 @@ font-size: 30px;
 /* Portfolio Image start */
 .portfolioImage {
   position: absolute;
-  width: 50%;
-  height: 280px;
+  
+  width: 600px;
+  height: 338px;
   border-radius: 5%;
   transition: transform 3s ease, opacity 0.3s ease;
 }
