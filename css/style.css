@@ -329,7 +329,7 @@ font-size: 30px;
   width: 600px;
   height: 338px;
   border-radius: 5%;
-  transition: transform 3s ease, opacity 0.3s ease;
+ 
 }
 
 .portfolioImage:hover {
