@@ -2,7 +2,7 @@ let galleryItem = document.querySelectorAll('.portfolioImage');
 function  gallery(index)
 {
     galleryItem.forEach((item, i) => {
-        item.style.transform = `translateY(${(i - index)* 115}%)`;
+        item.style.transform = `translateY(${(i - index)* 105}%)`;
       
     });
 
@@ -10,6 +10,9 @@ function  gallery(index)
 };
 let numbers = 0;
 let moveGallery;
+numbers = (numbers < galleryItem.length -3) ?  numbers +1:0;
+gallery(numbers);
+
 goSlider = () => {
  moveGallery = setInterval( () =>
     {
@@ -21,7 +24,7 @@ goSlider = () => {
 }
 goSlider();
 galleryItem.forEach(element => {
-    element.style.transition = "transform 3s ease";
+    element.style.transition = "transform 20s ease";
 });
 
 galleryItem.forEach(element2 => {
@@ -98,13 +101,15 @@ function  propertyText(index)
     
 };
 let moveGalleryBar;
+propertyNumbers = (propertyNumbers < property.length -1) ?  propertyNumbers +1:0;
+propertyText(propertyNumbers);
 goSliderBar = () => {
  moveGalleryBar = setInterval( () =>
 {
     propertyNumbers = (propertyNumbers < property.length -1) ?  propertyNumbers +1:0;
     propertyText(propertyNumbers);
 
-},5000)
+},3500)
 }
 goSliderBar();
 property.forEach(element2 => {

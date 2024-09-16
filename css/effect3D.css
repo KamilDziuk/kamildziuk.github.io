@@ -33,7 +33,7 @@ rotateY(var(--rotateY))
     
 }
 
-.property
+.property, .slogan
 {
     position: absolute;
 
@@ -72,12 +72,15 @@ rotateY(var(--rotateY))
     --green:hsl(198, 98%, 43%);
  --yellow:hsl(180, 100%, 49%);
     --orange:hsl(249, 100%, 48%);
+    --randomColor:hsl(130, 100%, 50%);
 }
 
 
 pre
 {
+    
 --log: var(--green);
+--slogan: var(--randomColor);
 --console: var(--white);
 --colon: var(--white);
 --bracket: var(--yellow);
@@ -126,6 +129,10 @@ color: var(--log);
 .property
 {
     color: var(--property); 
+}
+.slogan
+{
+    color: var(--slogan); 
 }
 .console
 {
