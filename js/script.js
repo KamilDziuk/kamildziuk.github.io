@@ -251,28 +251,33 @@ let interval0 = setInterval(()=>{
 
     let showText = randomTable[Math.floor(Math.random() * randomTable.length)];
 
-    if(showText == "D")
+  
+        setTimeout( () =>
         {
+            showText = "D";
+            landingText0.innerHTML = showText;
             clearInterval(interval0)
-        }
-    landingText0.innerHTML = showText;
+        },1500)
+        landingText0.innerHTML = showText;
 
-},40)
+},110)
 
 
 let interval1 = setInterval(()=>{
 
 
     let showText1   = randomTable[Math.floor(Math.random() * randomTable.length)];
-    if(showText1 == "z")
-        {
-            clearInterval(interval1)
-        }
-    
-  
-    landingText1.innerHTML = showText1;
 
-},40)
+        setTimeout( () =>
+            {
+                showText1= "z";
+                clearInterval(interval1)
+                landingText1.innerHTML = showText1;
+            },1500)
+  
+            landingText1.innerHTML = showText1;
+
+},110)
 
 
 
@@ -283,30 +288,35 @@ let interval2 =  setInterval(()=>{
     let showText2= randomTable[Math.floor(Math.random() * randomTable.length)];
 
  
-    if(showText2 == "i")
-        {
-            clearInterval(interval2)
-        }
-    landingText2.innerHTML = showText2;
 
 
-},90)
+        setTimeout( () =>
+            {
+                showText2= "i";
+                landingText2.innerHTML = showText2;
+                clearInterval(interval2)
+            },1500)
+            landingText2.innerHTML = showText2;
+
+
+},110)
 
 let interval3 = setInterval(()=>{
 
    
     let showText3= randomTable[Math.floor(Math.random() * randomTable.length)];
        
-    if(showText3 == "u")
-        {
-            clearInterval(interval3)
-        }
-        
 
-  
-    landingText3.innerHTML = showText3;
+        setTimeout( () =>
+            {
+                showText3 = "u";
+                landingText3.innerHTML = showText3;
+                clearInterval(interval3)
+            },1500)
+            landingText3.innerHTML = showText3;
 
-},80)
+
+},110)
 
 
 
@@ -316,12 +326,17 @@ let interval4 =  setInterval(()=>{
   
     let showText4= randomTable[Math.floor(Math.random() * randomTable.length)];
 
-    if(showText4 == "k")
-        {
+
+        setTimeout( () =>
+            {
+                showText4 = "k";
+                landingText4.innerHTML = showText4;
+                
             clearInterval(interval4)
-        }
-        
-    landingText4.innerHTML = showText4;
-},10)
+            },1500)
+       
+            landingText4.innerHTML = showText4;
+           
+},110)
 
 //random slogan end
