@@ -72,7 +72,7 @@ rotateY(var(--rotateY))
     --green:hsl(198, 98%, 43%);
  --yellow:hsl(180, 100%, 49%);
     --orange:hsl(249, 100%, 48%);
-    --randomColor:hsl(130, 100%, 50%);
+    --randomColor:hsl(0, 0%, 100%);
 }
 
 

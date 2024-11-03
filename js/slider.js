@@ -10,36 +10,34 @@ function  gallery(index)
 };
 let numbers = 0;
 let moveGallery;
-numbers = (numbers < galleryItem.length -3) ?  numbers +1:0;
-gallery(numbers);
 
 goSlider = () => {
  moveGallery = setInterval( () =>
     {
-        numbers = (numbers < galleryItem.length -3) ?  numbers +1:0;
+        numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
         gallery(numbers);
-    
-    },4000);
+     
+    },4500);
     
 }
 goSlider();
 galleryItem.forEach(element => {
-    element.style.transition = "transform 20s ease";
+    element.style.transition = "transform 4.5s ease";
 });
 
-galleryItem.forEach(element2 => {
-    element2.addEventListener("mouseleave", ()=> {
+// galleryItem.forEach(element2 => {
+//     element2.addEventListener("mouseleave", ()=> {
        
-        goSlider();
-     })
-});
-normalMove = () => 
+//         goSlider();
+//      })
+// });
+// normalMove = () => 
 
-    {
-        galleryItem.forEach(element1 => {
-            element1.style.transition = "transform 3s ease";
-        });
-    }
+//     {
+//         galleryItem.forEach(element1 => {
+//             element1.style.transition = "transform 4.5s ease";
+//         });
+//     }
 
 
 
@@ -60,28 +58,31 @@ galleryItem.forEach(element => {
 });
 document.querySelector('.top').addEventListener('click', () => {
 numbers = (numbers < galleryItem.length - 1)? numbers + 1: 0;
-normalMove();
+
+// normalMove();
 gallery(numbers);
 clearTimeout(moveGallery);
 });
 
 document.querySelector('.buttom').addEventListener('click', () => {
 numbers = (numbers > 0) ? numbers -1: galleryItem.length -1;
-normalMove();
+// normalMove();
 clearTimeout(moveGallery);
 gallery(numbers);
 });
 
 document.querySelector('.top').addEventListener('mouseleave', () => {
-    goSlider();
+    clearTimeout(moveGallery);
+
 });
 
 
 document.querySelector('.buttom').addEventListener('mouseleave', () => {
-    goSlider();
+    clearTimeout(moveGallery);
+    
 });
 
-gallery(numbers);
+
 
 
 
