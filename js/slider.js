@@ -22,7 +22,7 @@ goSlider = () => {
 }
 goSlider();
 galleryItem.forEach(element => {
-    element.style.transition = "transform 4.5s ease";
+    element.style.transition = "transform 3.5s ease";
 });
 
 // galleryItem.forEach(element2 => {
