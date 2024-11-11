@@ -63,7 +63,7 @@ aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several yea
 
 
 offer.innerHTML = `<h3 class="offerText" id="offerTextMenu"> <div class ="offerTitleText ">WWW PAGES </div> <i class="fa fa-desktop" style ="font-size: 30px;"></i><br><br>I design each website in such a way as to maintain harmony between aesthetics and simplicity. It strives to create websites that are not only eye-catching, but also easy to use for users. I emphasize minimalist design, eliminating unnecessary elements and focusing on key aspects, which makes the pages clear and intuitive. Mainly using JavaScript and PHP programming languages<br><br><br><br>
-    <div class ="offerTitleText">APPS </div> <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Do you need tailored functionality for your website? I will design an application or functionality for you that meets the individual needs of your business. Discover the potential of non-standard solutions and stand out from the competition!.<br><br><br><br>
+    <div class ="offerTitleText">WEB APP </div> <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Do you need tailored functionality for your website? I will design an application or functionality for you that meets the individual needs of your business. Discover the potential of non-standard solutions and stand out from the competition!<br><br><br><br>
     <div class ="offerTitleText">TECHNICAL SUPPORT </div>  <i class="fa fa-bug" style ="font-size: 30px;" ></i><br><br>If you want to maintain full control over the health of your website and application, I will be happy to cooperate with you in the field of cybersecurity and technical support.</h3>`;
 
 
@@ -139,7 +139,7 @@ if(polishLanguage.textContent == 'Polish')
     
 
     offer.innerHTML = `<h3 class="offerText" id="offerTextMenu"> <div class ="offerTitleText">STRONY WWW </div> <i class="fa fa-desktop" style ="font-size: 30px;"></i><br><br>Każdą stronę internetową projektuję tak, aby zachować harmonię pomiędzy estetyką i prostotą. Stara się tworzyć strony internetowe, które nie tylko przyciągają wzrok, ale są również łatwe w obsłudze dla użytkowników. Stawiam na minimalistyczny design, eliminując niepotrzebne elementy i skupiając się na kluczowych aspektach, dzięki czemu strony są przejrzyste i intuicyjne. Głównie przy użyciu języków programowania JavaScript oraz PHP<br><br><br><br>
- <div class ="offerTitleText">APLIKACJE </div> <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Potrzebujesz funkcjonalności dostosowanej do Twojej witryny? Zaprojektuję dla Ciebie aplikację lub funkcjonalność dostosowaną do indywidualnych potrzeb Twojego biznesu. Odkryj potencjał niestandardowych rozwiązań i wyróżnij się na tle konkurencji!.<br><br><br><br>
+ <div class ="offerTitleText">APLIKACJE </div> <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Potrzebujesz funkcjonalności dostosowanej do Twojej witryny? Zaprojektuję dla Ciebie aplikację lub funkcjonalność dostosowaną do indywidualnych potrzeb Twojego biznesu. Odkryj potencjał niestandardowych rozwiązań i wyróżnij się na tle konkurencji!<br><br><br><br>
      <div class ="offerTitleText">WSPARCIE TECHNICZNE </div>  <i class="fa fa-bug" style ="font-size: 30px;" ></i><br><br>Jeśli pragniesz utrzymać pełną kontrolę nad stanem swojej strony internetowej i aplikacji, z przyjemnością nawiążę z Tobą współpracę w zakresie cyberbezpieczeństwa oraz wsparcia technicznego.</h3>`;
     
     
@@ -212,7 +212,7 @@ if(polishLanguage.textContent == 'Polish')
    
 
 offer.innerHTML = `<h3 class="offerText" id="offerTextMenu"> <div class ="offerTitleText">WWW PAGES </div> <i class="fa fa-desktop" style ="font-size: 30px;"></i><br><br>I design each website in such a way as to maintain harmony between aesthetics and simplicity. It strives to create websites that are not only eye-catching, but also easy to use for users. I emphasize minimalist design, eliminating unnecessary elements and focusing on key aspects, which makes the pages clear and intuitive. Mainly using JavaScript and PHP programming languages<br><br><br><br>
-<div class ="offerTitleText">APPS </div> <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Do you need tailored functionality for your website? I will design an application or functionality for you that meets the individual needs of your business. Discover the potential of non-standard solutions and stand out from the competition!.<br><br><br><br>
+<div class ="offerTitleText">WEB APP </div> <i  class="fa fa-code" style ="font-size: 30px;"></i><br><br>Do you need tailored functionality for your website? I will design an application or functionality for you that meets the individual needs of your business. Discover the potential of non-standard solutions and stand out from the competition!<br><br><br><br>
 <div class ="offerTitleText">TECHNICAL SUPPORT </div>  <i class="fa fa-bug" style ="font-size: 30px;" ></i><br><br>If you want to maintain full control over the health of your website and application, I will be happy to cooperate with you in the field of cybersecurity and technical support.</h3>`;
 
 

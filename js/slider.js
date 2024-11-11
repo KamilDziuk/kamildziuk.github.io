@@ -8,21 +8,25 @@ function  gallery(index)
 
     
 };
+slideStretch = () =>
+{
+    numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
+    gallery(numbers);
+}
 let numbers = 0;
 let moveGallery;
-
+slideStretch();
 goSlider = () => {
  moveGallery = setInterval( () =>
     {
-        numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
-        gallery(numbers);
+        slideStretch();
      
-    },4500);
+    },3000);
     
 }
 goSlider();
 galleryItem.forEach(element => {
-    element.style.transition = "transform 3.5s ease";
+    element.style.transition = "transform 5.5s ease";
 });
 
 // galleryItem.forEach(element2 => {
