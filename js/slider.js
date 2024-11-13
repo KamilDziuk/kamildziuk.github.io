@@ -21,7 +21,7 @@ goSlider = () => {
     {
         slideStretch();
      
-    },3000);
+    },4500);
     
 }
 goSlider();
@@ -114,7 +114,7 @@ goSliderBar = () => {
     propertyNumbers = (propertyNumbers < property.length -1) ?  propertyNumbers +1:0;
     propertyText(propertyNumbers);
 
-},3500)
+},4500)
 }
 goSliderBar();
 property.forEach(element2 => {
