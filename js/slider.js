@@ -21,7 +21,7 @@ goSlider = () => {
     {
         slideStretch();
      
-    },4500);
+    },4300);
     
 }
 goSlider();
