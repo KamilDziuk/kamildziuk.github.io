@@ -358,25 +358,27 @@ opacity: 1;
 
 .top
 {
-position: relative;
-
-transform: translateX(-50);
-left: 71%;
-padding: 10px;
+  
+position: absolute;
+background-color: rgba(255, 255, 255, 0);
+width: 600px;
+height: 1px;
 color:#ffffff8a;
 text-align:center;
+z-index: 1;
 }
 
 .buttom
 {
-  position: relative;
-margin-top: 0px;
-transform: translateX(-50);
-left: 71%;
-padding: 10px;
-color:#ffffff8a;
  
-text-align:center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  width: 600px;
+top: 95.8%;
+  height: 1px;
+  color:#ffffff8a;
+  text-align:center;
+  z-index: 1;
 }
 
 .top:hover, .buttom:hover
@@ -731,11 +733,8 @@ margin-top: -12%;
 
 .buttom,.top
 {
- 
-margin-top:0px;
-transform: translateX(-50%);
-left: 50%;
-
+ width: 100%;
+ right: 0;
 }
 
     .blockImage0,
@@ -791,3 +790,4 @@ left: 50%;
 
 
 }
+
