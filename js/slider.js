@@ -114,7 +114,7 @@ goSliderBar = () => {
     propertyNumbers = (propertyNumbers < property.length -1) ?  propertyNumbers +1:0;
     propertyText(propertyNumbers);
 
-},4600)
+},4500)
 }
 goSliderBar();
 property.forEach(element2 => {
