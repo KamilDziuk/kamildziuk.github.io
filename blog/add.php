@@ -11,9 +11,6 @@ $tmt = $pdo -> prepare($sql);
 $tmt -> bindParam(':first_name', $first_name);
 $tmt -> bindParam(':pwd', $pwd);
 $tmt -> bindParam(':email', $email);
-
-
-
 $tmt -> execute();
 
 }
