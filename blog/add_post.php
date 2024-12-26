@@ -6,9 +6,8 @@
     <title>Add Post</title>
 
     <form action="add.php" method="POST">
-<input type="text" class="first_name" name="first_name">
-<input type="text" class="pwd" name="pwd">
-<input type="text" class="email" name="email">
+<input type="text" class="title" name="title">
+<input type="text" class="post" name="post">
 <input type="submit" value="submit">
 
 

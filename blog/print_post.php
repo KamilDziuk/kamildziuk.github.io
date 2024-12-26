@@ -9,22 +9,16 @@
     <div class="displayUseres"></div>
 <?php require "../blog/get_post.php"; ?>
 <script>
- let users = <?php echo json_encode($users); ?>
+ let blog = <?php echo json_encode($blog); ?>
 
 
-let getUsers = users.map( users1 => {
-   return `<br>${users1.first_name }<br>
-   ${users1.pwd }<br>
-   ${users1.email }<br>
-   ${users1.auto_date }<br>`;
+let getblog = blog.map( blog1 => {
+   return `<br>${blog1.title }<br>
+   ${blog1.post }<br>
+   ${blog1.date }<br>`;
 }
 )
-document.querySelector(".displayUseres").innerHTML = getUsers;
-
-
-
-
+document.querySelector(".displayUseres").innerHTML = getblog;
 </script>
-
 </body>
 </html>

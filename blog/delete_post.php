@@ -1,15 +1,15 @@
 <?php
 require "../db/config/config.php";
-$first_name = $_POST['first_name'];
-$sql = "DELETE FROM users WHERE =':first_name';";
+$title = $_POST['title'];
+$sql = "DELETE FROM blog WHERE =':title';";
 
 
 
 $tmt = $pdo -> prepare($sql);
-$tmt -> bindParam(':first_name', $first_name);
+$tmt -> bindParam(':title', $title);
 
 $tmt -> execute();
-$users = $tmt -> fetchAll(PDO::FETCH_ASSOC);
+$blog = $tmt -> fetchAll(PDO::FETCH_ASSOC);
 $tmt = null;
 $pdo = null;
 ?>
