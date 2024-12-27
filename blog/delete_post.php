@@ -7,15 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete post</title>
 
-    <form action="delete.php" method="POST">
+<form action="delete.php" method="POST">
 <input type="text" class="title" name="title">
 <input type="submit" value="submit">
-
-
-
-
-
-    </form>
+</form>
     
     
  
