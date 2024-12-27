@@ -1,17 +1,26 @@
-<?php
-require "../db/config/config.php";
-$title = $_POST['title'];
-$sql = "DELETE FROM blog WHERE =':title';";
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete post</title>
+
+    <form action="delete.php" method="POST">
+<input type="text" class="title" name="title">
+<input type="submit" value="submit">
 
 
 
-$tmt = $pdo -> prepare($sql);
-$tmt -> bindParam(':title', $title);
-
-$tmt -> execute();
-$blog = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$tmt = null;
-$pdo = null;
-?>
 
 
+    </form>
+    
+    
+ 
+</head>
+
+    
+</body>
+</html>

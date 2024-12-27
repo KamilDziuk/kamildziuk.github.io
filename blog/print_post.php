@@ -12,10 +12,10 @@
  let blog = <?php echo json_encode($blog); ?>
 
 
-let getblog = blog.map( blog1 => {
-   return `<br>${blog1.title }<br>
-   ${blog1.post }<br>
-   ${blog1.date }<br>`;
+let getblog = blog.map( blogContent => {
+   return `<br>${blogContent.title }<br>
+   ${blogContent.post }<br>
+   ${blogContent.date }<br>`;
 }
 )
 document.querySelector(".displayUseres").innerHTML = getblog;
