@@ -1,0 +1,52 @@
+body {
+    
+    margin: 0;
+
+    
+    background-color: bisque;
+
+    background-repeat: no-repeat;
+
+
+
+    z-index: 94;
+    }
+    #printPostBox
+    {
+        transform: translateX(-50%);
+        left: 50%;
+        display: flex ;
+        position: absolute;
+     
+    }
+    #printPost
+    {
+   
+        padding: 1%;
+     font-size: 25px;
+        background-color: #2424246a;
+        color: #fff;
+ 
+        z-index: 95;
+    }
+
+
+    @media(max-width:400px){
+        #printPost
+        {
+    
+         font-size: 17px;
+
+        }
+        
+        }  
+
+        @media(max-width:250px){
+            #printPost
+            {
+        
+             font-size: 17px;
+    
+            }
+            
+            }  
