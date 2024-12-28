@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Delete post</title>
-
-<form action="delete.php" method="POST">
-<input type="text" class="title" name="title">
+    <title>Search post</title>
+<?php 
+?>
+<form action="search.php" method="POST">
+<input type="text" class="search" name="search">
 <input type="submit" value="submit">
 </form>
     

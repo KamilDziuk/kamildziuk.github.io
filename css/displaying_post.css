@@ -1,20 +1,23 @@
-body {
-    
+*
+{ 
     margin: 0;
+    padding: 0;
+}
+html,
+body {
+    color: #ffffff;
+    background-color: rgb(5, 5, 55);
+    font-family: 'Courier New', monospace;
+    overflow-x: hidden;
+    font-weight:300;
+}
 
-    
-    background-color: bisque;
-
-    background-repeat: no-repeat;
-
-
-
-    z-index: 94;
-    }
-    #printPostBox
-    {
-        transform: translateX(-50%);
-        left: 50%;
+#printPostBox
+{
+transform: translateX(-50%);
+left: 50%;
+width: 80%;
+padding: 2%;
         display: flex ;
         position: absolute;
      
@@ -26,7 +29,8 @@ body {
      font-size: 25px;
         background-color: #2424246a;
         color: #fff;
- 
+ text-align: left;
+ width: 100%;
         z-index: 95;
     }
 
