@@ -4,7 +4,7 @@ let cooperation = document.querySelector('.cooperation');
 
 let offer = document.querySelector('.offer');
 
-
+let textContributions = document.querySelector('.textContributions');
 let aboutMeText = document.querySelector('.aboutMeText');
 let projectsText = document.querySelector('.projectsText');
 let offerText = document.querySelector('.offerText');
@@ -37,10 +37,10 @@ cooperationPosition.innerHTML =`Cooperation`;
 certificatesMenu.innerHTML =`Certificates`;
 baseTextMenu.innerHTML =`Knowledge base`;
 
+aboutMePosition.innerHTML =`About me`;
 
 
-
-
+textContributions.innerHTML =`Contributions in the last year`;
 
 
 aboutMeText.innerHTML = `About me`;
@@ -121,6 +121,7 @@ if(polishLanguage.textContent == 'Polish')
     
     
     
+textContributions.innerHTML =`Wkłady w ostatnim roku`;
     
     aboutMeText.innerHTML = `O mnie`;
     projectsText.innerHTML = `Projekty`;
@@ -187,7 +188,7 @@ if(polishLanguage.textContent == 'Polish')
         certificatesMenu.innerHTML =`Certificates`;
         baseTextMenu.innerHTML =`Knowledge base`;
         
-        
+        textContributions.innerHTML =`Contributions in the last year`;
         
         
         
