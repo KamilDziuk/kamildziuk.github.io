@@ -10,7 +10,7 @@ function  gallery(index)
 };
 slideStretch = () =>
 {
-    numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
+    numbers = (numbers < galleryItem.length -2.5) ?  numbers +1:0;
     gallery(numbers);
 }
 let numbers = 0;
@@ -61,7 +61,7 @@ galleryItem.forEach(element => {
 })
 });
 document.querySelector('.top').addEventListener('click', () => {
-numbers = (numbers < galleryItem.length - 1)? numbers + 1: 0;
+numbers = (numbers < galleryItem.length - 2)? numbers + 1: 0;
 
 // normalMove();
 gallery(numbers);
@@ -69,7 +69,7 @@ clearTimeout(moveGallery);
 });
 
 document.querySelector('.buttom').addEventListener('click', () => {
-numbers = (numbers > 0) ? numbers -1: galleryItem.length -1;
+numbers = (numbers > 0) ? numbers -1: galleryItem.length -2;
 // normalMove();
 clearTimeout(moveGallery);
 gallery(numbers);
@@ -106,12 +106,12 @@ function  propertyText(index)
     
 };
 let moveGalleryBar;
-propertyNumbers = (propertyNumbers < property.length -1) ?  propertyNumbers +1:0;
+propertyNumbers = (propertyNumbers < property.length -2) ?  propertyNumbers +1:0;
 propertyText(propertyNumbers);
 goSliderBar = () => {
  moveGalleryBar = setInterval( () =>
 {
-    propertyNumbers = (propertyNumbers < property.length -1) ?  propertyNumbers +1:0;
+    propertyNumbers = (propertyNumbers < property.length -2) ?  propertyNumbers +1:0;
     propertyText(propertyNumbers);
 
 },4500)
