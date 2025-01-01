@@ -14,6 +14,11 @@ src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit
 
 </head>
 <body>  
+  <?php 
+  
+  require "get_content.php";
+  
+  ?>
 <!-- elemnt  to google translate start -->
 <div id="google_translate_element"></div>
 <!-- elemnt  to google translate end -->
@@ -53,9 +58,7 @@ Using the buttons you can draw a question or a trivia
 Before adding another item, you must enter your password <input class="passwordInput" type="password" placeholder="Password"><br><br>
 <div class="passwordAlert"></div>
 <!-- View questions and answers end -->
-<?php
-require_once 'configFunction.php';
-?>
+
 <script>
  //  Downloading data from the database start  
 let questionsApp = <?php echo json_encode($questionsApp);?> 
