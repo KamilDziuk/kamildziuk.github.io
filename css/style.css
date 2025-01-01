@@ -472,28 +472,16 @@ margin-bottom: 5px;
   text-shadow: 0 0 0.3em currentColor;
 }
 
-.offer--scrolling, .cooperation--scrolling
+/* .offer--scrolling, .cooperation--scrolling
 {
 
  
-  background: linear-gradient(-90deg, #ffffff 0%, #ffffff00 0%,  #ffffff1c 100%);
 
-padding-left: 15px;
-padding-bottom: 15px;
-padding-top: 15px;
-
-border-radius: 5%;
-}
-.aboutMe--scrolling
+} */
+/* .aboutMe--scrolling
 {
-  background: linear-gradient(-90deg, #ffffff 0%, #ffffff00 0%,  #ffffff1c 100%);
 
-  padding-left: 15px;
-  padding-bottom: 15px;
-  padding-top:  0px;
-  
-  border-radius: 5%;
-}
+} */
 
 .meImage--scrolling
 {
@@ -560,17 +548,6 @@ display: none;
 
   }
 
-
-
-
-
-
-
-
-
-
-  
- 
  /* Bar and bar icone start */
 
  .burgerMenu {
@@ -802,6 +779,20 @@ margin-top: -12%;
 {
 
   font-size: 30px;
+}
+#portfolio {
+
+  height: 400px;
+
+
+}
+.buttom
+{
+ 
+  position: absolute;
+
+top: 90.5%;
+
 }
 
 
