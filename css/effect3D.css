@@ -197,7 +197,7 @@ pre::after
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        width: 57%;
+        width: 57%; 
         text-align: center;
         margin: 0px 0;
         margin-bottom: 0%;

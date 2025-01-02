@@ -17,13 +17,17 @@
 </div>
 <!-- light Reflections end-->
 
-<form  method="POST">
+<!-- <form  method="POST">
 <input type="text" class="search" name="search">
 <input type="submit" value="Search">
-</form>
+</form> -->
     
     <div id="printPostBox">
-    <div id="printPost"></div>
+    <div id="printPost">
+      <div class="categories">
+        <h1>JS</h1><h1>PHP</h1><h1>Web Development</h1>
+      </div>
+    </div>
     </div>
 
     
@@ -31,35 +35,35 @@
 
 
 <?php
- require "../blog/get_post.php";
+//  require "../blog/get_post.php";
 
 
 
 ?>
 <script>
-   let blog = <?php echo json_encode($blog); ?>
+  //  let blog = <?php echo json_encode($blog); ?>
 
-   let printPost = document.querySelector("#printPost")
-let getblog = blog.map( blogContent => {
-   return `${blogContent.title }<br>
-   ${blogContent.post }<br>
-   ${blogContent.date }<br>`;
-}
-)
-printPost.innerHTML = getblog;
+//    let printPost = document.querySelector("#printPost")
+// let getblog = blog.map( blogContent => {
+//    return `${blogContent.title }<br>
+//    ${blogContent.post }<br>
+//    ${blogContent.date }<br>`;
+// }
+// )
+// printPost.innerHTML = getblog;
 
  document.querySelector(".submit").addEventListener('click', ()=>
 {
 
 
 
-  let getblog = blog.map( blogContent => {
-   return `${blogContent.title }<br>
-   ${blogContent.post }<br>
-   ${blogContent.date }<br>`;
-}
-)
-printPost.innerHTML = getblog;
+//   let getblog = blog.map( blogContent => {
+//    return `${blogContent.title }<br>
+//    ${blogContent.post }<br>
+//    ${blogContent.date }<br>`;
+// }
+// )
+// printPost.innerHTML = getblog;
 
 })
  
