@@ -7,10 +7,34 @@
     
     <title>Adding post</title>
 
-    <form action="add.php" method="POST">
+    <form action="add_php.php" method="POST">
 <input type="text" class="title" name="title">
 <input type="text" class="post" name="post">
 <input type="submit" value="submit">
+
+<form action="add_db.php" method="POST">
+<input type="text" class="title" name="title">
+<input type="text" class="post" name="post">
+<input type="submit" value="submit">
+
+
+<form action="add_fd.php" method="POST">
+<input type="text" class="title" name="title">
+<input type="text" class="post" name="post">
+<input type="submit" value="submit">
+
+<form action="add_wdt.php" method="POST">
+<input type="text" class="title" name="title">
+<input type="text" class="post" name="post">
+<input type="submit" value="submit">
+
+<form action="add_ti.php" method="POST">
+<input type="text" class="title" name="title">
+<input type="text" class="post" name="post">
+<input type="submit" value="submit">
+
+
+
 
 
 
@@ -25,3 +49,4 @@
     
 </body>
 </html>
+

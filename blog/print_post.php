@@ -21,16 +21,34 @@
 <input type="text" class="search" name="search">
 <input type="submit" value="Search">
 </form> -->
-    
-    <div id="printPostBox">
-    <div id="printPost">
-      <div class="categories">
-        <h1>JS</h1><h1>PHP</h1><h1>Web Development</h1>
+<div class="categories_box">
+<div class="categories">
+        <h1>JS</h1>
+</div>
+        <div class="categories">
+        <h1>PHP</h1>
+        </div>
+        <div class="categories">
+        <h1>Backend Development</h1>
+        </div>
+        <div class="categories">
+        <h1>Frontend Development</h1>
+        </div>
+        <div class="categories">
+        <h1>Web Development Tools</h1>
+        </div>
+        <div class="categories">
+        <h1>Trends and Inspirations</h1>
+        </div>
       </div>
+      </div>
+    <!-- <div id="printPostBox">
+    <div id="printPost">
+  
     </div>
     </div>
 
-    
+     -->
 
 
 

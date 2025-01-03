@@ -11,10 +11,21 @@ body {
     overflow-x: hidden;
     font-weight:300;
 }
+.categories_box
+{
+    top: 10%;
+  position: absolute;
+text-align: center;
+display: flex;
+
+}
 .categories
 {
-  position: relative;
-  display: flex;
+    position: relative;
+font-size: 16px;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.441);
+    border: 2%;
 }
 
 
@@ -22,9 +33,9 @@ body {
 {
 transform: translateX(-50%);
 left: 50%;
-width: 80%;
+width:80%;
 padding: 2%;
-        display: flex ;
+       
         position: absolute;
      
     }
