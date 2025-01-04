@@ -24,7 +24,7 @@
 <div class="categories_box">
 <div class="categories">
         <h1>JS</h1>
-</div>
+      </div>
         <div class="categories">
         <h1>PHP</h1>
         </div>
@@ -42,49 +42,122 @@
         </div>
       </div>
       </div>
-    <!-- <div id="printPostBox">
-    <div id="printPost">
+    <div id="printPostBox">
+
+<h3>JavaScript</h3>
+<div id="printPostJS">
   
-    </div>
-    </div>
+  </div>
+<h3>PHP</h3>
+<div id="printPostPHP">
+  </div>
 
-     -->
+
+  <h3>Backend Development</h3>
+<div id="printPostBD">
+</div>
+
+<h3>Frontend Development</h3>
+<div id="printPostFD">
+</div>
 
 
+
+<h3>Web Development Tools</h3>
+<div id="printPostWDT">
+</div>
+
+
+<h3>Trends and Inspirations</h3>
+<div id="printPostTS">
+  
+  </div>
+</div>
 
 <?php
-//  require "../blog/get_post.php";
-
+ require "../blog/get_post.php";
 
 
 ?>
 <script>
-  //  let blog = <?php echo json_encode($blog); ?>
-
-//    let printPost = document.querySelector("#printPost")
-// let getblog = blog.map( blogContent => {
-//    return `${blogContent.title }<br>
-//    ${blogContent.post }<br>
-//    ${blogContent.date }<br>`;
-// }
-// )
-// printPost.innerHTML = getblog;
-
- document.querySelector(".submit").addEventListener('click', ()=>
-{
+   let js = <?php echo json_encode($js); ?>
+   let php = <?php echo json_encode($php); ?>
+   let bd = <?php echo json_encode($bd); ?>
+   let fd = <?php echo json_encode($fd); ?>
+   let wd = <?php echo json_encode($wd); ?>
+   let ti = <?php echo json_encode($ti); ?>
 
 
 
-//   let getblog = blog.map( blogContent => {
-//    return `${blogContent.title }<br>
-//    ${blogContent.post }<br>
-//    ${blogContent.date }<br>`;
-// }
-// )
-// printPost.innerHTML = getblog;
 
-})
- 
+
+let printPostJS = document.querySelector("#printPostJS")
+let getJS= js.map( jsContent => {
+   return `${jsContent.title }<br>
+   ${jsContent.post }<br>
+   ${jsContent.date }<br>`;
+}
+)
+printPostJS.innerHTML = getJS;
+
+
+
+
+let printPostPHP = document.querySelector("#printPostPHP")
+let getPHP= php.map( phpContent => {
+   return `${phpContent.title }<br>
+   ${phpContent.post }<br>
+   ${phpContent.date }<br>`;
+}
+)
+printPostPHP.innerHTML = getPHP;
+
+
+
+
+
+let printPostBD = document.querySelector("#printPostBD")
+let getBD= bd.map( dbContent => {
+   return `${dbContent.title }<br>
+   ${dbContent.post }<br>
+   ${dbContent.date }<br>`;
+}
+)
+printPostBD.innerHTML = getBD;
+
+
+let printPostFD = document.querySelector("#printPostFD")
+let getFD= fd.map( fdContent => {
+   return `${fdContent.title }<br>
+   ${fdContent.post }<br>
+   ${fdContent.date }<br>`;
+}
+)
+printPostFD.innerHTML = getFD;
+
+
+let printPostWDT = document.querySelector("#printPostWDT")
+let getWDT= wdt.map( wdtContent => {
+   return `${wdtContent.title }<br>
+   ${wdtContent.post }<br>
+   ${wdtContent.date }<br>`;
+}
+)
+printPostWDT.innerHTML = getWDT;
+
+
+let printPostTI = document.querySelector("#printPostTI")
+let getTI= ti.map( tiContent => {
+   return `${tiContent.title }<br>
+   ${tiContent.post }<br>
+   ${tiContent.date }<br>`;
+}
+)
+printPostTI.innerHTML = getTI;
+
+
+
+
 
 </script>
 
