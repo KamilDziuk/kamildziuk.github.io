@@ -1,5 +1,5 @@
 <?php
-require "../db/config/config.php";
+require "../../db/config/config.php";
 try{
 $title = $_POST['title'];
 $post = $_POST['post'];
