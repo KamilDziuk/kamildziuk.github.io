@@ -6,8 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../css/displaying_post.css">
     
     <title>Adding post</title>
-    </head>
-    <body>
+</head>
+<body>
     <h3>JavaScript</h3>
     <form action="categories/add_js.php" method="POST">
 <input type="text" class="title" name="title">
