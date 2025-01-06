@@ -10,23 +10,18 @@
 <body>
     
   <!-- light Reflections start-->
-<div class="lightReflectionsContainer">
-  <div class="lightReflections"></div>
-  <div class="lightReflections" style="--delay:-12s;--size:0.35;--speed:20s;"></div>
-  <div class="lightReflections" style="--delay:-10s;--size:0.3;--speed:10s;"></div>
-</div>
+
 <!-- light Reflections end-->
 
-<div class="categories_box">
+
+<div id="printPostBox">
+
 
 <h3>Web Development Tools</h3>
 <div id="printPostWDT">
+  
+  </div>
 </div>
-
-
-
-</div>
-
 <?php
  require_once "get_post.php";
 
