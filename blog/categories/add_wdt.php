@@ -4,12 +4,12 @@ try{
 $title = $_POST['title'];
 $post = $_POST['post'];
 
-require_once "../add_post.php";
+header('Location: ../add_post.php'); 
 $sql = "INSERT INTO wdt (title,post) VALUES ( :title, :post)";
-$tmt = $pdo -> prepare($sql);
-$tmt -> bindParam(':title', $title);
-$tmt -> bindParam(':post', $post);
-$tmt -> execute();
+$stmt = $pdo -> prepare($sql);
+$stmt -> bindParam(':title', $title);
+$stmt -> bindParam(':post', $post);
+$stmt -> execute();
 
 }
 catch(PDOException $e)

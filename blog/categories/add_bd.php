@@ -5,7 +5,7 @@ $title = $_POST['title'];
 $post = $_POST['post'];
 
 header('Location: ../add_post.php'); 
-$sql = "INSERT INTO ti (title,post) VALUES ( :title, :post)";
+$sql = "INSERT INTO bd (title, post) VALUES ( :title, :post)";
 $stmt = $pdo -> prepare($sql);
 $stmt -> bindParam(':title', $title);
 $stmt -> bindParam(':post', $post);

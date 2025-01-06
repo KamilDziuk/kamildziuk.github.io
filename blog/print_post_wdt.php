@@ -18,27 +18,45 @@
 <!-- light Reflections end-->
 
 <div class="categories_box">
-<div class="categories">
-        <h1>JS</h1>
-      </div>
-        <div class="categories">
-        <h1>PHP</h1>
-        </div>
-        <div class="categories">
-        <h1>Backend Development</h1>
-        </div>
-        <div class="categories">
-        <h1>Frontend Development</h1>
-        </div>
-        <div class="categories">
-        <h1>Web Development Tools</h1>
-        </div>
-        <div class="categories">
-        <h1>Trends and Inspirations</h1>
-        </div>
-      </div>
-      </div>
-   
+
+<h3>Web Development Tools</h3>
+<div id="printPostWDT">
+</div>
+
+
+
+</div>
+
+<?php
+ require_once "get_post.php";
+
+
+?>
+<script>
+   let wdt = <?php echo json_encode($wdt); ?>
+
+
+
+
+
+
+
+let printPostWDT = document.querySelector("#printPostWDT")
+let getWDT= wdt.map( wdtContent => {
+   return `${wdtContent.title }<br>
+   ${wdtContent.post }<br>
+   ${wdtContent.date }<br>`;
+}
+)
+printPostWDT.innerHTML = getWDT;
+
+
+
+
+
+
+</script>
+
 
 
 

@@ -1,47 +1,41 @@
 <?php
 require "../db/config/config.php";
-$search = $_POST['search'];
-$sql = "SELECT * FROM js";
-$sql = "SELECT * FROM php";
-$sql = "SELECT * FROM bd";
-$sql = "SELECT * FROM fb";
-$sql = "SELECT * FROM fi";
-$sql = "SELECT * FROM wdt";
-$tmt = $pdo -> prepare($sql);
+// header('Location: ../get_post.php'); 
+$sql_js = "SELECT * FROM js";
+$sql_php = "SELECT * FROM php";
+$sql_bd = "SELECT * FROM bd";
+$sql_fd = "SELECT * FROM fd";
+$sql_ti = "SELECT * FROM ti";
+$sql_wdt = "SELECT * FROM wdt";
 
+$stmt_js = $pdo -> prepare($sql_js);
+$stmt_php= $pdo -> prepare($sql_php);
+$stmt_bd = $pdo -> prepare($sql_bd);
+$stmt_fd = $pdo -> prepare($sql_fd);
+$stmt_ti = $pdo -> prepare($sql_ti);
+$stmt_wdt = $pdo -> prepare($sql_wdt);
 
-$tmt -> execute();
-$js = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$php = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$bd = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$fb = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$fi = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$wdt = $tmt -> fetchAll(PDO::FETCH_ASSOC);
+$stmt_js -> execute();
+$stmt_php -> execute();
+$stmt_bd -> execute();
+$stmt_fd -> execute();
+$stmt_ti -> execute();
+$stmt_wdt -> execute();
 
-if($search === '2024-12-28')
-{
- 
+$js = $stmt_js -> fetchAll(PDO::FETCH_ASSOC);
+$php = $stmt_php -> fetchAll(PDO::FETCH_ASSOC);
+$bd = $stmt_bd -> fetchAll(PDO::FETCH_ASSOC);
+$fd = $stmt_fd -> fetchAll(PDO::FETCH_ASSOC);
+$ti = $stmt_ti -> fetchAll(PDO::FETCH_ASSOC);
+$wdt = $stmt_wdt -> fetchAll(PDO::FETCH_ASSOC);
 
-
-$sql = "SELECT * FROM `js` WHERE date=:search";
-$sql = "SELECT * FROM `php` WHERE date=:search";
-$sql = "SELECT * FROM `bd` WHERE date=:search";
-$sql = "SELECT * FROM `fb` WHERE date=:search";
-$sql = "SELECT * FROM `fi` WHERE date=:search";
-$sql = "SELECT * FROM `wdt` WHERE date=:search";
-
-
-$tmt = $pdo -> prepare($sql);
-
-$tmt -> bindParam(':search', $search);
-$tmt -> execute();
-$js = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$php = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$bd = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$fb = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$fi = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-$wdt = $tmt -> fetchAll(PDO::FETCH_ASSOC);
-}
+$stmt_php = null;
+$stmt_js = null;
+$stmt_fd = null;
+$stmt_bd = null;
+$stmt_wdt = null;
+$stmt_ti = null;
+$pdo = null;
 ?>
 
 
