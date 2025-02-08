@@ -10,7 +10,6 @@ let projectsText = document.querySelector('.projectsText');
 let offerText = document.querySelector('.offerText');
 let cooperationText = document.querySelector('.cooperationText');
 let certificatesText = document.querySelector('.certificatesText');
-let baseText = document.querySelector('.baseText');
 let optionsMenu = document.querySelector('#optionsMenu');
 let aboutMeTextHead = document.querySelector('.aboutMeTextHead');
 let textHead = document.querySelector('.textHead');
@@ -20,7 +19,7 @@ let aboutMePosition = document.querySelector('.aboutMePosition');
 let portfolioPosition = document.querySelector('.portfolioPosition');
 let offerPosition = document.querySelector('.offerPosition');
 let cooperationPosition = document.querySelector('.cooperationPosition');
-let baseTextMenu = document.querySelector('.baseTextMenu');
+
 
 let polishLanguage =  document.querySelector('.polishLanguage');
 
@@ -33,7 +32,7 @@ aboutMePosition.innerHTML =`About me`;
 portfolioPosition.innerHTML =`Projects`;
 offerPosition.innerHTML =`Offer`;
 cooperationPosition.innerHTML =`Cooperation`;
-baseTextMenu.innerHTML =`Knowledge base`;
+
 
 aboutMePosition.innerHTML =`About me`;
 
@@ -46,7 +45,6 @@ projectsText.innerHTML = `Projects`;
 offerText.innerHTML = `Offer`;
 cooperationText.innerHTML = `Cooperation`;
 certificatesText.innerHTML = `Certificates`;
-baseText.innerHTML = `Knowledge base`;
 
 textHead.innerHTML ="Websites & Web Applications";
 
@@ -111,7 +109,6 @@ if(polishLanguage.textContent == 'Polish')
     portfolioPosition.innerHTML =`Projekty`;
     offerPosition.innerHTML =`Oferta`;
     cooperationPosition.innerHTML =`Współpraca`;
-    baseTextMenu.innerHTML =`Moja baza wiedzy`;
     
     
     textHead.innerHTML ="Strony Internetowe <br>& Aplikacje Webowe";
@@ -125,7 +122,6 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
     offerText.innerHTML = `Oferta`;
     cooperationText.innerHTML = `Współpraca`;
     certificatesText.innerHTML = `Certyfikaty`;
-    baseText.innerHTML = `Moja baza wiedzy`;
     
     aboutMeTextHead.innerHTML = 'Na co dzień jestem Web Developerem, posiadam kilkuletnie doświadczenie zawodowe w projektowaniu stron internetowych i tworzeniu aplikacji. Posiadam umiejętności niezbędne do dalszego rozwoju w swojej branży, aby móc wdrażać lepsze rozwiązania dla Twojej firmy. Poza pracą interesuję się głównie rozwojem osobistym, biznesem oraz nowościami z zakresu cyberbezpieczeństwa. Mam dużą motywację do pogłębiania wiedzy i osiągania postawionych sobie celów.';
     
@@ -182,7 +178,6 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
         portfolioPosition.innerHTML =`Projects`;
         offerPosition.innerHTML =`Offer`;
         cooperationPosition.innerHTML =`Cooperation`;
-        baseTextMenu.innerHTML =`Knowledge base`;
         
         textContributions.innerHTML =`Contributions in the last year`;
         
@@ -195,7 +190,6 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
         offerText.innerHTML = `Offer`;
         cooperationText.innerHTML = `Cooperation`;
         certificatesText.innerHTML = `Certificates`;
-        baseText.innerHTML = `Knowledge base`;
         
         aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several years of professional experience in designing websites and creating applications. I have the skills necessary to further develop in my industry to be able to implement better solutions for your company. Outside of work, I am mainly interested in personal development, business and news in the field of cybersecurity. I am highly motivated to deepen my knowledge and achieve my goals.';
         
