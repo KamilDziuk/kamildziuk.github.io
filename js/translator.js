@@ -20,7 +20,6 @@ let aboutMePosition = document.querySelector('.aboutMePosition');
 let portfolioPosition = document.querySelector('.portfolioPosition');
 let offerPosition = document.querySelector('.offerPosition');
 let cooperationPosition = document.querySelector('.cooperationPosition');
-let certificatesMenu = document.querySelector('.certificatesMenu');
 let baseTextMenu = document.querySelector('.baseTextMenu');
 
 let polishLanguage =  document.querySelector('.polishLanguage');
@@ -34,7 +33,6 @@ aboutMePosition.innerHTML =`About me`;
 portfolioPosition.innerHTML =`Projects`;
 offerPosition.innerHTML =`Offer`;
 cooperationPosition.innerHTML =`Cooperation`;
-certificatesMenu.innerHTML =`Certificates`;
 baseTextMenu.innerHTML =`Knowledge base`;
 
 aboutMePosition.innerHTML =`About me`;
@@ -113,7 +111,6 @@ if(polishLanguage.textContent == 'Polish')
     portfolioPosition.innerHTML =`Projekty`;
     offerPosition.innerHTML =`Oferta`;
     cooperationPosition.innerHTML =`Współpraca`;
-    certificatesMenu.innerHTML =`Certyfikaty`;
     baseTextMenu.innerHTML =`Moja baza wiedzy`;
     
     
@@ -185,7 +182,6 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
         portfolioPosition.innerHTML =`Projects`;
         offerPosition.innerHTML =`Offer`;
         cooperationPosition.innerHTML =`Cooperation`;
-        certificatesMenu.innerHTML =`Certificates`;
         baseTextMenu.innerHTML =`Knowledge base`;
         
         textContributions.innerHTML =`Contributions in the last year`;
