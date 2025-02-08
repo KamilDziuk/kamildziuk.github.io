@@ -9,7 +9,6 @@ let aboutMeText = document.querySelector('.aboutMeText');
 let projectsText = document.querySelector('.projectsText');
 let offerText = document.querySelector('.offerText');
 let cooperationText = document.querySelector('.cooperationText');
-let certificatesText = document.querySelector('.certificatesText');
 let optionsMenu = document.querySelector('#optionsMenu');
 let aboutMeTextHead = document.querySelector('.aboutMeTextHead');
 let textHead = document.querySelector('.textHead');
@@ -44,7 +43,6 @@ aboutMeText.innerHTML = `About me`;
 projectsText.innerHTML = `Projects`;
 offerText.innerHTML = `Offer`;
 cooperationText.innerHTML = `Cooperation`;
-certificatesText.innerHTML = `Certificates`;
 
 textHead.innerHTML ="Websites & Web Applications";
 
@@ -121,7 +119,6 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
     projectsText.innerHTML = `Projekty`;
     offerText.innerHTML = `Oferta`;
     cooperationText.innerHTML = `Współpraca`;
-    certificatesText.innerHTML = `Certyfikaty`;
     
     aboutMeTextHead.innerHTML = 'Na co dzień jestem Web Developerem, posiadam kilkuletnie doświadczenie zawodowe w projektowaniu stron internetowych i tworzeniu aplikacji. Posiadam umiejętności niezbędne do dalszego rozwoju w swojej branży, aby móc wdrażać lepsze rozwiązania dla Twojej firmy. Poza pracą interesuję się głównie rozwojem osobistym, biznesem oraz nowościami z zakresu cyberbezpieczeństwa. Mam dużą motywację do pogłębiania wiedzy i osiągania postawionych sobie celów.';
     
@@ -189,7 +186,6 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
         projectsText.innerHTML = `Projects`;
         offerText.innerHTML = `Offer`;
         cooperationText.innerHTML = `Cooperation`;
-        certificatesText.innerHTML = `Certificates`;
         
         aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several years of professional experience in designing websites and creating applications. I have the skills necessary to further develop in my industry to be able to implement better solutions for your company. Outside of work, I am mainly interested in personal development, business and news in the field of cybersecurity. I am highly motivated to deepen my knowledge and achieve my goals.';
         
