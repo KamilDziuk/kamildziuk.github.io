@@ -46,7 +46,7 @@ cooperationText.innerHTML = `Cooperation`;
 
 textHead.innerHTML ="Websites & Web Applications";
 
-aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several years of professional experience in designing websites and creating applications. I have the skills necessary to further develop in my industry to be able to implement better solutions for your company. Outside of work, I am mainly interested in personal development, business and news in the field of cybersecurity. I am highly motivated to deepen my knowledge and achieve my goals.';
+aboutMeTextHead.innerHTML = 'I am a Web Developer, I create websites and web applications on a daily basis. I work mainly with JavaScript and MySQL databases. In my projects, I focus on clarity and simplicity of code. In my free time, I develop my own projects and visit interesting places.';
 
 
 
@@ -120,7 +120,7 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
     offerText.innerHTML = `Oferta`;
     cooperationText.innerHTML = `Współpraca`;
     
-    aboutMeTextHead.innerHTML = 'Na co dzień jestem Web Developerem, posiadam kilkuletnie doświadczenie zawodowe w projektowaniu stron internetowych i tworzeniu aplikacji. Posiadam umiejętności niezbędne do dalszego rozwoju w swojej branży, aby móc wdrażać lepsze rozwiązania dla Twojej firmy. Poza pracą interesuję się głównie rozwojem osobistym, biznesem oraz nowościami z zakresu cyberbezpieczeństwa. Mam dużą motywację do pogłębiania wiedzy i osiągania postawionych sobie celów.';
+    aboutMeTextHead.innerHTML = 'Jestem Web Deweloperem, na co dzień tworze strony internetowe oraz aplikację webowe. Pracuję głównie z JavaScript oraz bazami danych MySQL. W projektach stawiam na przejrzystość i prostotę kodu. W wolnym czasie rozwijam własne projekty i zwiedzam ciekawe miejsca.';
     
     
     
@@ -187,7 +187,7 @@ textContributions.innerHTML =`Wkłady w ostatnim roku`;
         offerText.innerHTML = `Offer`;
         cooperationText.innerHTML = `Cooperation`;
         
-        aboutMeTextHead.innerHTML = 'Every day, I am a Web Developer, I have several years of professional experience in designing websites and creating applications. I have the skills necessary to further develop in my industry to be able to implement better solutions for your company. Outside of work, I am mainly interested in personal development, business and news in the field of cybersecurity. I am highly motivated to deepen my knowledge and achieve my goals.';
+        aboutMeTextHead.innerHTML = 'I am a Web Developer, I create websites and web applications on a daily basis. I work mainly with JavaScript and MySQL databases. In my projects, I focus on clarity and simplicity of code. In my free time, I develop my own projects and visit interesting places.';
         
         
         
