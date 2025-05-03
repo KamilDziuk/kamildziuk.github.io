@@ -1,0 +1,90 @@
+/* icone */
+.fa-comments,i {
+    font-size: 24px
+}
+
+i:hover {
+    text-shadow: 0 0 .3em currentColor
+}
+
+.assistantButton,.assistantWindow {
+    position: fixed;
+    border: 1px solid #313131;
+    transition: 1.3s
+}
+
+/* assistant button  */
+.assistantButton {
+    bottom: 53px;
+    right: 50px;
+    font-size: 24px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    background-size: 400%;
+    color: #ccc;
+    font-weight: 700;
+    border-radius: 1rem;
+    background: #0000006c;
+    overflow: hidden;
+    z-index: 99999
+}
+
+.assistantButton:hover {
+    transition: 1.3s;
+    box-shadow: 0 0 10px #fff
+}
+
+/* assistant window  */
+.assistantWindow {
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    z-index: 9999
+}
+
+/* close window  */
+.closeWindowPopup {
+    position: fixed;
+    background-color: #0000;
+    top: 15px;
+    right: 20px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #ccc;
+    border: 0;
+    border-radius: 50%;
+    z-index: 999999
+}
+
+.closeWindowPopup:hover {
+    color: #fff
+}
+
+@media screen and (max-width:850px) {
+    .assistantWindow {
+        width: 60%
+    }
+}
+
+@media screen and (max-width:500px) {
+    .assistantWindow {
+        padding: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateX(-50%);
+        left: 50%;
+        height: 100%;
+        border-radius: 0;
+        right: 0;
+        border-color: #92a8d100;
+        position: fixed
+    }
+
+    .assistantButton {
+        font-size: 15px;
+        bottom: 20px;
+        right: 5px
+    }
+}
