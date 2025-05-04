@@ -26,7 +26,7 @@ i:hover {
     border-radius: 1rem;
     background: #0000006c;
     overflow: hidden;
-    z-index: 99999
+  z-index: 99
 }
 
 .assistantButton:hover {
