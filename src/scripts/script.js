@@ -12,12 +12,12 @@ function ScrollMenu()
             {
            
                 
-                document.querySelector(".meImage").classList.add("meImage--scrolling");
-              
+             
+      
                 document.querySelector(".aboutMeTextHead").addEventListener("mouseover", () =>
                     {
                 
-                        document.querySelector(".meImage").classList.remove("meImage--scrolling");
+                     
                     })
           
             },3000)
@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
     {
    
 
-        document.querySelector(".meImage").classList.add("meImage--scrolling");
+       
   
     },3000)
   
@@ -43,7 +43,6 @@ window.addEventListener("scroll", () => {
     
     else {
     document.querySelector(".aboutMeText").classList.remove("aboutMeText--scrolling");
-    document.querySelector(".meImage").classList.remove("meImage--scrolling");
     document.querySelector(".aboutMe").classList.remove("aboutMe--scrolling");
     }  
     if(scroll >= document.querySelector("#portfolioPosition").offsetTop - 100)
