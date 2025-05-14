@@ -14,14 +14,7 @@ window.addEventListener("scroll", () => {
     document.querySelector(".aboutMeText").classList.add("aboutMeText--scrolling");
     document.querySelector(".aboutMe").classList.add("aboutMe--scrolling");
   
-   
-    setTimeout(()=>
-    {
-   
 
-       
-  
-    },3000)
   
     }
     
