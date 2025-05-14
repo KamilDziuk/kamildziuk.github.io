@@ -7,23 +7,7 @@ function ScrollMenu()
         this.cooperationText();
         this.offerText();
         this.projectsText();
-      
-        setTimeout(()=>
-            {
-           
-                
-             
-      
-                document.querySelector(".aboutMeTextHead").addEventListener("mouseover", () =>
-                    {
-                
-                     
-                    })
-          
-            },3000)
-
-         
-
+     
 window.addEventListener("scroll", () => {
     let scroll = window.pageYOffset;
     if (scroll >= document.querySelector("#aboutMePosition").offsetTop) {
