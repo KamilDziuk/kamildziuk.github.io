@@ -215,7 +215,9 @@ let randomTable = [
     ";",
     "`",
     "=",
-    "_"
+    "_",
+    "X",
+    "?"
 
  ]
 let landingText0 = document.querySelector(".landingText0");
