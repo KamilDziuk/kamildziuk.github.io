@@ -40,7 +40,7 @@ i:hover {
     width: 30%;
     height: 100%;
     right: 0;
-    z-index: 9999
+    z-index: 99
 }
 
 /* close window  */
@@ -54,7 +54,7 @@ i:hover {
     color: #ccc;
     border: 0;
     border-radius: 50%;
-    z-index: 999999
+    z-index: 999
 }
 
 .closeWindowPopup:hover {
