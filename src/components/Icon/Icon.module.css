@@ -1,0 +1,52 @@
+.icon {
+  color: rgba(255, 255, 255, 0.76);
+  margin-top: 0;
+  padding: 0px 8px 0px 8px;
+  font-size: 22px;
+  transition: 0.5s;
+  display: inline;
+}
+.icon:hover {
+  color: rgb(255, 255, 255);
+}
+.iconGroupWrapper {
+  display: inline-flex;
+  margin-top: 20%;
+}
+
+.contactIconGroupWrapper {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  display: inline-flex;
+  width: 170px;
+  margin-top: 0.5%;
+}
+
+.tools {
+  margin-top: 0%;
+}
+
+.iconGroupWrapper::before {
+  content: "" !important;
+}
+.iconGroupWrapper:hover::before {
+  content: "" !important;
+}
+
+@media screen and (max-width: 1150px) {
+  .iconGroupWrapper {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tools {
+    margin: -2% 8px 0px 8px !important;
+  }
+
+  .iconGroupWrapper {
+    margin-top: 5%;
+    margin-bottom: 30%;
+  }
+}

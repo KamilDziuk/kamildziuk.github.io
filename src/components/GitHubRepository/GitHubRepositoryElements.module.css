@@ -1,0 +1,51 @@
+.repositoryDescription {
+  padding: 0% 1.5% 1.5% 0%;
+  margin: 0% 1.5% 1.5% 0%;
+}
+
+.repositoryName {
+  display: inline-block;
+}
+
+.repositoryTopics {
+  padding: 1%;
+  margin: 1%;
+  background: rgb(0, 25, 124);
+  border-radius: 10%;
+  font-size: 15px;
+  display: inline;
+  color: #559eec;
+}
+
+.gitHubUserContent {
+  padding: 1.5% 0% 1.5% 0%;
+  width: 80%;
+  border-radius: 2.5%;
+}
+
+@media screen and (max-width: 1150px) {
+  .repositoryTopics {
+    font-size: 12px;
+  }
+
+  .gitHubUserContent {
+    width: 40%;
+    padding: 2%;
+    justify-items: center;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gitHubUserContent {
+    width: 100%;
+    padding: 1%;
+    justify-items: none;
+    justify-self: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  .repositoryTopics {
+    font-size: 10px;
+  }
+}
