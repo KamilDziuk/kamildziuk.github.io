@@ -7,11 +7,13 @@ export default function useNavigationIndicator() {
   const [navigationIndicatorOff, setNavigationIndicatorOff] = useState<
     boolean[]
   >([]);
+
   useEffect(() => {
     function navigationIndicatorStatus() {
       const windowHeightPositionValues = [0, 300, 2800, 3500];
- const windowHeightPositionValuesHide = [300, 2800, 3500, 4000];
+      const windowHeightPositionValuesHide = [300, 2800, 3500, 3700];
       const windowHeightPosition = window.scrollY;
+
       setNavigationIndicatorOn(
         windowHeightPositionValues.map((whpv) => whpv < windowHeightPosition)
       );
@@ -24,4 +26,14 @@ export default function useNavigationIndicator() {
   }, []);
 
   return [navigationIndicatorOn, navigationIndicatorOff];
+}
+
+export function useShowContact(): [boolean, () => void] {
+  const [navigationContact, setNavigationContact] = useState<boolean>(true);
+
+  const showContact = () => {
+    setNavigationContact(!navigationContact);
+  };
+
+  return [navigationContact, showContact];
 }

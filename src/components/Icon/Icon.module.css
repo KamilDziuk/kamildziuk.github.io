@@ -14,14 +14,6 @@
   margin-top: 20%;
 }
 
-.contactIconGroupWrapper {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
-  display: inline-flex;
-  width: 170px;
-  margin-top: 0.5%;
-}
-
 .tools {
   margin-top: 0%;
 }
@@ -46,7 +38,12 @@
   }
 
   .iconGroupWrapper {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 30%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .tools {
+    display: flow-root;
   }
 }

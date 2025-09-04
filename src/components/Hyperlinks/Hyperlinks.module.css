@@ -1,8 +1,26 @@
 .styleNav {
   font-size: 25px;
-  width: 250px;
+  width: 350px;
+}
+.styleNavContact {
+  font-size: 25px;
+  margin: 0px 0px 15px 4.5px;
+  animation: pulseContact 2s infinite;
 }
 
+.styleNavContact:hover {
+  text-shadow: 0 0 1em currentColor;
+}
+
+@keyframes pulseContact {
+  0% {
+    text-shadow: 0 0 1em currentColor;
+  }
+
+  50% {
+    text-shadow: 0 0 0em currentColor;
+  }
+}
 .navigationIndicator {
   display: flex;
   transition: 0.3s;
@@ -30,7 +48,7 @@
   color: rgb(255, 255, 255);
 }
 .navigationIndicator:hover::before {
-  content: " ─────── " !important;
+  content: " ─────── ";
   padding-right: 2%;
   text-shadow: 0 0 1em currentColor;
   transition: 0.3s;
@@ -51,5 +69,12 @@
 @media screen and (max-width: 1150px) {
   .styleNav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .styleNavContact {
+    font-size: 17px;
+    margin: 0px 0px 15px 2px;
   }
 }

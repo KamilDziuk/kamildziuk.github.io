@@ -15,24 +15,26 @@ export default function Hyperlinks({
   const [navigationIndicatorOn, navigationIndicatorOff] =
     useNavigationIndicator();
   return (
-    <Wrapper>
-      {items.map((item, index) => (
-        <a
-          className={` ${styleHyperLinks}   ${
-            navigationIndicatorStyle.navigationIndicator
-          } ${
-            navigationIndicatorOn[index] &&
-            navigationIndicatorStyle.navigationIndicatorOn
-          } ${
-            navigationIndicatorOff[index] &&
-            navigationIndicatorStyle.navigationIndicatorOff
-          }`}
-          key={index}
-          href={hrefs[index]}
-        >
-          {item}
-        </a>
-      ))}
-    </Wrapper>
+    <>
+      <Wrapper>
+        {items.map((item, index) => (
+          <a
+            className={` ${styleHyperLinks}   ${
+              navigationIndicatorStyle.navigationIndicator
+            } ${
+              navigationIndicatorOn[index] &&
+              navigationIndicatorStyle.navigationIndicatorOn
+            } ${
+              navigationIndicatorOff[index] &&
+              navigationIndicatorStyle.navigationIndicatorOff
+            }`}
+            key={index}
+            href={hrefs[index]}
+          >
+            {item}
+          </a>
+        ))}
+      </Wrapper>
+    </>
   );
 }

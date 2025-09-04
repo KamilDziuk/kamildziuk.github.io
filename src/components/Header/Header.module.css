@@ -20,22 +20,21 @@
   padding: 1.5% 0% 1.5% 0%;
 }
 
-i {
-  margin-top: 200px;
-  font-size: 35px;
-  padding: 1.5% 0% 1.5% 0%;
+.contactElement {
+  display: inline-flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  margin-top: 2% !important;
+  padding: 0px 3px 0px 7px !important;
 }
 
-i:hover {
-  text-shadow: 0 0 0.3em currentColor;
+.contactElement::before {
+  content: "" !important;
+  padding-right: 0% !important;
 }
-
-a:active {
-  text-shadow: 0 0 1em currentColor;
-}
-
-a:hover {
-  text-shadow: 0 0 0.3em currentColor;
+.contactElement:hover::before {
+  content: "" !important;
+  padding-right: 0% !important;
 }
 
 @media screen and (max-width: 1150px) {
@@ -45,9 +44,7 @@ a:hover {
     transform: translateX(-50%);
     width: 100%;
     text-align: left;
-    margin: 0px 0;
-    margin-bottom: 6.5%;
-    margin-top: 6.5%;
+    margin: 6.5% 0% 6.5% 0.5%;
   }
 
   i {
@@ -59,12 +56,21 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .contactElement {
+    display: flex !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    padding: 0px 0px 0px 0px !important;
+
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   .header {
     margin-top: 20%;
   }
-}
-@media screen and (max-width: 500px) {
   .secondHeaderText {
     font-size: 25px;
   }
