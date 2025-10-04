@@ -4,6 +4,7 @@ import RepositoryCard from "./GitHubRepositoryElements";
 const data = await gitHubRepository(
   "https://api.github.com/users/kamildziuk/repos"
 );
+
 export default function GitHubRepositoryServer() {
   const content = gitHubUserContent();
   const dataTable = [data[6], data[28], data[21], data[7], data[14]];

@@ -1,10 +1,11 @@
 import GitHubRepositoryServer, {
   GitHubRepositoryServerAll,
 } from "./GitHubRepositoryServer";
+
 import SectionText from "../SectionText/SectionText";
 import sectionTextStyle from "../SectionText/SectionText.module.css";
 import { useState } from "react";
-
+import Icon from "../Icon/Icon";
 export default function GitHubRepositoryClient() {
   const [showAllRepository, setShowAllRepository] = useState<boolean>(false);
   function TbSettingsQuestion() {
@@ -14,17 +15,22 @@ export default function GitHubRepositoryClient() {
   return (
     <>
       {!showAllRepository && <GitHubRepositoryServer />}
-
       {showAllRepository && <GitHubRepositoryServerAll />}
 
-      <SectionText    style={`${sectionTextStyle.sectionWrapperBackground}`}
-        title={null}
-        mainText={
+      <SectionText
+        style={`${sectionTextStyle.sectionWrapperBackground}`}
+        title={
           <div onClick={() => TbSettingsQuestion()}>
-            {showAllRepository
-              ? "Hide repositories"
-              : "View Full Project Archive 🠚"}
+            {showAllRepository ? "Hide repositories" : "Show all repositories"}
           </div>
+        }
+        mainText={null}
+        icon={
+          showAllRepository ? (
+            <Icon iconName="fa:FaLongArrowAltDown" />
+          ) : (
+            <Icon iconName="fa:FaLongArrowAltUp" />
+          )
         }
       />
     </>

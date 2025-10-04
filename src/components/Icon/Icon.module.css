@@ -14,10 +14,6 @@
   margin-top: 20%;
 }
 
-.tools {
-  margin-top: 0%;
-}
-
 .iconGroupWrapper::before {
   content: "" !important;
 }
@@ -33,17 +29,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .tools {
-    margin: -2% 8px 0px 8px !important;
-  }
-
   .iconGroupWrapper {
     margin-top: 10%;
     margin-bottom: 30%;
   }
-}
-@media screen and (max-width: 300px) {
-  .tools {
-    display: flow-root;
+
+  .icon {
+    padding: 0px 8px 0px 8px;
   }
 }

@@ -1,14 +1,16 @@
 import axios from "axios";
 
 export interface GitHubRepository {
-  content?: string | undefined;
   id: number;
+  content: string;
+  encoding: string;
   name: string;
   html_url: string;
   homepage: string | null;
   description: string | null;
   topics: string[];
 }
+
 export default async function gitHubRepository(
   url: string
 ): Promise<GitHubRepository[]> {
@@ -31,7 +33,7 @@ export default async function gitHubRepository(
 
 export function gitHubUserContent(): string[] {
   const content = [
-    "https://raw.githubusercontent.com/KamilDziuk/djMatthew/main/presentation.gif",
+    ?"https://raw.githubusercontent.com/KamilDziuk/djMatthew/main/presentation.gif",
     "https://raw.githubusercontent.com/KamilDziuk/yourAssistantAI/main/public/assets/video/presentation.gif",
     "https://raw.githubusercontent.com/KamilDziuk/parkpaderewskiego/main/src/public/assets/video/presentation.gif",
     "https://raw.githubusercontent.com/KamilDziuk/emplaza/main/image/presentation.gif",

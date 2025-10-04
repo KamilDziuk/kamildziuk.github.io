@@ -13,6 +13,8 @@
 .landingText {
   position: relative;
   font-family: "Best Signature Font", sans-serif;
+    /* font-family: "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive; */
+
   z-index: 999;
   transform: translate(-50%, -50%);
   left: 50%;

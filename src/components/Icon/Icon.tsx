@@ -1,3 +1,4 @@
+
 import collectionOFicons from "./collectionOFicons";
 import iconStyle from "./Icon.module.css";
 export default function Icon({ iconName }: { iconName: string }) {

@@ -1,24 +1,33 @@
-import Loading from "./components/Loading/Loading";
+import React, { Suspense } from "react";
+
+const Loading = React.lazy(() => import("./components/Loading/Loading"));
 import LightReflections from "./components/LightReflections/LightReflections.tsx";
 import Header from "./components/Header/Header.tsx";
-import About from "./components/About/About.tsx";
+const About = React.lazy(() => import("./components/About/About.tsx"));
 import Logo from "./components/Logo/Logo.tsx";
 import Icon from "./components/Icon/Icon";
 import Cooperation from "./components/Cooperation/Cooperation.tsx";
-import Hyperlinks from "./components/Hyperlinks/Hyperlinks";
-import iconStyle from "./components/Icon/Icon.module.css";
-import GitHubRepositoryClient from "./components/GitHubRepository/GitHubRepositoryClient.tsx";
 import MobileTitleSection from "./components/MobileTitleSection/MobileTitleSection";
 import SectionText from "./components/SectionText/SectionText";
 import AssistantAI from "./components/AssistantAI/AssistantAI.tsx";
 import sectionTextStyle from "./components/SectionText/SectionText.module.css";
+const GitHubRepositoryClient = React.lazy(
+  () => import("./components/GitHubRepository/GitHubRepositoryClient.tsx")
+);
 import "./App.css";
 
 function App() {
   return (
     <>
       <LightReflections />
-      <Loading />
+
+      <Suspense
+        fallback={
+        null
+        }
+      >
+        <Loading />
+      </Suspense>
       <Logo />
       <Header />
 
@@ -28,36 +37,20 @@ function App() {
       />
       <SectionText
         style={`${sectionTextStyle.sectionWrapperBackground}`}
-        title={"Hi there, my name is Kamil Dziuk"}
-        mainText={<About />}
-      />
-      <SectionText
-        style={`${sectionTextStyle.sectionWrapperBackground}`}
-        title={"Tools"}
-        icon={
-          <Hyperlinks
-            styleHyperLinks={`${iconStyle.iconGroupWrapper} ${iconStyle.tools}`}
-            items={[
-              <Icon iconName="ri:RiHtml5Fill" />,
-              <Icon iconName="ri:RiCss3Line" />,
-              <Icon iconName="bi:BiLogoTypescript" />,
-              <Icon iconName="ri:RiReactjsFill" />,
-              <Icon iconName="ri:RiNodejsFill" />,
-              <Icon iconName="si:SiMongodb" />,
-              <Icon iconName="si:SiFigma" />,
-              <Icon iconName="io5:IoLogoWordpress" />,
-              <Icon iconName="si:SiGoogleanalytics" />,
-            ]}
-            hrefs={[]}
-          />
+        title={null}
+        mainText={
+          <Suspense fallback={null}>
+            <About />
+          </Suspense>
         }
-        mainText={null}
       />
       <MobileTitleSection
         idSection={"portfolioPosition"}
         titleSection={"Projects"}
       />
-      <GitHubRepositoryClient />
+      <Suspense fallback={null}>
+        <GitHubRepositoryClient />
+      </Suspense>
       <MobileTitleSection idSection={"offerPosition"} titleSection={"Offer"} />
       <SectionText
         title={"WWW PAGES"}

@@ -46,11 +46,6 @@
     text-align: left;
     margin: 6.5% 0% 6.5% 0.5%;
   }
-
-  i {
-    margin-top: 40px;
-  }
-
   .shortText {
     padding: 1.5% 0% 1.5% 0%;
   }
@@ -62,10 +57,8 @@
     white-space: normal !important;
     overflow-wrap: anywhere !important;
     padding: 0px 0px 0px 0px !important;
-
   }
 }
-
 
 @media screen and (max-width: 500px) {
   .header {

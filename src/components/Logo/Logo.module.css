@@ -1,6 +1,8 @@
 .logo {
   position: fixed;
   font-family: "Best Signature Font", sans-serif;
+    /* font-family: "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive; */
+
   top: 20px;
   left: 3%;
   font-size: 50px;
