@@ -1,0 +1,30 @@
+.logo {
+  position: fixed;
+  font-family: "Best Signature Font", sans-serif;
+    /* font-family: "Brush Script MT", "Lucida Handwriting", "Segoe Script", cursive; */
+
+  top: 20px;
+  left: 3%;
+  font-size: 50px;
+  color: #ffffff8a !important;
+  z-index: 1;
+}
+.logo::before {
+  content: "" !important;
+  padding-right: 0% !important;
+}
+.logo:hover::before {
+  content: "" !important;
+  padding-right: 0% !important;
+}
+@media screen and (max-width: 1150px) {
+  .logo {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 30px;
+  }
+}

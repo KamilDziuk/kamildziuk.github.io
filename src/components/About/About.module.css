@@ -1,0 +1,20 @@
+.about div {
+  display: flex;
+  margin-top: 0%;
+}
+
+.about img {
+  padding: 0px;
+  margin: 0px 8px 0px 8px;
+  width: 22px;
+  height: 22px;
+}
+
+@media screen and (max-width: 400px) {
+  .about div {
+    display: table-footer-group;
+  }
+  .about img {
+    margin: 5px 12px 5px 0px;
+  }
+}
