@@ -34,7 +34,7 @@ export default async function gitHubRepository(
 export function gitHubUserContent(): string[] {
   const content = [
     "https://raw.githubusercontent.com/KamilDziuk/djMatthew/main/presentation.gif",
-    "https://raw.githubusercontent.com/KamilDziuk/yourAssistantAI/main/public/assets/video/presentation.gif",
+    "https://raw.githubusercontent.com/KamilDziuk/yourAssistantAI/main/client/src/assets/video/presentation.gif",
     "https://raw.githubusercontent.com/KamilDziuk/parkpaderewskiego/main/src/public/assets/video/presentation.gif",
     "https://raw.githubusercontent.com/KamilDziuk/emplaza/main/image/presentation.gif",
     "https://raw.githubusercontent.com/KamilDziuk/jumpingObject/main/assets/images/presentation.gif",
