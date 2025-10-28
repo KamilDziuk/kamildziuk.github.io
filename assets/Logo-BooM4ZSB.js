@@ -1,0 +1,1 @@
+import{j as o}from"./index-DVX0k9H2.js";import{H as s}from"./Hyperlinks-BvkM5Eyo.js";const t="_logo_bf8h9_1",r={logo:t};function i(){return o.jsx(s,{styleHyperLinks:r.logo,items:["Dziuk"],hrefs:["/."]})}export{i as default};
