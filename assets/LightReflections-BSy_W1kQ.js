@@ -1,1 +1,0 @@
-import{j as t}from"./index-DVX0k9H2.js";const i="_lightReflections_5217q_1",n="_lightReflectionsContainer_5217q_193",e={lightReflections:i,lightReflectionsContainer:n};function l(){return t.jsx("div",{className:e.lightReflectionsContainer,children:t.jsx("div",{className:e.lightReflections})})}export{l as default};
