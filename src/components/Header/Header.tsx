@@ -2,10 +2,12 @@ import { useShowContact } from "../Hyperlinks/useNavigationIndicator";
 import headerStyles from "./Header.module.css";
 import Hyperlinks from "../Hyperlinks/Hyperlinks";
 import linksStyle from "../Hyperlinks/Hyperlinks.module.css";
+import blogElementStyles from "../Blog/Blog.module.css";
 import hyperlinksValues from "../Hyperlinks/hyperlinksValues";
 import iconStyle from "../Icon/Icon.module.css";
 import IconGroup from "../Icon/IconGroup";
 import Icon from "../Icon/Icon";
+
 const [navLinks] = hyperlinksValues() as [{ label: string; href: string }[]];
 export default function Header() {
   const [navigationContact, showContact] = useShowContact();
@@ -26,7 +28,9 @@ export default function Header() {
           items={navLinks.map((link) => link.label)}
           hrefs={navLinks.map((link) => link.href)}
         />
-
+        <a href="#/blog" className={blogElementStyles.styleNavBlog}>
+          Blog
+        </a>
         <div
           className={linksStyle.styleNavContact}
           onClick={() => showContact()}

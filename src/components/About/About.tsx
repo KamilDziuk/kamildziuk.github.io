@@ -5,8 +5,8 @@ import rehypeRaw from "rehype-raw";
 export default function AboutMe() {
   const htmlContent = useClearTextAbout();
   return (
-  <div className={aboutStyle.about}>
-  <ReactMarkdown rehypePlugins={[rehypeRaw]}>{htmlContent}</ReactMarkdown>
+    <div className={aboutStyle.about}>
+      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{htmlContent}</ReactMarkdown>
     </div>
   );
 }
