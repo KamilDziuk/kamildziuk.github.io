@@ -6,6 +6,7 @@ import Icon from "../Icon/Icon";
 import MobileTitleSection from "../MobileTitleSection/MobileTitleSection";
 import SectionText from "../SectionText/SectionText";
 import sectionTextStyle from "../SectionText/SectionText.module.css";
+
 const About = React.lazy(() => import("../About/About.tsx"));
 const Cooperation = React.lazy(() => import("../Cooperation/Cooperation.tsx"));
 const AssistantAI = React.lazy(() => import("../AssistantAI/AssistantAI.tsx"));

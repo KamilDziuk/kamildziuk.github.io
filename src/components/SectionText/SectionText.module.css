@@ -9,6 +9,10 @@
   display: flow-root;
   text-align: left;
 }
+.sectionTitleText {
+  font-weight: 900;
+  font-size: 18.5px;
+}
 
 .sectionWrapper:hover {
   color: rgb(251, 251, 251);

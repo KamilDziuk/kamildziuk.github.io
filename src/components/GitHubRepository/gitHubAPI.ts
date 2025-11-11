@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export interface GitHubRepository {
+  [x: string]: any;
   id: number;
   content: string;
   encoding: string;

@@ -32,7 +32,7 @@ export default function SectionText({
       whileHover="hover"
       className={`${sectionTextStyle.sectionWrapper} ${style} `}
     >
-      <h3 className={sectionTextStyle.sectionTitleText}>
+      <div className={sectionTextStyle.sectionTitleText}>
         {title}
         <Motion.span
           variants={iconVariants}
@@ -44,7 +44,7 @@ export default function SectionText({
         >
           {icon}
         </Motion.span>
-      </h3>
+      </div>
       <div className={sectionTextStyle.sectionMainText}>{mainText}</div>
     </Motion.section>
   );

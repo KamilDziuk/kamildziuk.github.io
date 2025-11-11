@@ -58,8 +58,23 @@ a:active {
 a:hover {
   text-shadow: 0 0 0.3em currentColor;
 }
-
-
+.postImages {
+  width: 100%;
+  height: 200px;
+  padding: 0px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+.pagePostImages {
+  width: 95%;
+height: 77%;
+  padding: 0px;
+  margin-bottom: 0px;
+position: relative;
+  border-radius: 10px;
+left: 50%;
+  transform: translateX(-50%);
+}
 .postWrapper {
   display: flex;
 }
@@ -71,9 +86,8 @@ a:hover {
   text-align: left;
   position: relative;
   width: 90%;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
 }
 .postElements {
   position: relative;
@@ -90,9 +104,6 @@ a:hover {
 .titlePost {
   font-weight: 500;
 }
-.mainPost {
-  padding: 0% 0% 0% 0%;
-}
 
 .mainPost h1 {
   margin-top: -10px;
@@ -101,12 +112,44 @@ a:hover {
   font-weight: 100;
 }
 
-.mainPost p {
+.mainPost p,
+.mainPost a,
+.mainPost h2,
+.mainPost ol,
+.mainPost h3,
+.mainPost ul,
+.mainPost li {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   padding: 0;
   margin: 0;
+  font-weight: 100;
+  font-size: 15px;
+}
+.mainPost {
+  height: 290px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.postElements {
+  margin: 0px 50px 40px 0px;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.574);
+  color: #ffffff;
+  padding: 1%;
+  overflow: hidden;
+}
+
+.mainPost h1 {
+  color: #d1d1d1;
+  font-size: 18.5px;
+  white-space: initial;
+  font-weight: 900;
 }
 
 .styleNavBlog {
@@ -127,8 +170,8 @@ a:hover {
 .postButton {
   background-color: #00000000;
   padding: 3%;
-  margin-top: 7px;
-  color: #ffffff93;
+  margin: 10px;
+  color: #ffffff;
   border-radius: 10px;
   border: solid 0.5px, rgb(236, 236, 236);
   transition: 1s;
@@ -136,42 +179,63 @@ a:hover {
 
 .postButton:hover {
   background-color: #91919153;
-  color: #ffffff;
+  text-shadow: 0 0 0.3em currentColor;
 }
 
 @media screen and (max-width: 670px) {
+  .postImages {
+    height: 250px;
+  }
+  .mainPost {
+    height: 350px;
+  }
   .postWrapper {
     display: contents;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .mainPost {
+    bottom: 200px;
+    top: -100px;
+  }
+
   .styleNavBlog {
     font-size: 17px;
     margin: 0px 0px 15px 2px;
   }
 
-
-.postPageWrapper {
-  text-align: left;
-  position: relative;
-  width: 100%;
-  padding: 1%;
-  top: 0%;
-  left: 0%;
-  transform: translate(0%, 0%);
-}
-
-
-}
-
-@media screen and (max-width: 600px) {
+  .postPageWrapper {
+    text-align: left;
+    position: relative;
+    width: 100%;
+    padding: 1%;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
   .postElements {
     position: relative;
     padding: 5%;
-    margin: 0px;
+    margin: 0px 0px 40px 0px;
     width: 100%;
     left: 0%;
     transform: translate(0%);
+  }
+
+.pagePostImages {
+  width: 100%;
+height: 40%;
+
+}
+
+}
+
+@media screen and (max-width: 400px) {
+  .postImages {
+    height: 200px;
+  }
+  .mainPost {
+    height: 300px;
   }
 }
