@@ -20,9 +20,9 @@ export default function GitHubRepositoryClient() {
       <SectionText
         style={`${sectionTextStyle.sectionWrapperBackground}`}
         title={
-          <div onClick={() => TbSettingsQuestion()}>
+          <span  onClick={() => TbSettingsQuestion()}>
             {showAllRepository ? "Hide repositories" : "Show all repositories"}
-          </div>
+          </span>
         }
         mainText={null}
         icon={

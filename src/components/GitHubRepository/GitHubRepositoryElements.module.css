@@ -2,6 +2,9 @@
   padding: 0% 1.5% 1.5% 0%;
   margin: 0% 1.5% 1.5% 0%;
 }
+.updated {
+  padding: 5% 0% 0% 0%;
+}
 
 .repositoryName {
   display: inline-block;

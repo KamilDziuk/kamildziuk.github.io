@@ -12,6 +12,11 @@ export default function RepositoryCard({
   repo,
   children,
 }: RepositoryCardProps) {
+  const lastUpdate = repo.updated_at
+    .replaceAll("T", " ")
+    .replaceAll("Z", " ")
+    .slice(0, 10);
+
   return (
     <SectionText
       title={repo.name.replaceAll("_", " ").replaceAll("-", " ").toUpperCase()}
@@ -42,6 +47,10 @@ export default function RepositoryCard({
               {topic}
             </div>
           ))}
+
+          <div className={repositoryElementStyles.updated}>
+            Last update <data>{lastUpdate}</data>
+          </div>
         </>
       }
     />

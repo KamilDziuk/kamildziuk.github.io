@@ -8,7 +8,7 @@ const data = await gitHubRepository(
 export default function GitHubRepositoryServer() {
   const content = gitHubUserContent();
 
-  const dataTable = [data[7], data[29], data[23], data[8], data[15]];
+  const dataTable = [data[7], data[29], data[23],  data[19], data[8], data[15]];
 
   return (
     <>
@@ -16,6 +16,7 @@ export default function GitHubRepositoryServer() {
         <RepositoryCard key={repo.id} repo={repo}>
           <img
             loading="lazy"
+            alt="portfolio images"
             className={repositoryElementStyles.gitHubUserContent}
             src={content[index]}
           />

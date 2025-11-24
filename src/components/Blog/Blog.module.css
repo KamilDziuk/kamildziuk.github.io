@@ -1,63 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-:root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-wrap: anywhere;
-  color: #ffffff93;
-  background-color: rgb(5, 5, 55);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  overflow-x: hidden;
-  font-weight: 300;
-  scroll-behavior: smooth;
-  line-height: 1.4;
-}
 
-h1 {
-  font-size: 25px;
-  font-weight: 600;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  text-align: center;
-}
-h3 {
-  font-weight: 600;
-  display: flex;
-  font-size: 17px;
-  padding: 0% 0% 1.5% 0%;
-  margin: 0% 0% 0% 0%;
-  z-index: 994;
-}
-ol {
-  padding: 0% 0% 0% 4.5%;
-  margin: 0% 0% 0% 0%;
-}
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-i {
-  margin-top: 200px;
-  font-size: 35px;
-  padding: 1.5% 0% 1.5% 0%;
-}
-
-i:hover {
-  text-shadow: 0 0 0.3em currentColor;
-}
-
-a:active {
-  text-shadow: 0 0 1em currentColor;
-}
-
-a:hover {
-  text-shadow: 0 0 0.3em currentColor;
-}
 .postImages {
   width: 100%;
   height: 200px;
@@ -67,21 +8,21 @@ a:hover {
 }
 .pagePostImages {
   width: 95%;
-height: 77%;
+  height: 50%;
   padding: 0px;
   margin-bottom: 0px;
-position: relative;
+  position: relative;
   border-radius: 10px;
-left: 50%;
+  left: 50%;
   transform: translateX(-50%);
 }
 .postWrapper {
   display: flex;
+  padding: 0.5%;
+    flex-wrap: wrap;
+
 }
 
-.postWrapper {
-  padding: 0.5%;
-}
 .postPageWrapper {
   text-align: left;
   position: relative;
@@ -98,6 +39,15 @@ left: 50%;
   border-radius: 10px;
   left: 50%;
   transform: translate(-50%);
+  border: solid 0.5px, rgb(236, 236, 236);
+}
+
+.postStatusElements {
+  position: relative;
+  background: rgba(0, 0, 0, 0.433);
+  padding: 1%;
+  width: 200px;
+  border-radius: 10px;
   border: solid 0.5px, rgb(236, 236, 236);
 }
 
@@ -128,22 +78,21 @@ left: 50%;
   font-size: 15px;
 }
 .mainPost {
-  height: 290px;
+  height: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.postStatusElements {
+  margin: 0px 10px 30px 0px;
 }
 
 .postElements {
   margin: 0px 50px 40px 0px;
 }
 
-pre {
-  background: rgba(0, 0, 0, 0.574);
-  color: #ffffff;
-  padding: 1%;
-  overflow: hidden;
-}
+
 
 .mainPost h1 {
   color: #d1d1d1;
@@ -181,16 +130,24 @@ pre {
   background-color: #91919153;
   text-shadow: 0 0 0.3em currentColor;
 }
+@media screen and (max-width: 1430px) {
 
+  .postElements {
+    padding: 2%;
+
+    left: 5%;
+    transform: translate(0%);
+  }
+}
 @media screen and (max-width: 670px) {
+    .postWrapper {
+    display: contents;
+  }
   .postImages {
-    height: 250px;
+    height: 450px;
   }
   .mainPost {
-    height: 350px;
-  }
-  .postWrapper {
-    display: contents;
+    height: 550px;
   }
 }
 
@@ -223,12 +180,10 @@ pre {
     transform: translate(0%);
   }
 
-.pagePostImages {
-  width: 100%;
-height: 40%;
-
-}
-
+  .pagePostImages {
+    width: 100%;
+    height: 40%;
+  }
 }
 
 @media screen and (max-width: 400px) {
