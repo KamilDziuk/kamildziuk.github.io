@@ -10,6 +10,7 @@ export interface GitHubRepository {
   homepage: string | null;
   description: string | null;
   topics: string[];
+
 }
 
 export default async function gitHubRepository(

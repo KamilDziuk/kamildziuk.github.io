@@ -19,7 +19,6 @@
   line-height: 1.4;
 }
 
-
 h1 {
   font-size: 25px;
   font-weight: 600;
@@ -41,6 +40,7 @@ ol {
 a {
   color: #ffffff;
   text-decoration: none;
+
 }
 
 i {
@@ -48,7 +48,17 @@ i {
   font-size: 35px;
   padding: 1.5% 0% 1.5% 0%;
 }
+a.glink img {
+  margin-right: 7px;
+}
+.gt_switcher_wrapper {
+  right: 40px !important;
+  z-index: 99 !important;
+    top: 27px !important;
+      filter: grayscale(100%);
+  transition: filter 0.3s ease;
 
+}
 i:hover {
   text-shadow: 0 0 0.3em currentColor;
 }
@@ -60,7 +70,6 @@ a:active {
 a:hover {
   text-shadow: 0 0 0.3em currentColor;
 }
-
 
 @media screen and (max-width: 1150px) {
   h1 {
@@ -82,7 +91,13 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   ol {
-  padding: 0% 0% 0% 4.5%;
+    padding: 0% 0% 0% 4.5%;
     margin: 0% 0% 0% 0%;
   }
+
+  .gt_switcher_wrapper {
+  right: 5px !important;
+  position:absolute !important;
+    top: 35px !important;
+}
 }

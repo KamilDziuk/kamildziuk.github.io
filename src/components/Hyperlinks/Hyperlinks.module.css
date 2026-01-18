@@ -1,15 +1,17 @@
 .styleNav {
   font-size: 25px;
-  width: 350px;
+  width: 370px;
 }
 .styleNavContact {
   font-size: 25px;
   margin: 0px 0px 15px 7.5px;
   animation: pulseContact 2s infinite;
+;
 }
 
 .styleNavContact:hover {
   text-shadow: 0 0 1em currentColor;
+
 }
 
 @keyframes pulseContact {
@@ -46,6 +48,7 @@
   text-shadow: 0 0 1em currentColor;
   transition: 0.3s;
   color: rgb(255, 255, 255);
+
 }
 .navigationIndicator:hover::before {
   content: " ─────── ";
@@ -53,6 +56,7 @@
   text-shadow: 0 0 1em currentColor;
   transition: 0.3s;
   color: rgb(255, 255, 255) !important;
+
 }
 
 .navigationIndicator.navigationIndicatorOff::before {

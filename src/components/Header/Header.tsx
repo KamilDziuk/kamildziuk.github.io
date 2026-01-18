@@ -1,6 +1,7 @@
 import { useShowContact } from "../Hyperlinks/useNavigationIndicator";
 import headerStyles from "./Header.module.css";
 import Hyperlinks from "../Hyperlinks/Hyperlinks";
+import HyperlinksIcon from "../Hyperlinks/HyperlinksIcons";
 import linksStyle from "../Hyperlinks/Hyperlinks.module.css";
 import blogElementStyles from "../Blog/Blog.module.css";
 import hyperlinksValues from "../Hyperlinks/hyperlinksValues";
@@ -65,15 +66,17 @@ export default function Header() {
         )}
         <IconGroup
           iconContent={
-            <Hyperlinks
+            <HyperlinksIcon
               styleHyperLinks={iconStyle.iconGroupWrapper}
               items={[
                 <Icon iconName="md:MdOutlineEmail" />,
+                <Icon iconName="fa:FaInstagram" />,
                 <Icon iconName="fa:FaLinkedin" />,
                 <Icon iconName="fa:FaGithub" />,
               ]}
               hrefs={[
                 "mailto:kamildziukwebdeveloper@gmail.com",
+                "https://www.instagram.com/kamildziukwebdeveloper/",
                 "https://www.linkedin.com/in/kamil-dziuk-1b02201b3/",
                 "https://github.com/KamilDziuk",
               ]}

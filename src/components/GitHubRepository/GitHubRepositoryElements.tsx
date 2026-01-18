@@ -12,7 +12,12 @@ export default function RepositoryCard({
   repo,
   children,
 }: RepositoryCardProps) {
+
   const lastUpdate = repo.updated_at
+    .replaceAll("T", " ")
+    .replaceAll("Z", " ")
+    .slice(0, 10);
+  const created_at = repo.created_at
     .replaceAll("T", " ")
     .replaceAll("Z", " ")
     .slice(0, 10);
@@ -49,7 +54,8 @@ export default function RepositoryCard({
           ))}
 
           <div className={repositoryElementStyles.updated}>
-            Last update <data>{lastUpdate}</data>
+            Created at <data>{created_at}</data> | Last update{" "}
+            <data>{lastUpdate}</data>
           </div>
         </>
       }

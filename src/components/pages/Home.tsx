@@ -2,17 +2,17 @@ import React, { Suspense } from "react";
 import LightReflections from "../LightReflections/LightReflections.tsx";
 import Header from "../Header/Header.tsx";
 import Logo from "../Logo/Logo.tsx";
+import Wordpress from "../Wordpress/Wordpress.tsx";
 import Icon from "../Icon/Icon";
 import MobileTitleSection from "../MobileTitleSection/MobileTitleSection";
 import SectionText from "../SectionText/SectionText";
 import sectionTextStyle from "../SectionText/SectionText.module.css";
-
 const About = React.lazy(() => import("../About/About.tsx"));
 const Cooperation = React.lazy(() => import("../Cooperation/Cooperation.tsx"));
 const AssistantAI = React.lazy(() => import("../AssistantAI/AssistantAI.tsx"));
 
 const GitHubRepositoryClient = React.lazy(
-  () => import("../GitHubRepository/GitHubRepositoryClient.tsx")
+  () => import("../GitHubRepository/GitHubRepositoryClient.tsx"),
 );
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
 
       <MobileTitleSection
         idSection={"aboutMePosition"}
-        titleSection={"About"}
+        titleSection={"About Me"}
       />
 
       <SectionText
@@ -44,7 +44,11 @@ export default function Home() {
       <Suspense fallback={null}>
         <GitHubRepositoryClient />
       </Suspense>
-
+      <SectionText
+        title={"WORDPRESS PROJECT"}
+        icon={<Icon iconName="fa:FaWordpressSimple" />}
+        mainText={<Wordpress />}
+      />
       <MobileTitleSection idSection={"offerPosition"} titleSection={"Offer"} />
       <SectionText
         title={"WWW PAGES"}

@@ -1,17 +1,12 @@
 import blogElementStyles from "../Blog.module.css";
-import { postsBlog } from "../blogSettings.ts";
-import { useEffect, useState } from "react";
+import { usePostLengthStatus } from "../usePost";
+
+
 export default function PostFilters() {
-  const [postLengthStatus, setPostLengthStatus] = useState<number>();
-  useEffect(() => {
-    const postLength = postsBlog;
-
-    setPostLengthStatus(postLength.length);
-  }, []);
-
+  const postLengthStatus = usePostLengthStatus();
   return (
     <div className={blogElementStyles.postStatusElements}>
-    <p> Post number: {postLengthStatus}</p>
+      <p> Post number: {postLengthStatus}</p>
     </div>
   );
 }
