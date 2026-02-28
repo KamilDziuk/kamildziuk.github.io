@@ -26,7 +26,7 @@ export default function Blog() {
   }, [search]);
   const [repoCreate, setRepoCreate] = useState("");
   const [repoUpdate, setRepoUpdate] = useState("");
-  const [t1, t2] = useState("");
+  const [traffic, setTraffic] = useState("");
   useEffect(() => {
     async function loadRepoDates() {
       const [update, create] = await repoBlogDateStatus();
@@ -36,11 +36,11 @@ export default function Blog() {
 
     loadRepoDates();
   }, []);
-  async function t() {
-    const adwdaaw = await blogTraffic();
-    t2(adwdaaw);
+  async function visitors() {
+    const trafficContent = await blogTraffic();
+    setTraffic(trafficContent);
   }
-  t();
+  visitors();
   return (
     <>
       <Logo />
@@ -60,7 +60,7 @@ export default function Blog() {
         style={sectionTextStyle.sectionWrapperBackground}
         title={null}
         icon={null}
-        mainText={`Blog visitors from the last 14 days: ${t1}`}
+        mainText={`Blog visitors from the last 14 days: ${traffic}`}
       />
       <SectionText
         style={sectionTextStyle.sectionWrapperBackground}
