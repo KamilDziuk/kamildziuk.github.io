@@ -4,7 +4,7 @@ import { postsBlog } from "./blogSettings.ts";
 
 export default function usePost(
   textPosts: string,
-  index: string
+  index: string,
 ): [string, string] {
   const [postText, setPostText] = useState("");
   const [postImage, setPostImage] = useState("");

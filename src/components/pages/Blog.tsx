@@ -3,9 +3,9 @@ import { Suspense, lazy, useEffect, useState } from "react";
 import LightReflections from "../LightReflections/LightReflections";
 import Icon from "../Icon/Icon";
 import Categoris from "../Blog/Categoris/PostFilters";
+import blogTraffic from "../Blog/blogTraffic";
 import SectionText from "../SectionText/SectionText";
 import Logo from "../Logo/Logo";
-
 import sectionTextStyle from "../SectionText/SectionText.module.css";
 import blogElementStyles from "../Blog/Blog.module.css";
 
@@ -26,7 +26,7 @@ export default function Blog() {
   }, [search]);
   const [repoCreate, setRepoCreate] = useState("");
   const [repoUpdate, setRepoUpdate] = useState("");
-
+  const [t1, t2] = useState("");
   useEffect(() => {
     async function loadRepoDates() {
       const [update, create] = await repoBlogDateStatus();
@@ -36,25 +36,32 @@ export default function Blog() {
 
     loadRepoDates();
   }, []);
-
+  async function t() {
+    const adwdaaw = await blogTraffic();
+    t2(adwdaaw);
+  }
+  t();
   return (
     <>
       <Logo />
-
       <SectionText
         style={sectionTextStyle.sectionWrapperBackground}
         title="Welcome to my Web Development Blog"
         icon={<Icon iconName="fa:FaPenFancy" />}
         mainText={`Here, I share insights, tutorials, and tips about modern web development — from front-end design and responsive layouts to back-end technologies and best coding practices.`}
       />
-
       <SectionText
         style={sectionTextStyle.sectionWrapperBackground}
         title={null}
         icon={null}
         mainText={`Created at ${repoCreate} | Last update ${repoUpdate}`}
       />
-
+      <SectionText
+        style={sectionTextStyle.sectionWrapperBackground}
+        title={null}
+        icon={null}
+        mainText={`Blog visitors from the last 14 days: ${t1}`}
+      />
       <SectionText
         style={sectionTextStyle.sectionWrapperBackground}
         title={null}
