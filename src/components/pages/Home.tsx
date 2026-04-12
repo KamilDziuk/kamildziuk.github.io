@@ -2,89 +2,39 @@ import React, { Suspense } from "react";
 import LightReflections from "../LightReflections/LightReflections.tsx";
 import Header from "../Header/Header.tsx";
 import Logo from "../Logo/Logo.tsx";
-import Wordpress from "../Wordpress/Wordpress.tsx";
-import Icon from "../Icon/Icon";
-import MobileTitleSection from "../MobileTitleSection/MobileTitleSection";
-import SectionText from "../SectionText/SectionText";
-import sectionTextStyle from "../SectionText/SectionText.module.css";
-const About = React.lazy(() => import("../About/About.tsx"));
-const Cooperation = React.lazy(() => import("../Cooperation/Cooperation.tsx"));
-const AssistantAI = React.lazy(() => import("../AssistantAI/AssistantAI.tsx"));
+import Section from "../Section/Section.tsx";
+import SectionContentList from "../Section/SectionContentList.tsx";
+import { Helmet } from "react-helmet-async";
 
-const GitHubRepositoryClient = React.lazy(
-  () => import("../GitHubRepository/GitHubRepositoryClient.tsx"),
-);
+const AssistantAI = React.lazy(() => import("../AssistantAI/AssistantAI.tsx"));
 
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>Kamil Dziuk - Websites and Web applications</title>
+        <meta
+          name="description"
+          content="Kamil Dziuk - modern web developer creating web applications and interfaces."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kamil Dziuk - Web Developer" />
+        <meta
+          property="og:description"
+          content="Modern web developer creating web applications."
+        />
+      </Helmet>
+
       <LightReflections />
       <Logo />
 
       <Header />
 
-      <MobileTitleSection
-        idSection={"aboutMePosition"}
-        titleSection={"About Me"}
-      />
+      {SectionContentList().map((section, i) => (
+        <Section key={i} {...section} />
+      ))}
 
-      <SectionText
-        style={`${sectionTextStyle.sectionWrapperBackground}`}
-        title={null}
-        mainText={
-          <Suspense fallback={null}>
-            <About />
-          </Suspense>
-        }
-      />
-      <MobileTitleSection
-        idSection={"portfolioPosition"}
-        titleSection={"Projects"}
-      />
-      <Suspense fallback={null}>
-        <GitHubRepositoryClient />
-      </Suspense>
-      <SectionText
-        title={"WORDPRESS PROJECT"}
-        icon={<Icon iconName="fa:FaWordpressSimple" />}
-        mainText={<Wordpress />}
-      />
-      <MobileTitleSection idSection={"offerPosition"} titleSection={"Offer"} />
-      <SectionText
-        title={"WWW PAGES"}
-        icon={<Icon iconName="ri:RiPagesLine" />}
-        mainText={
-          "I design each website in such a way as to maintain harmony between aesthetics and simplicity. It strives to create websites that are not only eye-catching, but also easy to use for users. I emphasize minimalist design, eliminating unnecessary elements and focusing on key aspects, which makes the pages clear and intuitive. Mainly using JavaScript and PHP programming languages"
-        }
-      />
-      <SectionText
-        title={"WEB APP"}
-        icon={<Icon iconName="ri:RiFunctionAddLine" />}
-        mainText={
-          "Do you need tailored functionality for your website? I will design an application or functionality for you that meets the individual needs of your business. Discover the potential of non-standard solutions and stand out from the competition!"
-        }
-      />
-      <SectionText
-        title={"TECHNICAL SUPPORT"}
-        icon={<Icon iconName="fa:FaTools" />}
-        mainText={
-          "If you want to maintain full control over the health of your website and application, I will be happy to cooperate with you in the field of cybersecurity and technical support."
-        }
-      />
-
-      <MobileTitleSection
-        idSection={"cooperationPosition"}
-        titleSection={"Cooperation"}
-      />
-      <SectionText
-        style={`${sectionTextStyle.sectionWrapperBackground}`}
-        title={"WHAT DOES COOPERATION LOOK LIKE?"}
-        mainText={
-          <Suspense fallback={null}>
-            <Cooperation />
-          </Suspense>
-        }
-      />
       <Suspense fallback={null}>
         <AssistantAI />
       </Suspense>

@@ -1,18 +1,17 @@
 import Icon from "../Icon/Icon";
-import SectionText from "../SectionText/SectionText";
+import SectionGitHubRepository from "../Section/Section";
 import repositoryElementStyles from "./GitHubRepositoryElements.module.css";
 import type React from "react";
 
 type RepositoryCardProps = {
   repo: any;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export default function RepositoryCard({
   repo,
   children,
 }: RepositoryCardProps) {
-
   const lastUpdate = repo.updated_at
     .replaceAll("T", " ")
     .replaceAll("Z", " ")
@@ -23,7 +22,7 @@ export default function RepositoryCard({
     .slice(0, 10);
 
   return (
-    <SectionText
+    <SectionGitHubRepository
       title={repo.name.replaceAll("_", " ").replaceAll("-", " ").toUpperCase()}
       icon={
         <>

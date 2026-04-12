@@ -73,12 +73,14 @@ export default function Header() {
                 <Icon iconName="fa:FaInstagram" />,
                 <Icon iconName="fa:FaLinkedin" />,
                 <Icon iconName="fa:FaGithub" />,
+                <Icon iconName="ri:RiGitlabFill" />,
               ]}
               hrefs={[
                 "mailto:kamildziukwebdeveloper@gmail.com",
                 "https://www.instagram.com/kamildziukwebdeveloper/",
                 "https://www.linkedin.com/in/kamil-dziuk-1b02201b3/",
                 "https://github.com/KamilDziuk",
+                "https://gitlab.com/KamilDziuk",
               ]}
             />
           }

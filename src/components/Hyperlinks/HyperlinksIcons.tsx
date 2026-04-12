@@ -30,6 +30,7 @@ export default function HyperlinksIcon({
     <Wrapper>
       {items.map((item, index) => (
         <a
+        target="_blank"
           className={` ${styleHyperLinks} ${
             navigationIndicatorStyle.navigationIndicator
           } ${

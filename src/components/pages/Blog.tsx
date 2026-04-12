@@ -1,14 +1,14 @@
 import { Suspense, lazy, useEffect, useState } from "react";
-
 import LightReflections from "../LightReflections/LightReflections";
 import Icon from "../Icon/Icon";
 import Categoris from "../Blog/Categoris/PostFilters";
-import blogTraffic from "../Blog/blogTraffic";
-import SectionText from "../SectionText/SectionText";
+// import { blogPopular, blogTraffic } from "../Blog/blogTraffic";
+import { blogTraffic } from "../Blog/blogTraffic";
+import BlogSection from "../Section/Section";
 import Logo from "../Logo/Logo";
-import sectionTextStyle from "../SectionText/SectionText.module.css";
+import sectionBlogStyle from "../Section/Section.module.css";
 import blogElementStyles from "../Blog/Blog.module.css";
-
+import { Helmet } from "react-helmet-async";
 import { repoBlogDateStatus } from "../Blog/blogSettings";
 
 const Post = lazy(() => import("../Blog/Post"));
@@ -27,6 +27,7 @@ export default function Blog() {
   const [repoCreate, setRepoCreate] = useState("");
   const [repoUpdate, setRepoUpdate] = useState("");
   const [traffic, setTraffic] = useState("");
+  // const [popular, setPopular] = useState("");
   useEffect(() => {
     async function loadRepoDates() {
       const [update, create] = await repoBlogDateStatus();
@@ -41,31 +42,44 @@ export default function Blog() {
     setTraffic(trafficContent);
   }
   visitors();
+
+  // async function popularVisitors() {
+  //   const popularContent = await blogPopular();
+  //   setPopular(popularContent);
+  // }
+  // popularVisitors();
+
   return (
     <>
+      <Helmet>
+        <title>Kamil Dziuk - Blog</title>
+        <meta
+          name="description"
+          content="Here, I share insights, tutorials, and tips about modern web development — from front-end design and responsive layouts to back-end technologies and best coding practices."
+        />
+      </Helmet>
+
       <Logo />
-      <SectionText
-        style={sectionTextStyle.sectionWrapperBackground}
+      <BlogSection
+        style={sectionBlogStyle.sectionWrapperBackground}
         title="Welcome to my Web Development Blog"
         icon={<Icon iconName="fa:FaPenFancy" />}
         mainText={`Here, I share insights, tutorials, and tips about modern web development — from front-end design and responsive layouts to back-end technologies and best coding practices.`}
       />
-      <SectionText
-        style={sectionTextStyle.sectionWrapperBackground}
-        title={null}
-        icon={null}
+      <BlogSection
+        style={sectionBlogStyle.sectionWrapperBackground}
+        title={"Timestamps"}
+        icon={<Icon iconName="md:MdUpdate" />}
         mainText={`Created at ${repoCreate} | Last update ${repoUpdate}`}
       />
-      <SectionText
-        style={sectionTextStyle.sectionWrapperBackground}
-        title={null}
-        icon={null}
-        mainText={`Blog visitors from the last 14 days: ${traffic}`}
+      <BlogSection
+        style={sectionBlogStyle.sectionWrapperBackground}
+        title={"Visitors"}
+        icon={<Icon iconName="fa:FaRegEye" />}
+        mainText={<>Blog pageviews: {traffic}</>}
       />
-      <SectionText
-        style={sectionTextStyle.sectionWrapperBackground}
-        title={null}
-        icon={null}
+      <BlogSection
+        style={sectionBlogStyle.sectionWrapperBackground}
         mainText={<Categoris />}
       />
 

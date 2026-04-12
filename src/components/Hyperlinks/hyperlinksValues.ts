@@ -6,7 +6,8 @@ type NavLinks = {
 export default function hyperlinksValues() {
   const navLinks: NavLinks[] = [
     { label: "About Me", href: "#aboutMePosition" },
-    { label: "Projects", href: "#portfolioPosition" },
+    { label: "Code Projects", href: "#portfolioPosition" },
+    { label: "WordPress Projects", href: "#portfolioWordpressPosition" },
     { label: "Offer", href: "#offerPosition" },
     { label: "Cooperation", href: "#cooperationPosition" },
   ];

@@ -2,8 +2,8 @@ import GitHubRepositoryServer, {
   GitHubRepositoryServerAll,
 } from "./GitHubRepositoryServer";
 
-import SectionText from "../SectionText/SectionText";
-import sectionTextStyle from "../SectionText/SectionText.module.css";
+import SectionGitHubRepository from "../Section/Section";
+import sectionGitHubRepositoryStyle from "../Section/Section.module.css";
 import { useState } from "react";
 import Icon from "../Icon/Icon";
 export default function GitHubRepositoryClient() {
@@ -17,14 +17,13 @@ export default function GitHubRepositoryClient() {
       {!showAllRepository && <GitHubRepositoryServer />}
       {showAllRepository && <GitHubRepositoryServerAll />}
 
-      <SectionText
-        style={`${sectionTextStyle.sectionWrapperBackground}`}
+      <SectionGitHubRepository
+        style={`${sectionGitHubRepositoryStyle.sectionWrapperBackground}`}
         title={
-          <span  onClick={() => TbSettingsQuestion()}>
+          <span onClick={() => TbSettingsQuestion()}>
             {showAllRepository ? "Hide repositories" : "Show all repositories"}
           </span>
         }
-        mainText={null}
         icon={
           showAllRepository ? (
             <Icon iconName="fa:FaLongArrowAltDown" />

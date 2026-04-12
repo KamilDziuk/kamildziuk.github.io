@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <HyperlinksIcon
       styleHyperLinks={logoStyle.logo}
-      items={["Dziuk"]}
+      items={[""]}
       hrefs={["/."]}
     />
   );

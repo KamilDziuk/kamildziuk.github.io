@@ -1,11 +1,12 @@
-import sectionTextStyle from "./SectionText.module.css";
+import sectionStyle from "./Section.module.css";
 import { motion as Motion } from "framer-motion";
 
 type SectionTextProps = {
-  title?: string | null | any;
-  icon?: any;
-  mainText: React.ReactNode;
-  style?: any;
+  title?: React.ReactNode;
+  idSection?: string;
+  icon?:any;
+  mainText?: React.ReactNode;
+  style?: string;
 };
 const iconVariants = {
   hover: { y: -10, scale: 1.1, transition: { duration: 0.3 } },
@@ -16,8 +17,9 @@ const allElementVariants = {
   initial: { opacity: 0 },
 };
 
-export default function SectionText({
+export default function Section({
   title,
+  idSection,
   mainText,
   icon,
   style,
@@ -28,11 +30,12 @@ export default function SectionText({
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
+      id={idSection}
       initial="initial"
       whileHover="hover"
-      className={`${sectionTextStyle.sectionWrapper} ${style} `}
+      className={`${sectionStyle.sectionWrapper} ${style} `}
     >
-      <div className={sectionTextStyle.sectionTitleText}>
+      <div className={sectionStyle.sectionTitleText}>
         {title}
         <Motion.span
           variants={iconVariants}
@@ -40,12 +43,12 @@ export default function SectionText({
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.2 }}
           viewport={{ once: true }}
-          className={sectionTextStyle.iconWrapper}
+          className={sectionStyle.iconWrapper}
         >
           {icon}
         </Motion.span>
       </div>
-      <div className={sectionTextStyle.sectionMainText}>{mainText}</div>
+      <div className={sectionStyle.sectionMainText}>{mainText}</div>
     </Motion.section>
   );
 }

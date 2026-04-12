@@ -4,21 +4,25 @@ import usePost from "./usePost.ts";
 import useSearch from "./useSearch.ts";
 import ReactMarkdown from "react-markdown";
 import blogElementStyles from "../Blog/Blog.module.css";
+import Media from "../Media/Media.tsx";
 
 export default function Post({ search }: { search: string }) {
   const post = postsBlog.map(async (textPosts: any, index: any) => {
+
     const [postText, postImage] = usePost(textPosts.download_url, index);
     const regex = useSearch(search);
+
     if (Boolean(postText.match(regex)) == true) {
       return (
         <article key={textPosts.sha || index}>
           <div className={blogElementStyles.postElements}>
-            <img
-              loading="lazy"
+            
+            <Media
+              mediaStyle={blogElementStyles.pagePostImages}
+              media={postImage}
               alt={`post image named ${textPosts.name}`}
-              src={postImage}
-              className={blogElementStyles.pagePostImages}
             />
+
             <div className={blogElementStyles.mainPost}>
               <ReactMarkdown>{postText}</ReactMarkdown>
             </div>
