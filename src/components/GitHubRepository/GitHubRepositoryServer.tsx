@@ -6,11 +6,11 @@ import Media from "../Media/Media";
 const data = await gitHubRepository(
   "https://api.github.com/users/kamildziuk/repos",
 );
-
+console.log(data)
 export default function GitHubRepositoryServer() {
   const content = gitHubUserContent();
 
-  const dataTable = [data[7], data[29], data[23], data[19], data[8], data[15]];
+  const dataTable = [data[8], data[7], data[29], data[23], data[19], data[9], data[15]];
 
   return (
     <>
