@@ -6,7 +6,7 @@ import Media from "../Media/Media";
 const data = await gitHubRepository(
   "https://api.github.com/users/kamildziuk/repos",
 );
-console.log(data)
+
 export default function GitHubRepositoryServer() {
   const content = gitHubUserContent();
 
