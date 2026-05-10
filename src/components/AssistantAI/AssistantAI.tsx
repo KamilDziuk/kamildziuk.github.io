@@ -15,7 +15,7 @@ export default function AssistantAI() {
       {!closeWindowPopup && (
         <embed
           className={assistantAIStyle.assistantWindow}
-          src="https://your-assistant-ai.onrender.com/"
+          src="https://yourassistantai.uk/"
         />
       )}
       {!closeWindowPopup && (
