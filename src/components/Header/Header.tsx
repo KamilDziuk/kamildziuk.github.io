@@ -60,6 +60,11 @@ export default function Header() {
                   "",
                   "https://www.google.com/maps/place/Katowice/@50.2138488,18.925582,12z/data=!3m1!4b1!4m6!3m5!1s0x4716ce2336a1ccd1:0xb9af2a350559fabb!8m2!3d50.2648919!4d19.0237815!16zL20vMGJsZDg?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
                 ]}
+                ariaLabels={[
+                  "Call +48 668 573 034",
+                  "Send email to kamildziukwebdeveloper@gmail.com",
+                  "Open location: Katowice, Poland",
+                ]}
               />
             }
           />
@@ -73,14 +78,18 @@ export default function Header() {
                 <Icon iconName="fa:FaInstagram" />,
                 <Icon iconName="fa:FaLinkedin" />,
                 <Icon iconName="fa:FaGithub" />,
-                <Icon iconName="ri:RiGitlabFill" />,
               ]}
               hrefs={[
                 "mailto:kamildziukwebdeveloper@gmail.com",
                 "https://www.instagram.com/kamildziukwebdeveloper/",
                 "https://www.linkedin.com/in/kamil-dziuk-1b02201b3/",
                 "https://github.com/KamilDziuk",
-                "https://gitlab.com/KamilDziuk",
+              ]}
+              ariaLabels={[
+                "Send email",
+                "Visit Instagram profile",
+                "Visit LinkedIn profile",
+                "Visit GitHub profile",
               ]}
             />
           }

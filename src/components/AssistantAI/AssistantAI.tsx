@@ -10,7 +10,7 @@ export default function AssistantAI() {
         onClick={() => clickBehavior()}
         className={assistantAIStyle.assistantButton}
       >
-        <Icon iconName="io5:IoChatbubbles" />
+        <Icon ariaLabel="Open chat assistant" iconName="io5:IoChatbubbles" />
       </button>
       {!closeWindowPopup && (
         <embed

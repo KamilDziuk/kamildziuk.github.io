@@ -4,22 +4,20 @@ import useNavigationIndicator from "./useNavigationIndicator";
 export default function HyperlinksIcon({
   hrefs,
   items,
+  ariaLabels,
   styleHyperLinks,
   wrapper: Wrapper = "div",
 }: {
   hrefs: string[] | string;
   items: (string | JSX.Element)[];
+  ariaLabels?: string[];
   styleHyperLinks?: string;
   wrapper?: React.ElementType;
 }) {
   const [navigationIndicatorOn, navigationIndicatorOff] =
     useNavigationIndicator();
 
-  const handleClick = (
-
-    href: string
-  ) => {
-
+  const handleClick = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -30,7 +28,6 @@ export default function HyperlinksIcon({
     <Wrapper>
       {items.map((item, index) => (
         <a
-        target="_blank"
           className={` ${styleHyperLinks} ${
             navigationIndicatorStyle.navigationIndicator
           } ${
@@ -42,7 +39,8 @@ export default function HyperlinksIcon({
           }`}
           key={index}
           href={hrefs[index]}
-          onClick={() => handleClick( hrefs[index])}
+          aria-label={ariaLabels?.[index]}
+          onClick={() => handleClick(hrefs[index])}
         >
           {item}
         </a>

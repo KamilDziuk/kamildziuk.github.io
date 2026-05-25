@@ -20,15 +20,20 @@ export default function GitHubRepositoryClient() {
       <SectionGitHubRepository
         style={`${sectionGitHubRepositoryStyle.sectionWrapperBackground}`}
         title={
-          <span onClick={() => TbSettingsQuestion()}>
+          <span
+            onClick={() => TbSettingsQuestion()}
+            aria-label={
+              showAllRepository ? "Hide repositories" : "Show all repositories"
+            }
+          >
             {showAllRepository ? "Hide repositories" : "Show all repositories"}
           </span>
         }
         icon={
           showAllRepository ? (
-            <Icon iconName="fa:FaLongArrowAltDown" />
+            <Icon ariaLabel="true" iconName="fa:FaLongArrowAltDown" />
           ) : (
-            <Icon iconName="fa:FaLongArrowAltUp" />
+            <Icon ariaLabel="true" iconName="fa:FaLongArrowAltUp" />
           )
         }
       />
