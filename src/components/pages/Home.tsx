@@ -17,13 +17,6 @@ export default function Home() {
           name="description"
           content="Kamil Dziuk - modern web developer creating web applications and interfaces."
         />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Kamil Dziuk - Web Developer" />
-        <meta
-          property="og:description"
-          content="Modern web developer creating web applications."
-        />
       </Helmet>
 
       <LightReflections />
@@ -31,13 +24,15 @@ export default function Home() {
 
       <Header />
 
-      {SectionContentList().map((section, i) => (
-        <Section key={i} {...section} />
-      ))}
+      <main>
+        {SectionContentList().map((section, i) => (
+          <Section key={i} {...section} />
+        ))}
 
-      <Suspense fallback={null}>
-        <AssistantAI />
-      </Suspense>
+        <Suspense fallback={null}>
+          <AssistantAI />
+        </Suspense>
+      </main>
     </>
   );
 }

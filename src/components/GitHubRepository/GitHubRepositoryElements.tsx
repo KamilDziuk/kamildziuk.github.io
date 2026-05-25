@@ -27,11 +27,17 @@ export default function RepositoryCard({
       icon={
         <>
           <a target="_blank" href={repo.homepage} rel="noopener noreferrer">
-            <Icon iconName="ri:RiGlobalLine" />
+            <Icon
+             ariaLabel={`Open live website for ${repo.name}`}
+              iconName="ri:RiGlobalLine"
+            />
           </a>
 
           <a target="_blank" href={repo.html_url} rel="noopener noreferrer">
-            <Icon iconName="fa:FaGithub" />
+            <Icon
+             ariaLabel={`Open GitHub repository for ${repo.name}`}
+              iconName="fa:FaGithub"
+            />
           </a>
         </>
       }
