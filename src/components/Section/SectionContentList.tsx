@@ -49,7 +49,7 @@ export default function SectionContentList() {
         <>
           <a
             target="_blank"
-            href={"https://markolmchefkok.nl/"}
+            href={"../../../public/{015AC9B1-3380-4331-87CA-96992121F460}.png"}
             rel="noopener noreferrer"
           >
             <Icon iconName="ri:RiGlobalLine" />
