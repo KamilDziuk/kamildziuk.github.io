@@ -50,6 +50,7 @@ export default function SectionContentList() {
             target="_blank"
             href={"https://markolmchefkok.nl"}
             rel="noopener noreferrer"
+            aria-label="Visit the Markolm Chefkok website"
           >
             <Icon iconName="ri:RiGlobalLine" />
           </a>
@@ -85,6 +86,7 @@ export default function SectionContentList() {
             target="_blank"
             href={"https://unitedsellers.eu/"}
             rel="noopener noreferrer"
+            aria-label="Visit the Unitedsellersk website"
           >
             <Icon iconName="ri:RiGlobalLine" />
           </a>
