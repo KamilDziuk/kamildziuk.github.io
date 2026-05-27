@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import Media from "../Media/Media.tsx";
 import repositoryElementStyles from "../GitHubRepository/GitHubRepositoryElements.module.css";
 import Icon from "../Icon/Icon.tsx";
 import sectionStyle from "../Section/Section.module.css";
@@ -49,7 +48,7 @@ export default function SectionContentList() {
         <>
           <a
             target="_blank"
-            href={"../../../public/{015AC9B1-3380-4331-87CA-96992121F460}.png"}
+            href={"https://markolmchefkok.nl"}
             rel="noopener noreferrer"
           >
             <Icon iconName="ri:RiGlobalLine" />
@@ -65,11 +64,16 @@ export default function SectionContentList() {
             agent written in React was implemented, integrated with WordPress
             via an API, providing support.
           </div>
-          <Media
+          <img
+            className={repositoryElementStyles.gitHubUserContent}
+            src="/../../../{015AC9B1-3380-4331-87CA-96992121F460}.png"
+            alt="obraz projektu strony markolmchefkok.nl"
+          />
+          {/* <Media
             mediaStyle={repositoryElementStyles.gitHubUserContent}
             media="../../../markolmchefkok.gif"
             alt=""
-          />
+          /> */}
         </>
       ),
     },
@@ -97,11 +101,16 @@ export default function SectionContentList() {
             basic SEO, with a focus on usability, performance, and mobile
             compatibility.
           </div>
-          <Media
+          <img
+            className={repositoryElementStyles.gitHubUserContent}
+            src="/../../../{0D47BADD-5291-4B79-9AE6-6CB92173348E}.png"
+            alt="obraz projektu strony unitedsellers.eu"
+          />
+          {/* <Media
             mediaStyle={repositoryElementStyles.gitHubUserContent}
             media="../../../sunitedsellers.gif"
             alt=""
-          />
+          /> */}
         </>
       ),
     },

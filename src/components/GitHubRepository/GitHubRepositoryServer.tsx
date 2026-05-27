@@ -27,12 +27,3 @@ export default function GitHubRepositoryServer() {
   );
 }
 
-export function GitHubRepositoryServerAll() {
-  return (
-    <>
-      {data.map((repo: any) => (
-        <RepositoryCard key={repo.id} repo={repo}></RepositoryCard>
-      ))}
-    </>
-  );
-}
