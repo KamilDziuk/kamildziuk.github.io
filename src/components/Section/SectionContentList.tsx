@@ -67,7 +67,7 @@ export default function SectionContentList() {
           </div>
           <img
             className={repositoryElementStyles.gitHubUserContent}
-            src="/../../../{015AC9B1-3380-4331-87CA-96992121F460}.png"
+            src="/../../../MarkolmChefkok.webp"
             alt="obraz projektu strony markolmchefkok.nl"
           />
           {/* <Media
@@ -105,7 +105,7 @@ export default function SectionContentList() {
           </div>
           <img
             className={repositoryElementStyles.gitHubUserContent}
-            src="/../../../{0D47BADD-5291-4B79-9AE6-6CB92173348E}.png"
+            src="/../../../UnitedSellers.webp"
             alt="obraz projektu strony unitedsellers.eu"
           />
           {/* <Media
