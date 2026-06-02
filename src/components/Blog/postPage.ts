@@ -23,7 +23,10 @@ export const createPostPage = async (
     <style>${blogPageElementStyles}</style>
   </head>
   <body>
-    <a href="https://kamildziuk.github.io/#/blog" class="${blogElementStyles.logo}"> &larr; Back</a>
+   <a href="https://kamildziuk.github.io/#/blog" class="${blogElementStyles.logo}">
+  <span aria-hidden="true">←</span>
+  <span class="sr-only">Back to blog</span>
+</a>
       <div class="lightReflectionsContainer">
       <div class="lightReflections"></div>
     </div>
