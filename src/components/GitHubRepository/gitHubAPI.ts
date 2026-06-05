@@ -34,6 +34,7 @@ export default async function gitHubRepository(
 
 export function gitHubUserContent(): string[] {
   const content = [
+      "../../../SensualBeauty.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/ElCoffeino/main/public/gif/presentation.gif",
     "../../../ElCoffeino.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/djMatthew/main/presentation.gif",
