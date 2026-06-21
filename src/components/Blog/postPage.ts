@@ -6,7 +6,7 @@ import { marked } from "marked";
 export const createPostPage = async (
   content: any,
   textPostsPage: any,
-  index: any
+  index: any,
 ) => {
   const titleTextPosts = textPostsPage.name.replaceAll(".md", "");
   const mainTextPosts = await content;
@@ -127,8 +127,6 @@ a.glink img {
 
 {
 right: 45px !important;
-  //     filter: grayscale(100%);
-  // transition: filter 0.3s ease;
 }
 
 .lightReflections {
