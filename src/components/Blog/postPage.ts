@@ -127,8 +127,8 @@ a.glink img {
 
 {
 right: 45px !important;
-      filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  //     filter: grayscale(100%);
+  // transition: filter 0.3s ease;
 }
 
 .lightReflections {
