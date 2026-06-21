@@ -2,8 +2,6 @@ import { Suspense, lazy, useEffect, useState } from "react";
 import LightReflections from "../LightReflections/LightReflections";
 import Icon from "../Icon/Icon";
 import Categoris from "../Blog/Categoris/PostFilters";
-// import { blogPopular, blogTraffic } from "../Blog/blogTraffic";
-import { blogTraffic } from "../Blog/blogTraffic";
 import BlogSection from "../Section/Section";
 import Logo from "../Logo/Logo";
 import sectionBlogStyle from "../Section/Section.module.css";
@@ -26,8 +24,7 @@ export default function Blog() {
   }, [search]);
   const [repoCreate, setRepoCreate] = useState("");
   const [repoUpdate, setRepoUpdate] = useState("");
-  const [traffic, setTraffic] = useState("");
-  // const [popular, setPopular] = useState("");
+
   useEffect(() => {
     async function loadRepoDates() {
       const [update, create] = await repoBlogDateStatus();
@@ -37,17 +34,6 @@ export default function Blog() {
 
     loadRepoDates();
   }, []);
-  async function visitors() {
-    const trafficContent = await blogTraffic();
-    setTraffic(trafficContent);
-  }
-  visitors();
-
-  // async function popularVisitors() {
-  //   const popularContent = await blogPopular();
-  //   setPopular(popularContent);
-  // }
-  // popularVisitors();
 
   return (
     <>
@@ -72,12 +58,7 @@ export default function Blog() {
         icon={<Icon iconName="md:MdUpdate" />}
         mainText={`Created at ${repoCreate} | Last update ${repoUpdate}`}
       />
-      <BlogSection
-        style={sectionBlogStyle.sectionWrapperBackground}
-        title={"Visitors"}
-        icon={<Icon iconName="fa:FaRegEye" />}
-        mainText={<>Blog pageviews: {traffic}</>}
-      />
+
       <BlogSection
         style={sectionBlogStyle.sectionWrapperBackground}
         mainText={<Categoris />}
