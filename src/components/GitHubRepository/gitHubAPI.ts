@@ -34,21 +34,23 @@ export default async function gitHubRepository(
 
 export function gitHubUserContent(): string[] {
   const content = [
-      "../../../SensualBeauty.webp",
+    "../../../AIAssistant.webp",
+
+    "../../../SensualBeauty.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/ElCoffeino/main/public/gif/presentation.gif",
     "../../../ElCoffeino.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/djMatthew/main/presentation.gif",
     "../../../DjMatthew.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/yourAssistantAI/main/client/src/assets/video/presentation.gif",
-    "../../../AIAssistant.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/parkpaderewskiego/main/src/public/assets/video/presentation.gif",
-     "../../../ParkPaderewskiego.webp",
+    "../../../Tychydlugowiecznosc.webp",
+    "../../../ParkPaderewskiego.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/live-chat/main/presentation.gif",
-     "../../../LiveChat.webp",
+    "../../../LiveChat.webp",
     // "https://raw.githubusercontent.com/KamilDziuk/emplaza/main/image/presentation.gif",
-     "../../../Emplaza.webp",
+    "../../../Emplaza.webp",
     //"https://raw.githubusercontent.com/KamilDziuk/jumpingObject/main/assets/images/presentation.gif",
-     "../../../JumpingObject.webp",
+    "../../../JumpingObject.webp",
   ];
 
   return content;
