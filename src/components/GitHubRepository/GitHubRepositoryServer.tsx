@@ -10,7 +10,17 @@ const data = await gitHubRepository(
 export default function GitHubRepositoryServer() {
   const content = gitHubUserContent();
 
-  const dataTable = [data[29], data[25], data[8], data[7], data[28], data[22], data[18], data[9], data[15]];
+  const dataTable = [
+    data[29],
+    data[24],
+    data[7],
+    data[6],
+    data[27],
+    data[21],
+    data[17],
+    data[8],
+    data[14],
+  ];
 
   return (
     <>
@@ -26,4 +36,3 @@ export default function GitHubRepositoryServer() {
     </>
   );
 }
-
