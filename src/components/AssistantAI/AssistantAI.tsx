@@ -15,7 +15,7 @@ export default function AssistantAI() {
       {!closeWindowPopup && (
         <embed
           className={assistantAIStyle.assistantWindow}
-          src="https://yourassistantai.uk/"
+          src="https://yourassistantai.vercel.app/"
         />
       )}
       {!closeWindowPopup && (
